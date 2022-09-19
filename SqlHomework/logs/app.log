@@ -1,0 +1,26 @@
+2022-09-19 13:53:25,988 DEBUG  [main] ---------------19/09/2022 13:53---------------
+2022-09-19 13:53:25,994 INFO  [main] 1. Get list of customers.
+2. Insert a new customer.
+3. Get all branches.
+0. Exit.
+
+2022-09-19 13:53:32,458 INFO  [main] Branches{id=1, name='Supermarket 1', address='Av. Edison 1200', manager_id=1}
+2022-09-19 13:53:32,459 INFO  [main] Branches{id=2, name='Supermarket 2', address='Av. Chaco 1200', manager_id=5}
+2022-09-19 13:53:32,459 INFO  [main] Branches{id=3, name='Supermarket 3', address='Av. Sarmiento 1200', manager_id=3}
+2022-09-19 13:53:32,460 INFO  [main] 1. Get list of customers.
+2. Insert a new customer.
+3. Get all branches.
+0. Exit.
+
+2022-09-19 14:01:59,899 DEBUG  [main] ---------------19/09/2022 14:01---------------
+2022-09-19 14:01:59,915 INFO  [main] 1) Customers.
+2022-09-19 14:01:59,916 INFO  [main] 2) Employees.
+2022-09-19 14:01:59,916 INFO  [main] 3) Managers.
+2022-09-19 14:01:59,917 INFO  [main] 4) Departments.
+2022-09-19 14:01:59,917 INFO  [main] 5) Suppliers.
+2022-09-19 14:01:59,918 INFO  [main] 6) Products.
+2022-09-19 14:01:59,918 INFO  [main] 7) Purchases.
+2022-09-19 14:01:59,918 INFO  [main] 8) Promos.
+2022-09-19 14:01:59,919 INFO  [main] 9) Orders.
+2022-09-19 14:01:59,919 INFO  [main] 10) Branches.
+2022-09-19 14:01:59,919 INFO  [main] 0) Exit.
