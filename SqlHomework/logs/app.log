@@ -24,3 +24,102 @@
 2022-09-19 14:01:59,919 INFO  [main] 9) Orders.
 2022-09-19 14:01:59,919 INFO  [main] 10) Branches.
 2022-09-19 14:01:59,919 INFO  [main] 0) Exit.
+2022-09-20 14:05:40,081 DEBUG  [main] ---------------20/09/2022 14:05---------------
+2022-09-20 14:05:40,094 INFO  [main] 1) Customers.
+2022-09-20 14:05:40,095 INFO  [main] 2) Employees.
+2022-09-20 14:05:40,095 INFO  [main] 3) Managers.
+2022-09-20 14:05:40,096 INFO  [main] 4) Departments.
+2022-09-20 14:05:40,096 INFO  [main] 5) Suppliers.
+2022-09-20 14:05:40,096 INFO  [main] 6) Products.
+2022-09-20 14:05:40,096 INFO  [main] 7) Purchases.
+2022-09-20 14:05:40,096 INFO  [main] 8) Promos.
+2022-09-20 14:05:40,097 INFO  [main] 9) Orders.
+2022-09-20 14:05:40,097 INFO  [main] 10) Branches.
+2022-09-20 14:05:40,097 INFO  [main] 0) Exit.
+2022-09-20 14:05:45,584 INFO  [main] 1) Insert.
+2022-09-20 14:05:45,584 INFO  [main] 2) Update.
+2022-09-20 14:05:45,585 INFO  [main] 3) Delete.
+2022-09-20 14:05:45,585 INFO  [main] 4) Get all.
+2022-09-20 14:05:45,585 INFO  [main] 5) Get by ID.
+2022-09-20 14:05:45,585 INFO  [main] 0) Exit.
+2022-09-20 14:05:54,050 INFO  [main] 1) Insert.
+2022-09-20 14:05:54,050 INFO  [main] 2) Update.
+2022-09-20 14:05:54,050 INFO  [main] 3) Delete.
+2022-09-20 14:05:54,050 INFO  [main] 4) Get all.
+2022-09-20 14:05:54,051 INFO  [main] 5) Get by ID.
+2022-09-20 14:05:54,051 INFO  [main] 0) Exit.
+2022-09-20 14:09:02,250 DEBUG  [main] ---------------20/09/2022 14:09---------------
+2022-09-20 14:09:02,263 INFO  [main] 1) Customers.
+2022-09-20 14:09:02,264 INFO  [main] 2) Employees.
+2022-09-20 14:09:02,264 INFO  [main] 3) Managers.
+2022-09-20 14:09:02,265 INFO  [main] 4) Departments.
+2022-09-20 14:09:02,265 INFO  [main] 5) Suppliers.
+2022-09-20 14:09:02,266 INFO  [main] 6) Products.
+2022-09-20 14:09:02,266 INFO  [main] 7) Purchases.
+2022-09-20 14:09:02,267 INFO  [main] 8) Promos.
+2022-09-20 14:09:02,267 INFO  [main] 9) Orders.
+2022-09-20 14:09:02,268 INFO  [main] 10) Branches.
+2022-09-20 14:09:02,268 INFO  [main] 0) Exit.
+2022-09-20 14:09:07,163 INFO  [main] 1) Insert.
+2022-09-20 14:09:07,164 INFO  [main] 2) Update.
+2022-09-20 14:09:07,164 INFO  [main] 3) Delete.
+2022-09-20 14:09:07,165 INFO  [main] 4) Get all.
+2022-09-20 14:09:07,165 INFO  [main] 5) Get by ID.
+2022-09-20 14:09:07,166 INFO  [main] 0) Exit.
+2022-09-20 14:09:08,722 INFO  [main] 1) Insert.
+2022-09-20 14:09:08,723 INFO  [main] 2) Update.
+2022-09-20 14:09:08,723 INFO  [main] 3) Delete.
+2022-09-20 14:09:08,723 INFO  [main] 4) Get all.
+2022-09-20 14:09:08,723 INFO  [main] 5) Get by ID.
+2022-09-20 14:09:08,724 INFO  [main] 0) Exit.
+2022-09-20 14:09:09,825 INFO  [main] 1) Insert.
+2022-09-20 14:09:09,826 INFO  [main] 2) Update.
+2022-09-20 14:09:09,826 INFO  [main] 3) Delete.
+2022-09-20 14:09:09,826 INFO  [main] 4) Get all.
+2022-09-20 14:09:09,826 INFO  [main] 5) Get by ID.
+2022-09-20 14:09:09,827 INFO  [main] 0) Exit.
+2022-09-20 14:09:11,834 INFO  [main] 1) Customers.
+2022-09-20 14:09:11,835 INFO  [main] 2) Employees.
+2022-09-20 14:09:11,835 INFO  [main] 3) Managers.
+2022-09-20 14:09:11,835 INFO  [main] 4) Departments.
+2022-09-20 14:09:11,835 INFO  [main] 5) Suppliers.
+2022-09-20 14:09:11,835 INFO  [main] 6) Products.
+2022-09-20 14:09:11,836 INFO  [main] 7) Purchases.
+2022-09-20 14:09:11,836 INFO  [main] 8) Promos.
+2022-09-20 14:09:11,836 INFO  [main] 9) Orders.
+2022-09-20 14:09:11,836 INFO  [main] 10) Branches.
+2022-09-20 14:09:11,836 INFO  [main] 0) Exit.
+2022-09-20 14:09:14,706 INFO  [main] 1) Insert.
+2022-09-20 14:09:14,707 INFO  [main] 2) Update.
+2022-09-20 14:09:14,707 INFO  [main] 3) Delete.
+2022-09-20 14:09:14,707 INFO  [main] 4) Get all.
+2022-09-20 14:09:14,707 INFO  [main] 5) Get by ID.
+2022-09-20 14:09:14,707 INFO  [main] 0) Exit.
+2022-09-20 14:09:15,506 INFO  [main] 1) Customers.
+2022-09-20 14:09:15,506 INFO  [main] 2) Employees.
+2022-09-20 14:09:15,506 INFO  [main] 3) Managers.
+2022-09-20 14:09:15,506 INFO  [main] 4) Departments.
+2022-09-20 14:09:15,506 INFO  [main] 5) Suppliers.
+2022-09-20 14:09:15,507 INFO  [main] 6) Products.
+2022-09-20 14:09:15,507 INFO  [main] 7) Purchases.
+2022-09-20 14:09:15,507 INFO  [main] 8) Promos.
+2022-09-20 14:09:15,507 INFO  [main] 9) Orders.
+2022-09-20 14:09:15,507 INFO  [main] 10) Branches.
+2022-09-20 14:09:15,508 INFO  [main] 0) Exit.
+2022-09-20 14:09:16,539 INFO  [main] 1) Insert.
+2022-09-20 14:09:16,540 INFO  [main] 2) Update.
+2022-09-20 14:09:16,540 INFO  [main] 3) Delete.
+2022-09-20 14:09:16,540 INFO  [main] 4) Get all.
+2022-09-20 14:09:16,540 INFO  [main] 5) Get by ID.
+2022-09-20 14:09:16,541 INFO  [main] 0) Exit.
+2022-09-20 14:09:17,490 INFO  [main] 1) Customers.
+2022-09-20 14:09:17,491 INFO  [main] 2) Employees.
+2022-09-20 14:09:17,491 INFO  [main] 3) Managers.
+2022-09-20 14:09:17,491 INFO  [main] 4) Departments.
+2022-09-20 14:09:17,491 INFO  [main] 5) Suppliers.
+2022-09-20 14:09:17,491 INFO  [main] 6) Products.
+2022-09-20 14:09:17,492 INFO  [main] 7) Purchases.
+2022-09-20 14:09:17,492 INFO  [main] 8) Promos.
+2022-09-20 14:09:17,492 INFO  [main] 9) Orders.
+2022-09-20 14:09:17,492 INFO  [main] 10) Branches.
+2022-09-20 14:09:17,492 INFO  [main] 0) Exit.

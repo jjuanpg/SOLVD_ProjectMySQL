@@ -13,8 +13,8 @@ import java.util.List;
 
 public class OrdersMySQL extends Orders implements DAO<Orders, Integer> {
 
-    final String INSERT_FORMAT = "INSERT INTO mangers(o_date, product, quantity, department, supplier_id, o_status) VALUES (?, ?, ?, ?, ?, ?)";
-    final String UPDATE_FORMAT = "UPDATE managers SET o_date = ?, product = ?, quantity = ?, department = ?, supplier_id = ?, o_status = ? WHERE o_id = ?";
+    final String INSERT_FORMAT = "INSERT INTO orders(o_date, product, quantity, department, supplier_id, o_status) VALUES (?, ?, ?, ?, ?, ?)";
+    final String UPDATE_FORMAT = "UPDATE orders SET o_date = ?, product = ?, quantity = ?, department = ?, supplier_id = ?, o_status = ? WHERE o_id = ?";
     final String DELETE_FORMAT = "DELETE FROM orders WHERE o_id = ?";
     final String GET_ALL = "SELECT * FROM orders";
     final String GET_ONE = "SELECT * FROM orders WHERE o_id = ?";
