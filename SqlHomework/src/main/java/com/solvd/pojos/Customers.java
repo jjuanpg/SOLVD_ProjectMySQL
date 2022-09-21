@@ -1,8 +1,15 @@
 package com.solvd.pojos;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.sql.Date;
+import java.util.Scanner;
 
 public class Customers {
 
+    private static final Logger logger = LogManager.getLogger(Customers.class);
+    static Scanner sc = new Scanner(System.in);
     private int id;
     private String first_name;
     private String last_name;
@@ -78,5 +85,29 @@ public class Customers {
                 ", email= " + email +
                 ", address= " + address +
                 ']';
+    }
+
+    public Customers create(){
+        Customers customer = new Customers();
+        logger.info("Insert the customer first name");
+        Scanner scan = new Scanner(System.in);
+        String name="";
+        name+=scan.nextLine();
+        customer.setFirst_name(name);
+        logger.info("Insert the customer last name");
+        customer.setLast_name(sc.next());
+        logger.info("Insert the customer date of birth");
+        customer.setDob(java.sql.Date.valueOf(sc.next())); //Dates must be like this 2022-09-21
+        logger.info("Insert the customer phone number");
+        customer.setPhone(sc.next());
+        logger.info("Insert the customer email address");
+        customer.setEmail(sc.next());
+        logger.info("Insert the customer address");
+        Scanner scan1 = new Scanner(System.in);
+        String address="";
+        address+=scan1.nextLine();
+        customer.setAddress(address);
+
+        return customer;
     }
 }

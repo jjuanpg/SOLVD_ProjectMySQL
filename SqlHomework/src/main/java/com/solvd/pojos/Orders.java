@@ -1,9 +1,15 @@
 package com.solvd.pojos;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.sql.Date;
+import java.util.Scanner;
 
 public class Orders {
 
+    private static final Logger logger = LogManager.getLogger(Orders.class);
+    static Scanner sc = new Scanner(System.in);
     private int id;
     private Date order_date;
     private String product;
@@ -79,5 +85,23 @@ public class Orders {
                 ", supplier_id=" + supplier_id +
                 ", order_status=" + order_status +
                 '}';
+    }
+
+    public Orders create(){
+        Orders order = new Orders();
+        logger.info("Enter the order date");
+        order.setOrder_date(java.sql.Date.valueOf(sc.next())); //Dates must be like this 2022-09-21
+        logger.info("Enter the product name");
+        order.setProduct(sc.next());
+        logger.info("Enter the order quantity");
+        order.setQuantity(sc.nextInt());
+        logger.info("Enter the department ID");
+        order.setDepartment_id(sc.nextInt());
+        logger.info("Enter the supplier ID");
+        order.setSupplier_id(sc.nextInt());
+        logger.info("Enter the order status");
+        order.setOrder_status(sc.nextBoolean());
+
+        return order;
     }
 }

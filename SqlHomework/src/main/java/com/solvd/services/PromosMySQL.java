@@ -13,8 +13,8 @@ import java.util.List;
 
 public class PromosMySQL extends Promos implements DAO<Promos, Integer> {
 
-    final String INSERT_FORMAT = "INSERT INTO promos(discount, valid_till, consumptions, product_id) VALUES (?, ?, ?, ?)";
-    final String UPDATE_FORMAT = "UPDATE promos SET discount = ?, valid_till = ?, consumptions = ?, product_id = ? WHERE p_id = ?";
+    final String INSERT_FORMAT = "INSERT INTO promos(discount, valid_till, product_id) VALUES (?, ?, ?, ?)";
+    final String UPDATE_FORMAT = "UPDATE promos SET discount = ?, valid_till = ?, product_id = ? WHERE p_id = ?";
     final String DELETE_FORMAT = "DELETE FROM promos WHERE p_id = ?";
     final String GET_ALL = "SELECT * FROM promos";
     final String GET_ONE = "SELECT * FROM promos WHERE p_id = ?";
@@ -31,8 +31,7 @@ public class PromosMySQL extends Promos implements DAO<Promos, Integer> {
             statement = con.prepareStatement(INSERT_FORMAT);
             statement.setInt(1, promos.getDiscount());
             statement.setDate(2, promos.getValid_till());
-            statement.setInt(3, promos.getConsumptions());
-            statement.setInt(4, promos.getProduct_id());
+            statement.setInt(3, promos.getProduct_id());
 
             if (statement.executeUpdate() == 0){
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
@@ -59,9 +58,8 @@ public class PromosMySQL extends Promos implements DAO<Promos, Integer> {
             statement = con.prepareStatement(UPDATE_FORMAT);
             statement.setInt(1, promos.getDiscount());
             statement.setDate(2, promos.getValid_till());
-            statement.setInt(3, promos.getConsumptions());
-            statement.setInt(4, promos.getProduct_id());
-            statement.setInt(5, promos.getId());
+            statement.setInt(3, promos.getProduct_id());
+            statement.setInt(4, promos.getId());
 
             if (statement.executeUpdate() == 0){
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
@@ -111,7 +109,6 @@ public class PromosMySQL extends Promos implements DAO<Promos, Integer> {
         promo.setId(rs.getInt("p_id"));
         promo.setDiscount(rs.getInt("discount"));
         promo.setValid_till(rs.getDate("valid_till"));
-        promo.setConsumptions(rs.getInt("consumptions"));
         promo.setProduct_id(rs.getInt("product_id"));
 
         return promo;

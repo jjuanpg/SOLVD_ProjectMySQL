@@ -1,8 +1,9 @@
 package com.solvd.services;
+
 import com.solvd.dao.DAO;
 import com.solvd.exception.DAOException;
-import com.solvd.pojos.Branches;
 import com.solvd.pojos.Departments;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

@@ -1,16 +1,16 @@
 package com.solvd.enums;
 
 public enum Tables {
-    CUSTOMERS("Customers."),
-    EMPLOYEES("Employees."),
-    MANAGERS("Managers."),
-    DEPARTMENTS("Departments."),
-    SUPPLIERS("Suppliers."),
-    PRODUCTS("Products."),
-    PURCHASES("Purchases."),
-    PROMOS("Promos."),
-    ORDERS("Orders."),
-    BRANCHES("Branches.");
+    CUSTOMERS("Customers table."),
+    EMPLOYEES("Employees table."),
+    MANAGERS("Managers table."),
+    DEPARTMENTS("Departments table."),
+    SUPPLIERS("Suppliers table."),
+    PRODUCTS("Products table."),
+    PURCHASES("Purchases table."),
+    PROMOS("Promos table."),
+    ORDERS("Orders table."),
+    BRANCHES("Branches table.");
 
     private final String description;
     Tables(String s){

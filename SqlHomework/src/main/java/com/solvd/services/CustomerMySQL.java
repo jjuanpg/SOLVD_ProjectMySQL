@@ -14,7 +14,7 @@ import java.util.List;
 public class CustomerMySQL extends Customers implements DAO<Customers, Integer> {
 
     final String INSERT_FORMAT = "INSERT INTO customers(first_name, last_name, bod, phone, email, address) VALUES (?, ?, ?, ?, ?, ?)";
-    final String UPDATE_FORMAT = "UPDATE customers SET first_name = ?, last_name = ?, bod = ?, phone = ?, email = ?, address = ? WHERE b_id = ?";
+    final String UPDATE_FORMAT = "UPDATE customers SET first_name = ?, last_name = ?, bod = ?, phone = ?, email = ?, address = ? WHERE c_id = ?";
     final String DELETE_FORMAT = "DELETE FROM customers WHERE c_id = ?";
     final String GET_ALL = "SELECT * FROM customers";
     final String GET_ONE = "SELECT * FROM customers WHERE c_id = ?";

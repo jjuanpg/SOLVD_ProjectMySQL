@@ -1,9 +1,15 @@
 package com.solvd.pojos;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.sql.Date;
+import java.util.Scanner;
 
 public class Employees {
 
+    private static final Logger logger = LogManager.getLogger(Employees.class);
+    static Scanner sc = new Scanner(System.in);
     private int id;
     private String first_name;
     private String last_name;
@@ -99,5 +105,31 @@ public class Employees {
                 ", salary=" + salary +
                 ", dept_id=" + dept_id +
                 '}';
+    }
+
+    public Employees create(){
+        Employees employee = new Employees();
+        logger.info("Insert the employee first name");
+        Scanner scan = new Scanner(System.in);
+        String name="";
+        name+=scan.nextLine();
+        employee.setFirst_name(name);
+        logger.info("Insert the employee last name");
+        employee.setLast_name(sc.next());
+        logger.info("Insert the employee date of birth");
+        employee.setDob(java.sql.Date.valueOf(sc.next())); //Dates must be like this 2022-09-21
+        logger.info("Insert the employee phone number");
+        employee.setPhone(sc.next());
+        logger.info("Insert the employee email address");
+        employee.setEmail(sc.next());
+        logger.info("Insert the employee address");
+        Scanner scan1 = new Scanner(System.in);
+        String address="";
+        address+=scan1.nextLine();
+        employee.setAddress(address);
+        employee.setSalary(sc.nextInt());
+        employee.setDept_id(sc.nextInt());
+
+        return employee;
     }
 }

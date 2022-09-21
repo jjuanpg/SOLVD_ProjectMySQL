@@ -1,7 +1,14 @@
 package com.solvd.pojos;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.util.Scanner;
+
 public class Products {
 
+    private static final Logger logger = LogManager.getLogger(Products.class);
+    static Scanner sc = new Scanner(System.in);
     private int id;
     private String name;
     private int quantity;
@@ -67,5 +74,21 @@ public class Products {
                 ", creator_id=" + creator_id +
                 ", supplier_id=" + supplier_id +
                 '}';
+    }
+
+    public Products create(){
+        Products product = new Products();
+        logger.info("Enter the product name");
+        product.setName(sc.next());
+        logger.info("Enter the order quantity");
+        product.setQuantity(sc.nextInt());
+        logger.info("Enter the product price");
+        product.setPrice(sc.nextInt());
+        logger.info("Enter the manager ID");
+        product.setCreator_id(sc.nextInt());
+        logger.info("Enter the supplier ID");
+        product.setSupplier_id(sc.nextInt());
+
+        return product;
     }
 }

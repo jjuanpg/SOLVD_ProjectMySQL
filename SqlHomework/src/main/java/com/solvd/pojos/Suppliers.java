@@ -1,7 +1,14 @@
 package com.solvd.pojos;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.util.Scanner;
+
 public class Suppliers {
 
+    private static final Logger logger = LogManager.getLogger(Suppliers.class);
+    static Scanner sc = new Scanner(System.in);
     private int id;
     private String name;
     private String address;
@@ -57,5 +64,22 @@ public class Suppliers {
                 ", phone='" + phone + '\'' +
                 ", email='" + email + '\'' +
                 '}';
+    }
+
+    public Suppliers create(){
+        Suppliers supplier = new Suppliers();
+        logger.info("Enter the supplier name");
+        supplier.setName(sc.next());
+        logger.info("Enter the supplier address");
+        Scanner scan1 = new Scanner(System.in);
+        String address="";
+        address+=scan1.nextLine();
+        supplier.setAddress(address);
+        logger.info("Enter the supplier phone");
+        supplier.setPhone(sc.next());
+        logger.info("Enter the supplier email address");
+        supplier.setEmail(sc.next());
+
+        return supplier;
     }
 }

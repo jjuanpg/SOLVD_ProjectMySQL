@@ -13,8 +13,8 @@ import java.util.List;
 
 public class PurchasesMySQL extends Purchases implements DAO<Purchases, Integer> {
 
-    final String INSERT_FORMAT = "INSERT INTO purchases(p_date, total_spent, costumer_id) VALUES (?, ?, ?)";
-    final String UPDATE_FORMAT = "UPDATE purchases SET p_date = ?, total_spent = ?, costumer_id = ? WHERE p_id = ?";
+    final String INSERT_FORMAT = "INSERT INTO purchases(p_date, total_spent, costumer_id, dept_id, items) VALUES (?, ?, ?, ?, ?)";
+    final String UPDATE_FORMAT = "UPDATE purchases SET p_date = ?, total_spent = ?, costumer_id = ?, dept_id = ?, items = ? WHERE p_id = ?";
     final String DELETE_FORMAT = "DELETE FROM purchases WHERE p_id = ?";
     final String GET_ALL = "SELECT * FROM purchases";
     final String GET_ONE = "SELECT * FROM purchases WHERE p_id = ?";
@@ -32,6 +32,8 @@ public class PurchasesMySQL extends Purchases implements DAO<Purchases, Integer>
             statement.setDate(1, purchases.getDate());
             statement.setInt(2, purchases.getTotal_spent());
             statement.setInt(3, purchases.getCustomer_id());
+            statement.setInt(4, purchases.getDept_id());
+            statement.setString(5, purchases.getItems());
 
             if (statement.executeUpdate() == 0){
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
