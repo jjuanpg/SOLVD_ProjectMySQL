@@ -4,6 +4,7 @@ import java.sql.SQLException;
 
 public interface ConnectionPool {
 
+    //Implemented in multithread class and tested in com.solvd.test.java.SimpleTest
     Connection getConnection() throws SQLException;
     boolean releaseConnection(Connection connection);
     String getUrl();
