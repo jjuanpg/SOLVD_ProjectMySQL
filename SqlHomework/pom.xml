@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <groupId>com.solvd</groupId>
     <artifactId>SqlHomework</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -13,6 +13,14 @@
         <maven.compiler.target>18</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>internal.repo</id>
+            <name>Temporary Staging Repository</name>
+            <url>file://${project.build.directory}/mvn-repo</url> <!--this should be changed to upload to GitHub-->
+        </repository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
@@ -44,7 +52,7 @@
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-impl</artifactId>
-            <version>4.0.0</version>
+            <version>4.0.1</version>
             <scope>runtime</scope>
         </dependency>
         <dependency>
