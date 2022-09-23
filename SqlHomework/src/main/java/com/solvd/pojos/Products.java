@@ -8,7 +8,9 @@ import java.util.Scanner;
 public class Products {
 
     private static final Logger logger = LogManager.getLogger(Products.class);
-    static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in); //Scanner for numbers
+    static Scanner sc1 = new Scanner(System.in); //Scanner for strings
+
     private int id;
     private String name;
     private int quantity;
@@ -79,7 +81,9 @@ public class Products {
     public Products create(){
         Products product = new Products();
         logger.info("Enter the product name");
-        product.setName(sc.next());
+        String name = "";
+        name += sc1.nextLine();
+        product.setName(name);
         logger.info("Enter the order quantity");
         product.setQuantity(sc.nextInt());
         logger.info("Enter the product price");

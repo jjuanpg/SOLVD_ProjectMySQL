@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Departments {
 
     private static final Logger logger = LogManager.getLogger(Departments.class);
+    private static final Scanner scan = new Scanner(System.in);
     private int id;
     private String name;
 
@@ -36,8 +37,7 @@ public class Departments {
     }
     public Departments create(){
         Departments department = new Departments();
-        logger.info("Insert the department name");
-        Scanner scan = new Scanner(System.in);
+        logger.info("Enter the department name");
         String name="";
         name+=scan.nextLine();
         department.setName(name);

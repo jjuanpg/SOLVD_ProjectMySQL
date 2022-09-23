@@ -9,7 +9,9 @@ import java.util.Scanner;
 public class Employees {
 
     private static final Logger logger = LogManager.getLogger(Employees.class);
-    static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in); //Scanner for numbers
+    static Scanner sc1 = new Scanner(System.in); //Scanner for strings
+
     private int id;
     private String first_name;
     private String last_name;
@@ -109,25 +111,25 @@ public class Employees {
 
     public Employees create(){
         Employees employee = new Employees();
-        logger.info("Insert the employee first name");
-        Scanner scan = new Scanner(System.in);
+        logger.info("Enter the employee first name");
         String name="";
-        name+=scan.nextLine();
+        name+=sc1.nextLine();
         employee.setFirst_name(name);
-        logger.info("Insert the employee last name");
+        logger.info("Enter the employee last name");
         employee.setLast_name(sc.next());
-        logger.info("Insert the employee date of birth");
+        logger.info("Enter the employee date of birth");
         employee.setDob(java.sql.Date.valueOf(sc.next())); //Dates must be like this 2022-09-21
-        logger.info("Insert the employee phone number");
+        logger.info("Enter the employee phone number");
         employee.setPhone(sc.next());
-        logger.info("Insert the employee email address");
+        logger.info("Enter the employee email address");
         employee.setEmail(sc.next());
-        logger.info("Insert the employee address");
-        Scanner scan1 = new Scanner(System.in);
+        logger.info("Enter the employee address");
         String address="";
-        address+=scan1.nextLine();
+        address+=sc1.nextLine();
         employee.setAddress(address);
+        logger.info("Enter the employee salary");
         employee.setSalary(sc.nextInt());
+        logger.info("Enter the employee dept ID");
         employee.setDept_id(sc.nextInt());
 
         return employee;

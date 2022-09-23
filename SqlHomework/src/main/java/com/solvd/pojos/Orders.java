@@ -9,7 +9,9 @@ import java.util.Scanner;
 public class Orders {
 
     private static final Logger logger = LogManager.getLogger(Orders.class);
-    static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in); //Scanner for numbers
+    static Scanner sc1 = new Scanner(System.in); //Scanner for strings
+
     private int id;
     private Date order_date;
     private String product;
@@ -92,7 +94,9 @@ public class Orders {
         logger.info("Enter the order date");
         order.setOrder_date(java.sql.Date.valueOf(sc.next())); //Dates must be like this 2022-09-21
         logger.info("Enter the product name");
-        order.setProduct(sc.next());
+        String name= "";
+        name += sc1.nextLine();
+        order.setProduct(name);
         logger.info("Enter the order quantity");
         order.setQuantity(sc.nextInt());
         logger.info("Enter the department ID");

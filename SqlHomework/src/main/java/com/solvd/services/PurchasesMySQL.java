@@ -61,7 +61,9 @@ public class PurchasesMySQL extends Purchases implements DAO<Purchases, Integer>
             statement.setDate(1, purchases.getDate());
             statement.setInt(2, purchases.getTotal_spent());
             statement.setInt(3, purchases.getCustomer_id());
-            statement.setInt(4, purchases.getId());
+            statement.setInt(4, purchases.getDept_id());
+            statement.setString(5, purchases.getItems());
+            statement.setInt(6, purchases.getId());
 
             if (statement.executeUpdate() == 0){
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
@@ -112,6 +114,8 @@ public class PurchasesMySQL extends Purchases implements DAO<Purchases, Integer>
         purchases.setDate(rs.getDate("p_date"));
         purchases.setTotal_spent(rs.getInt("total_spent"));
         purchases.setCustomer_id(rs.getInt("customer_id"));
+        purchases.setDept_id(rs.getInt("dept_id"));
+        purchases.setItems(rs.getString("items"));
 
         return purchases;
     }

@@ -9,7 +9,9 @@ import java.util.Scanner;
 public class Managers {
 
     private static final Logger logger = LogManager.getLogger(Managers.class);
-    static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in); //Scanner for numbers
+    static Scanner sc1 = new Scanner(System.in); //Scanner for strings
+
     private int id;
     private String first_name;
     private String last_name;
@@ -109,25 +111,25 @@ public class Managers {
 
     public Managers create(){
         Managers manager = new Managers();
-        logger.info("Insert the manager first name");
-        Scanner scan = new Scanner(System.in);
+        logger.info("Enter the manager first name");
         String name="";
-        name+=scan.nextLine();
+        name+=sc1.nextLine();
         manager.setFirst_name(name);
-        logger.info("Insert the manager last name");
+        logger.info("Enter the manager last name");
         manager.setLast_name(sc.next());
-        logger.info("Insert the manager date of birth");
+        logger.info("Enter the manager date of birth");
         manager.setDob(java.sql.Date.valueOf(sc.next())); //Dates must be like this 2022-09-21
-        logger.info("Insert the manager phone number");
+        logger.info("Enter the manager phone number");
         manager.setPhone(sc.next());
-        logger.info("Insert the manager email address");
+        logger.info("Enter the manager email address");
         manager.setEmail(sc.next());
-        logger.info("Insert the manager address");
-        Scanner scan1 = new Scanner(System.in);
+        logger.info("Enter the manager address");
         String address="";
-        address+=scan1.nextLine();
+        address+=sc1.nextLine();
         manager.setAddress(address);
+        logger.info("Enter the manager salary");
         manager.setSalary(sc.nextInt());
+        logger.info("Enter the manager dept ID");
         manager.setDept_id(sc.nextInt());
 
         return manager;

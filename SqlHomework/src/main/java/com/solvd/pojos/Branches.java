@@ -8,7 +8,8 @@ import java.util.Scanner;
 public class Branches {
 
     private static final Logger logger = LogManager.getLogger(Branches.class);
-    static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in); //Scanner for numbers
+    static Scanner sc1 = new Scanner(System.in); //Scanner for strings
     private int id;
     private String name;
     private String address;
@@ -58,16 +59,15 @@ public class Branches {
 
     public Branches create(){
         Branches branch = new Branches();
-        logger.info("Insert the branch name");
-        Scanner scan = new Scanner(System.in);
+        logger.info("Enter the branch name");
         String name="";
-        name+=scan.nextLine();
+        name+=sc1.nextLine();
         branch.setName(name);
-        logger.info("Insert the branch address");
-        Scanner scan1 = new Scanner(System.in);
+        logger.info("Enter the branch address");
         String address="";
-        address+=scan1.nextLine();
+        address+=sc1.nextLine();
         branch.setAddress(address);
+        logger.info("Enter the manager ID of the branch");
         branch.setManager_id(sc.nextInt());
 
         return branch;

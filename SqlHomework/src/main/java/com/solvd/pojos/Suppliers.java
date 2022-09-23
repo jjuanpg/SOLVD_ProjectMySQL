@@ -8,7 +8,8 @@ import java.util.Scanner;
 public class Suppliers {
 
     private static final Logger logger = LogManager.getLogger(Suppliers.class);
-    static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in); //Scanner for numbers
+    static Scanner sc1 = new Scanner(System.in); //Scanner for strings
     private int id;
     private String name;
     private String address;
@@ -71,9 +72,8 @@ public class Suppliers {
         logger.info("Enter the supplier name");
         supplier.setName(sc.next());
         logger.info("Enter the supplier address");
-        Scanner scan1 = new Scanner(System.in);
         String address="";
-        address+=scan1.nextLine();
+        address+=sc1.nextLine();
         supplier.setAddress(address);
         logger.info("Enter the supplier phone");
         supplier.setPhone(sc.next());

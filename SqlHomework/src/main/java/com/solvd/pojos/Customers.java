@@ -9,7 +9,9 @@ import java.util.Scanner;
 public class Customers {
 
     private static final Logger logger = LogManager.getLogger(Customers.class);
-    static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in); //Scanner for numbers
+    static Scanner sc1 = new Scanner(System.in); //Scanner for strings
+
     private int id;
     private String first_name;
     private String last_name;
@@ -89,23 +91,21 @@ public class Customers {
 
     public Customers create(){
         Customers customer = new Customers();
-        logger.info("Insert the customer first name");
-        Scanner scan = new Scanner(System.in);
+        logger.info("Enter the customer first name");
         String name="";
-        name+=scan.nextLine();
+        name+=sc1.nextLine();
         customer.setFirst_name(name);
-        logger.info("Insert the customer last name");
+        logger.info("Enter the customer last name");
         customer.setLast_name(sc.next());
-        logger.info("Insert the customer date of birth");
+        logger.info("Enter the customer date of birth");
         customer.setDob(java.sql.Date.valueOf(sc.next())); //Dates must be like this 2022-09-21
-        logger.info("Insert the customer phone number");
+        logger.info("Enter the customer phone number");
         customer.setPhone(sc.next());
-        logger.info("Insert the customer email address");
+        logger.info("Enter the customer email address");
         customer.setEmail(sc.next());
-        logger.info("Insert the customer address");
-        Scanner scan1 = new Scanner(System.in);
+        logger.info("Enter the customer address");
         String address="";
-        address+=scan1.nextLine();
+        address+=sc1.nextLine();
         customer.setAddress(address);
 
         return customer;
