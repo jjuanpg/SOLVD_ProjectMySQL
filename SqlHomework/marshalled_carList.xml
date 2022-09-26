@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<cars>
+    <car id="1">
+        <brand>BMW</brand>
+        <model>I8</model>
+        <year>2022</year>
+        <plate>AAA 123</plate>
+        <dos>2022-09-26</dos>
+    </car>
+    <car id="2">
+        <brand>Audi</brand>
+        <model>A7</model>
+        <year>2022</year>
+        <plate>AAA 124</plate>
+        <dos>2022-09-26</dos>
+    </car>
+</cars>

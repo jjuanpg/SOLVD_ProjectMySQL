@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cars>
+    <car id="1">
+        <brand>Audi</brand>
+        <model>e-tron Sportback</model>
+        <year>2022</year>
+        <plate>XEB 897</plate>
+        <dos>2022-09-25</dos> <!-- Date of sell -->
+    </car>
+    <car id="2">
+        <brand>BWM</brand>
+        <model>M5</model>
+        <year>2022</year>
+        <plate>XBB 150</plate>
+        <dos>2022-09-27</dos>
+    </car>
+    <car id="3">
+        <brand>Mercedes Benz</brand>
+        <model>A200</model>
+        <year>2022</year>
+        <plate>XAF 542</plate>
+        <dos>2022-09-24</dos>
+    </car>
+    <car id="4">
+        <brand>Alfa Romeo</brand>
+        <model>Giulia QV</model>
+        <year>2022</year>
+        <plate>XEE 457</plate>
+        <dos>2022-09-15</dos>
+    </car>
+</cars>

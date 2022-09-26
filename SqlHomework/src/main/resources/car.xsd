@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cars">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="car" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="brand"/>
+                            <xs:element type="xs:string" name="model"/>
+                            <xs:element type="xs:int" name="year"/>
+                            <xs:element type="xs:string" name="plate"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:int" name="id"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

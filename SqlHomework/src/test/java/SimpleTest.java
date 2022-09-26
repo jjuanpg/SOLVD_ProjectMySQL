@@ -1,11 +1,29 @@
 import com.solvd.connection_pool.Multithread;
+import com.solvd.xml.Dom;
 import org.testng.annotations.Test;
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
+
+import java.io.IOException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 public class SimpleTest {
+        DocumentBuilder documentBuilder = DocumentBuilderFactory.newDefaultInstance().newDocumentBuilder();
+        Document dom = documentBuilder.parse(Dom.class.getClassLoader().getResourceAsStream("car.xml"));
+
+        public SimpleTest() throws ParserConfigurationException, IOException, SAXException {
+        }
 
         @Test
         public void ConnectionPoolTest() throws InterruptedException {
@@ -29,5 +47,15 @@ public class SimpleTest {
             service.awaitTermination(5, TimeUnit.SECONDS);
             service.shutdown();
             assertTrue(myThing.isClosing());
+        }
+
+        @Test
+        public void GetElementByTag(){
+            NodeList nodeList = dom.getElementsByTagName("car");
+            Node first = nodeList.item(0);
+
+            assertEquals(4, nodeList.getLength());
+            assertEquals(Node.ELEMENT_NODE, first.getNodeType());
+            assertEquals("car", first.getNodeName());
         }
 }
