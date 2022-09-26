@@ -1,5 +1,5 @@
 import com.solvd.connection_pool.Multithread;
-import com.solvd.xml.Dom;
+import com.solvd.parsers.xml.Dom;
 import org.testng.annotations.Test;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
