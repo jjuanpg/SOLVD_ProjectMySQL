@@ -1,0 +1,20 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "brand": "BMW",
+      "model": "I8",
+      "year": 2022,
+      "plate": "AAA 123",
+      "dos": 1664209349655
+    },
+    {
+      "id": 2,
+      "brand": "Audi",
+      "model": "A7",
+      "year": 2022,
+      "plate": "AAA 124",
+      "dos": 1664209349655
+    }
+  ]
+}
