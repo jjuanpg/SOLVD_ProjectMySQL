@@ -86,10 +86,19 @@ public class Jackson {
         car2.setPlate("AAA 999");
         car2.setDos(date);
 
+        Car car3 = new Car();
+        car3.setId(4);
+        car3.setBrand("Ferrari");
+        car3.setModel("488");
+        car3.setYear(2022);
+        car3.setPlate("AAB 000");
+        car3.setDos(date);
+
         //Add the cars to the list
         cars.add(car);
         cars.add(car1);
         cars.add(car2);
+        cars.add(car3);
 
         objectMapper.writeValue(new File("src/main/resources/car_list.json"),cars);
     }

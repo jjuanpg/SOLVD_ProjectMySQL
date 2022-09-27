@@ -27,15 +27,15 @@ public class Jaxb {
                                """);
             option = sc.nextInt();
             switch (option){
-                case 1 -> marshallExample();
-                case 2 -> UnmarshallExample();
+                case 1 -> marshalExample();
+                case 2 -> UnmarshalExample();
                 case 3 -> marshalListExample();
-                case 4 -> UnmarshallListExample();
+                case 4 -> UnmarshalListExample();
             }
         }while (option != 0);
     }
 
-    public static void UnmarshallExample() throws JAXBException {
+    public static void UnmarshalExample() throws JAXBException {
         JAXBContext jaxbContext = JAXBContext.newInstance(Car.class);
         Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 
@@ -43,7 +43,7 @@ public class Jaxb {
         System.out.println(car);
     }
 
-    public static void marshallExample() throws JAXBException {
+    public static void marshalExample() throws JAXBException {
         JAXBContext context = JAXBContext.newInstance(Car.class);
         Marshaller jaxbMarshaller = context.createMarshaller();
         Date date = new Date();
@@ -65,7 +65,7 @@ public class Jaxb {
         jaxbMarshaller.marshal(car, new File("src/main/resources/marshalled_car.xml"));
     }
 
-    public static void UnmarshallListExample() throws JAXBException {
+    public static void UnmarshalListExample() throws JAXBException {
         JAXBContext jaxbContext = JAXBContext.newInstance(Cars.class);
         Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 
@@ -100,6 +100,8 @@ public class Jaxb {
         car1.setDos(date);
 
         //Add the cars to the list
+        cars.getCars().add(car);
+        cars.getCars().add(car1);
         cars.getCars().add(car);
         cars.getCars().add(car1);
 
