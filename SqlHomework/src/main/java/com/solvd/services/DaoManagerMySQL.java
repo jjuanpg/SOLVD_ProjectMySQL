@@ -24,6 +24,8 @@ public class DaoManagerMySQL implements DAOManager {
     Promos promos = null;
     Purchases purchases = null;
     Suppliers suppliers = null;
+    Deliverys delivery = null;
+    Licenses licenses = null;
 
     public DaoManagerMySQL(String host,String username, String password, String database) throws SQLException {
         con = DriverManager.getConnection("jdbc:mysql://"+host+"/"+database, username, password);
@@ -107,6 +109,22 @@ public class DaoManagerMySQL implements DAOManager {
             suppliers = new SuppliersMySQL(con);
         }
         return suppliers;
+    }
+
+    @Override
+    public Deliverys getDeliverys() {
+        if(delivery == null){
+            delivery = new DeliverysMySQL(con);
+        }
+        return  delivery;
+    }
+
+    @Override
+    public Licenses getLicenses() {
+        if(licenses == null){
+            licenses = new LicensesMySQL(con);
+        }
+        return licenses;
     }
 
     public void closeConnection() {

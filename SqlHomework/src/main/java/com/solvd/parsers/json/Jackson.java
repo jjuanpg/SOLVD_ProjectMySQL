@@ -1,12 +1,14 @@
 package com.solvd.parsers.json;
+
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.solvd.parsers.Car;
-import com.solvd.parsers.Cars;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
 public class Jackson {
@@ -56,8 +58,7 @@ public class Jackson {
 
     public static void serializeObjectList() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        Cars cars = new Cars();
-        cars.setCars(new ArrayList<>());
+        List<Car> cars = new ArrayList<>();
         Date date = new Date();
 
         //Create car examples
@@ -77,18 +78,26 @@ public class Jackson {
         car1.setPlate("AAA 124");
         car1.setDos(date);
 
+        Car car2 = new Car();
+        car2.setId(3);
+        car2.setBrand("Lamborghini");
+        car2.setModel("Gallardo");
+        car2.setYear(2022);
+        car2.setPlate("AAA 999");
+        car2.setDos(date);
+
         //Add the cars to the list
-        cars.getCars().add(car);
-        cars.getCars().add(car1);
+        cars.add(car);
+        cars.add(car1);
+        cars.add(car2);
 
         objectMapper.writeValue(new File("src/main/resources/car_list.json"),cars);
     }
 
     public static void deserializeObjectList() throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
-        Cars cars = objectMapper.readValue(new File("src/main/resources/car_list.json"), Cars.class);
-        for (Car c : cars.getCars()){
-            System.out.println(c);
-        }
+        List<Car> cars = objectMapper.readValue(new File("src/main/resources/car_list.json"), new TypeReference<>(){});
+        System.out.println("The amount of cars: "+cars.size());
+        cars.forEach(System.out::println);
     }
 }

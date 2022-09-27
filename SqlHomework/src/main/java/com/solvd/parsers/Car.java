@@ -1,6 +1,7 @@
 package com.solvd.parsers;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.xml.bind.annotation.*;
 import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.Date;
@@ -16,6 +17,7 @@ public class Car {
     private int year;
     private String plate;
     @XmlJavaTypeAdapter(DateAdapter.class)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date dos; // Date of sell
 
     public int getId(){

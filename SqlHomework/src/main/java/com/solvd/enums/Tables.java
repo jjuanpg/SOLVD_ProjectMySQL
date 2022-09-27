@@ -10,7 +10,9 @@ public enum Tables {
     PURCHASES("Purchases table."),
     PROMOS("Promos table."),
     ORDERS("Orders table."),
-    BRANCHES("Branches table.");
+    BRANCHES("Branches table."),
+    DELIVERYS("Delivery table."),
+    LICENSES("Licenses table.");
 
     private final String description;
     Tables(String s){

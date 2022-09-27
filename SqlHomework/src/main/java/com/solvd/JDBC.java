@@ -576,6 +576,116 @@ public class JDBC {
                     }while (option != 0);
                     option += 99;
                 }
+                //DELIVERYS TABLE
+                case 11 -> {
+                    do {
+                        DaoManagerMySQL man = new DaoManagerMySQL("localhost","root","root","supermarket");
+                        Arrays.stream(menu).map(v -> (v.ordinal()+1)+") "+ v).forEach(logger::info);
+                        logger.info("0) Exit.");
+                        option = sc.nextInt();
+
+                        switch(option){
+                            case 1 ->{
+                                // code to insert
+                                Deliverys delivery = new Deliverys();
+                                delivery = delivery.create();
+
+                                ((DeliverysMySQL) man.getDeliverys()).insert(delivery);
+                                logger.info("Delivery inserted!");
+                                man.closeConnection();
+                            }
+                            case 2 ->{
+                                // code to update
+                                Deliverys delivery = new Deliverys();
+                                delivery = delivery.create();
+                                logger.info("Insert the delivery ID");
+                                delivery.setId(sc.nextInt());
+
+                                ((DeliverysMySQL) man.getDeliverys()).update(delivery);
+                                logger.info("Delivery updated!");
+                                man.closeConnection();
+                            }
+                            case 3 ->{
+                                // code to delete
+                                Deliverys delivery = new Deliverys();
+                                logger.info("Enter the delivery ID");
+                                delivery.setId(sc.nextInt());
+                                ((DeliverysMySQL) man.getDeliverys()).delete(delivery);
+                                logger.info("Delivery deleted!");
+                                man.closeConnection();
+                            }
+                            case 4 ->{
+                                // code to get all
+                                List<Deliverys> delivery = ((DeliverysMySQL) man.getDeliverys()).getAll();
+                                delivery.forEach(logger::info);
+                                man.closeConnection();
+                            }
+                            case 5 ->{
+                                // code to get by id
+                                logger.info("Enter the delivery ID");
+                                Deliverys delivery = ((DeliverysMySQL) man.getDeliverys()).getByID(sc.nextInt());
+                                logger.info(delivery);
+                                man.closeConnection();
+                            }
+                        }
+                    }while (option != 0);
+                    option += 99;
+                }
+                //LICENSES TABLE
+                case 12 -> {
+                    do {
+                        DaoManagerMySQL man = new DaoManagerMySQL("localhost","root","root","supermarket");
+                        Arrays.stream(menu).map(v -> (v.ordinal()+1)+") "+ v).forEach(logger::info);
+                        logger.info("0) Exit.");
+                        option = sc.nextInt();
+
+                        switch(option){
+                            case 1 ->{
+                                // code to insert
+                                Licenses license = new Licenses();
+                                license = license.create();
+
+                                ((LicensesMySQL) man.getLicenses()).insert(license);
+                                logger.info("License inserted!");
+                                man.closeConnection();
+                            }
+                            case 2 ->{
+                                // code to update
+                                Licenses license = new Licenses();
+                                license = license.create();
+                                logger.info("Insert the license ID");
+                                license.setId(sc.nextInt());
+
+                                ((LicensesMySQL) man.getLicenses()).update(license);
+                                logger.info("License updated!");
+                                man.closeConnection();
+                            }
+                            case 3 ->{
+                                // code to delete
+                                Licenses license = new Licenses();
+                                logger.info("Enter the license ID");
+                                license.setId(sc.nextInt());
+                                ((LicensesMySQL) man.getLicenses()).delete(license);
+                                logger.info("License deleted!");
+                                man.closeConnection();
+                            }
+                            case 4 ->{
+                                // code to get all
+                                List<Licenses> license = ((LicensesMySQL) man.getLicenses()).getAll();
+                                license.forEach(logger::info);
+                                man.closeConnection();
+                            }
+                            case 5 ->{
+                                // code to get by id
+                                logger.info("Enter the license ID");
+                                Licenses license = ((LicensesMySQL) man.getLicenses()).getByID(sc.nextInt());
+                                logger.info(license);
+                                man.closeConnection();
+                            }
+                        }
+                    }while (option !=0);
+                    option += 99;
+                }
                 default -> {
                     if(option != 0){
                         throw new MismatchInputException("ERROR: WRONG INPUT");

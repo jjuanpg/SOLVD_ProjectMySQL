@@ -1,20 +1,26 @@
-{
-  "cars": [
-    {
-      "id": 1,
-      "brand": "BMW",
-      "model": "I8",
-      "year": 2022,
-      "plate": "AAA 123",
-      "dos": 1664209349655
-    },
-    {
-      "id": 2,
-      "brand": "Audi",
-      "model": "A7",
-      "year": 2022,
-      "plate": "AAA 124",
-      "dos": 1664209349655
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "brand": "BMW",
+    "model": "I8",
+    "year": 2022,
+    "plate": "AAA 123",
+    "dos": "2022-09-26"
+  },
+  {
+    "id": 2,
+    "brand": "Audi",
+    "model": "A7",
+    "year": 2022,
+    "plate": "AAA 124",
+    "dos": "2022-09-26"
+  },
+  {
+    "id": 3,
+    "brand": "Lamborghini",
+    "model": "Gallardo",
+    "year": 2022,
+    "plate": "AAA 999",
+    "dos": "2022-09-26"
+  }
+]

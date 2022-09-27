@@ -13,4 +13,6 @@ public interface DAOManager {
     Promos getPromos();
     Purchases getPurchases();
     Suppliers getSuppliers();
+    Deliverys getDeliverys();
+    Licenses getLicenses();
 }
