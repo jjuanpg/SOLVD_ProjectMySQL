@@ -125,7 +125,7 @@ public class DeliverysMySQL extends Deliverys implements DAO<Deliverys, Integer>
                 deliverys.add(getDelivery(rs));
             }
         } catch (SQLException e){
-            throw new DAOException("ERROR GETTING BRANCH BY ID");
+            throw new DAOException("ERROR GETTING DELIVERY BY ID");
         } finally {
             if (rs != null){
                 try {
@@ -158,10 +158,10 @@ public class DeliverysMySQL extends Deliverys implements DAO<Deliverys, Integer>
             if (rs.next()){
                 delivery = getDelivery(rs);
             }else{
-                throw new DAOException("ERROR: BRANCH DOES NOT EXIST");
+                throw new DAOException("ERROR: DELIVERY DOES NOT EXIST");
             }
         } catch (SQLException e){
-            throw new DAOException("ERROR GETTING BRANCH BY ID");
+            throw new DAOException("ERROR GETTING DELIVERY BY ID");
         } finally {
             if (rs != null){
                 try {

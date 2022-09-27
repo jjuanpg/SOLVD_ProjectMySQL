@@ -119,7 +119,7 @@ public class LicensesMySQL extends Licenses implements DAO<Licenses, Integer> {
                 licenses.add(getLicense(rs));
             }
         } catch (SQLException e){
-            throw new DAOException("ERROR GETTING BRANCH BY ID");
+            throw new DAOException("ERROR GETTING LICENSE BY ID");
         } finally {
             if (rs != null){
                 try {
@@ -152,10 +152,10 @@ public class LicensesMySQL extends Licenses implements DAO<Licenses, Integer> {
             if (rs.next()){
                 license = getLicense(rs);
             }else{
-                throw new DAOException("ERROR: BRANCH DOES NOT EXIST");
+                throw new DAOException("ERROR: LICENSE DOES NOT EXIST");
             }
         } catch (SQLException e){
-            throw new DAOException("ERROR GETTING BRANCH BY ID");
+            throw new DAOException("ERROR GETTING LICENSE BY ID");
         } finally {
             if (rs != null){
                 try {

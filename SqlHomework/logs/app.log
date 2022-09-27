@@ -1777,3 +1777,105 @@
 2022-09-22 20:49:13,919 INFO  [main] 9) Orders table.
 2022-09-22 20:49:13,919 INFO  [main] 10) Branches table.
 2022-09-22 20:49:13,919 INFO  [main] 0) Exit.
+2022-09-27 10:06:04,272 DEBUG  [main] ---------------27/09/2022 10:06---------------
+2022-09-27 10:06:04,282 INFO  [main] 1) Customers table.
+2022-09-27 10:06:04,283 INFO  [main] 2) Employees table.
+2022-09-27 10:06:04,283 INFO  [main] 3) Managers table.
+2022-09-27 10:06:04,283 INFO  [main] 4) Departments table.
+2022-09-27 10:06:04,283 INFO  [main] 5) Suppliers table.
+2022-09-27 10:06:04,284 INFO  [main] 6) Products table.
+2022-09-27 10:06:04,284 INFO  [main] 7) Purchases table.
+2022-09-27 10:06:04,284 INFO  [main] 8) Promos table.
+2022-09-27 10:06:04,284 INFO  [main] 9) Orders table.
+2022-09-27 10:06:04,285 INFO  [main] 10) Branches table.
+2022-09-27 10:06:04,285 INFO  [main] 11) Delivery table.
+2022-09-27 10:06:04,285 INFO  [main] 12) Licenses table.
+2022-09-27 10:06:04,285 INFO  [main] 0) Exit.
+2022-09-27 10:06:08,140 INFO  [main] 1) Insert.
+2022-09-27 10:06:08,140 INFO  [main] 2) Update.
+2022-09-27 10:06:08,140 INFO  [main] 3) Delete.
+2022-09-27 10:06:08,140 INFO  [main] 4) Get all.
+2022-09-27 10:06:08,141 INFO  [main] 5) Get by ID.
+2022-09-27 10:06:08,141 INFO  [main] 0) Exit.
+2022-09-27 10:06:10,168 INFO  [main] Deliverys{id=11, name='Martin Gonzales', vehicle='BMW I8', purchaseID=1, licenseID=6}
+2022-09-27 10:06:10,168 INFO  [main] Deliverys{id=12, name='Veronica Gomez', vehicle='Audi A5', purchaseID=2, licenseID=7}
+2022-09-27 10:06:10,168 INFO  [main] Deliverys{id=13, name='Lucas Perez', vehicle='Volkswagen Golf', purchaseID=3, licenseID=8}
+2022-09-27 10:06:10,168 INFO  [main] Deliverys{id=14, name='Ramiro Leiva', vehicle='Audi A1', purchaseID=4, licenseID=9}
+2022-09-27 10:06:10,169 INFO  [main] Deliverys{id=15, name='Pablo Romero', vehicle='BMW M4', purchaseID=5, licenseID=10}
+2022-09-27 10:06:10,196 INFO  [main] 1) Insert.
+2022-09-27 10:06:10,197 INFO  [main] 2) Update.
+2022-09-27 10:06:10,197 INFO  [main] 3) Delete.
+2022-09-27 10:06:10,210 INFO  [main] 4) Get all.
+2022-09-27 10:06:10,210 INFO  [main] 5) Get by ID.
+2022-09-27 10:06:10,210 INFO  [main] 0) Exit.
+2022-09-27 10:06:13,887 INFO  [main] Enter the delivery ID
+2022-09-27 10:07:34,245 DEBUG  [main] ---------------27/09/2022 10:07---------------
+2022-09-27 10:07:34,260 INFO  [main] 1) Customers table.
+2022-09-27 10:07:34,260 INFO  [main] 2) Employees table.
+2022-09-27 10:07:34,261 INFO  [main] 3) Managers table.
+2022-09-27 10:07:34,261 INFO  [main] 4) Departments table.
+2022-09-27 10:07:34,261 INFO  [main] 5) Suppliers table.
+2022-09-27 10:07:34,262 INFO  [main] 6) Products table.
+2022-09-27 10:07:34,262 INFO  [main] 7) Purchases table.
+2022-09-27 10:07:34,262 INFO  [main] 8) Promos table.
+2022-09-27 10:07:34,262 INFO  [main] 9) Orders table.
+2022-09-27 10:07:34,263 INFO  [main] 10) Branches table.
+2022-09-27 10:07:34,263 INFO  [main] 11) Delivery table.
+2022-09-27 10:07:34,263 INFO  [main] 12) Licenses table.
+2022-09-27 10:07:34,263 INFO  [main] 0) Exit.
+2022-09-27 10:07:36,860 INFO  [main] 1) Insert.
+2022-09-27 10:07:36,861 INFO  [main] 2) Update.
+2022-09-27 10:07:36,861 INFO  [main] 3) Delete.
+2022-09-27 10:07:36,861 INFO  [main] 4) Get all.
+2022-09-27 10:07:36,861 INFO  [main] 5) Get by ID.
+2022-09-27 10:07:36,861 INFO  [main] 0) Exit.
+2022-09-27 10:07:38,111 INFO  [main] Deliverys{id=11, name='Martin Gonzales', vehicle='BMW I8', purchaseID=1, licenseID=6}
+2022-09-27 10:07:38,111 INFO  [main] Deliverys{id=12, name='Veronica Gomez', vehicle='Audi A5', purchaseID=2, licenseID=7}
+2022-09-27 10:07:38,111 INFO  [main] Deliverys{id=13, name='Lucas Perez', vehicle='Volkswagen Golf', purchaseID=3, licenseID=8}
+2022-09-27 10:07:38,112 INFO  [main] Deliverys{id=14, name='Ramiro Leiva', vehicle='Audi A1', purchaseID=4, licenseID=9}
+2022-09-27 10:07:38,112 INFO  [main] Deliverys{id=15, name='Pablo Romero', vehicle='BMW M4', purchaseID=5, licenseID=10}
+2022-09-27 10:07:38,139 INFO  [main] 1) Insert.
+2022-09-27 10:07:38,139 INFO  [main] 2) Update.
+2022-09-27 10:07:38,139 INFO  [main] 3) Delete.
+2022-09-27 10:07:38,139 INFO  [main] 4) Get all.
+2022-09-27 10:07:38,140 INFO  [main] 5) Get by ID.
+2022-09-27 10:07:38,140 INFO  [main] 0) Exit.
+2022-09-27 10:07:40,381 INFO  [main] Enter the delivery ID
+2022-09-27 10:07:41,568 INFO  [main] Deliverys{id=11, name='Martin Gonzales', vehicle='BMW I8', purchaseID=1, licenseID=6}
+2022-09-27 10:07:41,591 INFO  [main] 1) Insert.
+2022-09-27 10:07:41,591 INFO  [main] 2) Update.
+2022-09-27 10:07:41,592 INFO  [main] 3) Delete.
+2022-09-27 10:07:41,592 INFO  [main] 4) Get all.
+2022-09-27 10:07:41,592 INFO  [main] 5) Get by ID.
+2022-09-27 10:07:41,592 INFO  [main] 0) Exit.
+2022-09-27 10:07:47,582 INFO  [main] 1) Customers table.
+2022-09-27 10:07:47,582 INFO  [main] 2) Employees table.
+2022-09-27 10:07:47,582 INFO  [main] 3) Managers table.
+2022-09-27 10:07:47,583 INFO  [main] 4) Departments table.
+2022-09-27 10:07:47,583 INFO  [main] 5) Suppliers table.
+2022-09-27 10:07:47,583 INFO  [main] 6) Products table.
+2022-09-27 10:07:47,583 INFO  [main] 7) Purchases table.
+2022-09-27 10:07:47,583 INFO  [main] 8) Promos table.
+2022-09-27 10:07:47,583 INFO  [main] 9) Orders table.
+2022-09-27 10:07:47,583 INFO  [main] 10) Branches table.
+2022-09-27 10:07:47,584 INFO  [main] 11) Delivery table.
+2022-09-27 10:07:47,584 INFO  [main] 12) Licenses table.
+2022-09-27 10:07:47,584 INFO  [main] 0) Exit.
+2022-09-27 10:07:49,316 INFO  [main] 1) Insert.
+2022-09-27 10:07:49,316 INFO  [main] 2) Update.
+2022-09-27 10:07:49,316 INFO  [main] 3) Delete.
+2022-09-27 10:07:49,316 INFO  [main] 4) Get all.
+2022-09-27 10:07:49,317 INFO  [main] 5) Get by ID.
+2022-09-27 10:07:49,317 INFO  [main] 0) Exit.
+2022-09-27 10:07:50,876 INFO  [main] Licenses{id=6, licenseType='Car', delivery_id=11}
+2022-09-27 10:07:50,876 INFO  [main] Licenses{id=7, licenseType='Car', delivery_id=12}
+2022-09-27 10:07:50,876 INFO  [main] Licenses{id=8, licenseType='Car', delivery_id=13}
+2022-09-27 10:07:50,876 INFO  [main] Licenses{id=9, licenseType='Car', delivery_id=14}
+2022-09-27 10:07:50,876 INFO  [main] Licenses{id=10, licenseType='Car', delivery_id=15}
+2022-09-27 10:07:50,897 INFO  [main] 1) Insert.
+2022-09-27 10:07:50,897 INFO  [main] 2) Update.
+2022-09-27 10:07:50,898 INFO  [main] 3) Delete.
+2022-09-27 10:07:50,898 INFO  [main] 4) Get all.
+2022-09-27 10:07:50,898 INFO  [main] 5) Get by ID.
+2022-09-27 10:07:50,898 INFO  [main] 0) Exit.
+2022-09-27 10:07:57,414 INFO  [main] Enter the license ID
