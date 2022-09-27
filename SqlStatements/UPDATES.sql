@@ -11,3 +11,5 @@ UPDATE products SET quantity = 350, price = 12 WHERE prod_id = 1;
 UPDATE promos SET discount = 30, product_id = 5 WHERE p_id = 1;
 UPDATE purchases SET total_spent = 110, costumer_id = 3 WHERE p_id = 3;
 UPDATE suppliers SET s_phone = '3624595214', s_email = 'vea_supplier@gmail.com' WHERE s_name = 'vea';
+UPDATE purchases SET dept_id = 1 WHERE p_id = 1;
+UPDATE purchases SET items = 'Bread*1, Olive oil*1, Cafe*1, Sugar*5' WHERE total_spent > 99;

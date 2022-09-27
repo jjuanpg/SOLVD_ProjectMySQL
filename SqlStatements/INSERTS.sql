@@ -7,6 +7,9 @@ INSERT INTO customers (first_name, last_name, bod, phone, email, address) VALUES
 ('Franco', 'Fernandez', '2022-05-23', '3624923812', 'franco2001@gmail.com', 'Av. 9 de Julio 1000'),
 ('Matias', 'Franco', '2022-10-13', '3624881392', 'matiasfranco@live.com.ar', 'Colon 1921');
 
+INSERT INTO customers (first_name, last_name, bod, phone, email, address) VALUES
+('MARTA', 'MARTA', '2022-10-13', '3624881392', 'matiasfranco@live.com.ar', 'Colon 1981');
+
 INSERT INTO departments(d_name) VALUES
 ('Cleaning'),
 ('Food'),
@@ -42,12 +45,12 @@ INSERT INTO products(p_name, quantity, price, create_by, supplier_id) VALUES
 ('Noodles', 200, 5, 4, 5),
 ('Sugar', 300, 10, 5, 4);
 
-INSERT INTO purchases(p_date, total_spent, customer_id) VALUES
-('2022-09-20', 100, 3),
-('2022-09-20', 55, 1),
-('2022-09-20', 38, 5),
-('2022-09-20', 80, 4),
-('2022-09-20', 72, 2);
+INSERT INTO purchases(p_date, total_spent, customer_id, dept_id, items) VALUES
+('2022-09-20', 100, 3, 1, 'Bread'),
+('2022-09-20', 55, 1, 2, 'Olive oil'),
+('2022-09-20', 38, 5, 3, 'Sugar'),
+('2022-09-20', 80, 4, 4, 'Cafe'),
+('2022-09-20', 72, 2, 5, 'Noodles');
 
 INSERT INTO promos(discount, valid_till, product_id) VALUES
 (15, '2022-10-20', 5),
@@ -69,3 +72,17 @@ INSERT INTO branches(b_name, b_address, manager_id) VALUES
 ('Supermarket 3', 'Av. Sarmiento 1200', 3),
 ('Supermarket 4', 'Av. Alberdi 1100', 4),
 ('Supermarket 5', 'Av. Sabin 1200', 2);
+
+INSERT INTO deliverys(d_name, vehicle, purchase_id) VALUES
+('Martin Gonzales', 'BMW I8', 1),
+('Veronica Gomez', 'Audi A5', 2),
+('Lucas Perez', 'Volkswagen Golf', 3),
+('Ramiro Leiva', 'Audi A1', 4),
+('Pablo Romero', 'BMW M4', 5);
+
+INSERT INTO licenses(license_type, delivery_id) VALUES
+('Car', 11),
+('Car', 12),
+('Car', 13),
+('Car', 14),
+('Car', 15);

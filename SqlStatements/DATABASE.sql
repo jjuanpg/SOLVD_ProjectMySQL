@@ -83,11 +83,24 @@ CREATE TABLE branches(
     manager_id INT NOT NULL UNIQUE,
     FOREIGN KEY (manager_id) REFERENCES managers(m_id) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
+CREATE TABLE deliverys(
+	d_id INT PRIMARY KEY auto_increment,
+    d_name VARCHAR(50) NOT NULL,
+    vehicle VARCHAR(30) NOT NULL,
+    purchase_id INT NOT NULL,
+    license_id INT NOT NULL UNIQUE
+);
+CREATE TABLE licenses(
+	l_id INT PRIMARY KEY AUTO_INCREMENT,
+    license_type VARCHAR(50) NOT NULL,
+    delivery_id INT NOT NULL
+);
 
 -- ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root';
 -- FLUSH PRIVILEGES;
 -- these commands fix a connection error within intellij and mysql localhost
 
+USE supermarket;
 SELECT * FROM customers; -- done
 SELECT * FROM employees; -- done
 SELECT * FROM managers; -- done
@@ -98,3 +111,5 @@ SELECT * FROM purchases; -- done
 SELECT * FROM promos; -- done
 SELECT * FROM orders; -- done
 SELECT * FROM branches; -- done
+SELECT * FROM deliverys; -- done
+SELECT * FROM licenses; -- done
