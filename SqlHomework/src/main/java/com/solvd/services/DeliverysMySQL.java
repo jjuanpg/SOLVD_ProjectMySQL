@@ -1,5 +1,6 @@
 package com.solvd.services;
 
+import com.solvd.connection_pool.dataSource;
 import com.solvd.dao.IDeliverysDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Deliverys;
@@ -20,9 +21,12 @@ public class DeliverysMySQL extends Deliverys implements IDeliverysDao {
     final String GET_ONE = "SELECT * FROM deliverys WHERE d_id = ?";
 
     private final Connection con;
-
-    public DeliverysMySQL(Connection con) {
-        this.con = con;
+    {
+        try {
+            con = dataSource.getDataSource().getConnection();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -41,12 +45,15 @@ public class DeliverysMySQL extends Deliverys implements IDeliverysDao {
         } catch (SQLException e) {
             throw new DAOException("ERROR IN THE SQL INSERT");
         } finally {
-            if(statement != null){
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    throw new DAOException("ERROR IN THE SQL INSERT");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL INSERT");
             }
         }
     }
@@ -68,12 +75,15 @@ public class DeliverysMySQL extends Deliverys implements IDeliverysDao {
         }catch (SQLException e){
             throw new DAOException("ERROR IN THE SQL UPDATE");
         }finally {
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    throw new DAOException("ERROR IN THE SQL UPDATE");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL UPDATE");
             }
         }
     }
@@ -91,12 +101,15 @@ public class DeliverysMySQL extends Deliverys implements IDeliverysDao {
         } catch (SQLException e){
             throw new DAOException("ERROR IN THE SQL DELETE");
         }finally {
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    throw new DAOException("ERROR IN THE SQL DELETE");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL DELETE");
             }
         }
     }
@@ -127,19 +140,18 @@ public class DeliverysMySQL extends Deliverys implements IDeliverysDao {
         } catch (SQLException e){
             throw new DAOException("ERROR GETTING DELIVERY BY ID");
         } finally {
-            if (rs != null){
-                try {
-                    rs.close();
-                } catch (SQLException e) {
-                    throw new DAOException("ERROR: THE RESULT SET CANNOT BE CLOSED");
-                }
-            }
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    throw new DAOException("ERROR IN THE SQL SELECT");
                 }
+                if (rs != null){
+                    rs.close();
+                }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL SELECT");
             }
         }
         return deliverys;
@@ -163,20 +175,18 @@ public class DeliverysMySQL extends Deliverys implements IDeliverysDao {
         } catch (SQLException e){
             throw new DAOException("ERROR GETTING DELIVERY BY ID");
         } finally {
-            if (rs != null){
-                try {
-                    rs.close();
-                } catch (SQLException e) {
-                    throw new DAOException("ERROR: THE RESULT SET CANNOT BE CLOSED");
-                }
-            }
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL SELECT");
                 }
+                if (rs != null){
+                    rs.close();
+                }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL SELECT");
             }
         }
         return delivery;

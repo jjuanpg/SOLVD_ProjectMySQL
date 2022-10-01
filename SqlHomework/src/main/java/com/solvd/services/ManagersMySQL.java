@@ -1,5 +1,6 @@
 package com.solvd.services;
 
+import com.solvd.connection_pool.dataSource;
 import com.solvd.dao.IManagersDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Managers;
@@ -13,15 +14,18 @@ import java.util.List;
 
 public class ManagersMySQL extends Managers implements IManagersDao {
 
-    final String INSERT_FORMAT = "INSERT INTO mangers(first_name, last_name, bod, phone, email, address, salary, dept_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+    final String INSERT_FORMAT = "INSERT INTO managers(first_name, last_name, bod, phone, email, address, salary, dept_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
     final String UPDATE_FORMAT = "UPDATE managers SET first_name = ?, last_name = ?, bod = ?, phone = ?, email = ?, address = ?, salary = ?, dept_id = ? WHERE m_id = ?";
     final String DELETE_FORMAT = "DELETE FROM managers WHERE m_id = ?";
     final String GET_ALL = "SELECT * FROM managers";
     final String GET_ONE = "SELECT * FROM managers WHERE m_id = ?";
     private final Connection con;
-
-    public ManagersMySQL(Connection con) {
-        this.con = con;
+    {
+        try {
+            con = dataSource.getDataSource().getConnection();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -42,16 +46,17 @@ public class ManagersMySQL extends Managers implements IManagersDao {
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
             }
         } catch (SQLException e) {
-            e.printStackTrace();
             throw new DAOException("ERROR IN THE SQL INSERT");
         } finally {
-            if(statement != null){
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL INSERT");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL INSERT");
             }
         }
     }
@@ -75,16 +80,17 @@ public class ManagersMySQL extends Managers implements IManagersDao {
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
             }
         }catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR IN THE SQL UPDATE");
         }finally {
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL UPDATE");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL UPDATE");
             }
         }
     }
@@ -100,16 +106,17 @@ public class ManagersMySQL extends Managers implements IManagersDao {
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
             }
         } catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR IN THE SQL DELETE");
         }finally {
-            if (statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL DELETE");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL DELETE");
             }
         }
     }
@@ -142,24 +149,20 @@ public class ManagersMySQL extends Managers implements IManagersDao {
                 managers.add(getManagers(rs));
             }
         } catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR GETTING CUSTOMER BY ID");
         } finally {
-            if (rs != null){
-                try {
-                    rs.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR: THE RESULT SET CANNOT BE CLOSED");
-                }
-            }
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL SELECT");
                 }
+                if (rs != null){
+                    rs.close();
+                }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL SELECT");
             }
         }
         return managers;
@@ -181,24 +184,20 @@ public class ManagersMySQL extends Managers implements IManagersDao {
                 throw new DAOException("ERROR: CLIENT DOES NOT EXIST");
             }
         } catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR GETTING CLIENT BY ID");
         } finally {
-            if (rs != null){
-                try {
-                    rs.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR: THE RESULT SET CANNOT BE CLOSED");
-                }
-            }
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL SELECT");
                 }
+                if (rs != null){
+                    rs.close();
+                }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL SELECT");
             }
         }
         return managers;

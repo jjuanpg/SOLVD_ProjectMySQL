@@ -9,14 +9,13 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
 import java.io.IOException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class SimpleTest {
         DocumentBuilder documentBuilder = DocumentBuilderFactory.newDefaultInstance().newDocumentBuilder();
@@ -28,7 +27,7 @@ public class SimpleTest {
         @Test
         public void ConnectionPoolTest() throws InterruptedException {
             ThreadPoolExecutor service = (ThreadPoolExecutor) Executors.newFixedThreadPool(5);
-            Multithread myThing = new Multithread("jdbc:mysql://localhost:3306/supermarket","root","root");
+            Multithread myThing = new Multithread();
             for(int i=1; i<8; i++){
                 service.submit(myThing);
             }
@@ -40,7 +39,7 @@ public class SimpleTest {
         @Test
         public void ConnectionPoolRelease() throws InterruptedException {
             ThreadPoolExecutor service = (ThreadPoolExecutor) Executors.newFixedThreadPool(5);
-            Multithread myThing = new Multithread("jdbc:mysql://localhost:3306/supermarket","root","root");
+            Multithread myThing = new Multithread();
             for(int i=1; i<8; i++){
                 service.submit(myThing);
             }

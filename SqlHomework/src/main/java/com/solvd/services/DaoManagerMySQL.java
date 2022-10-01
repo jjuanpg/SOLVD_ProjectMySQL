@@ -2,17 +2,8 @@ package com.solvd.services;
 
 import com.solvd.dao.IDaoManager;
 import com.solvd.pojos.*;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 
 public class DaoManagerMySQL implements IDaoManager {
-
-    private static final Logger logger = LogManager.getLogger(DaoManagerMySQL.class);
-    private final Connection con;
 
     Branches branches = null;
     Customers customers = null;
@@ -27,14 +18,10 @@ public class DaoManagerMySQL implements IDaoManager {
     Deliverys delivery = null;
     Licenses licenses = null;
 
-    public DaoManagerMySQL(String host,String username, String password, String database) throws SQLException {
-        con = DriverManager.getConnection("jdbc:mysql://"+host+"/"+database, username, password);
-    }
-
     @Override
     public Branches getBranches() {
         if(branches == null){
-            branches = new BranchesMySQL(con);
+            branches = new BranchesMySQL();
         }
         return branches;
     }
@@ -42,7 +29,7 @@ public class DaoManagerMySQL implements IDaoManager {
     @Override
     public Customers getCustomers() {
         if(customers == null){
-            customers = new CustomerMySQL(con);
+            customers = new CustomerMySQL();
         }
         return customers;
     }
@@ -50,7 +37,7 @@ public class DaoManagerMySQL implements IDaoManager {
     @Override
     public Departments getDepartments() {
         if(departments == null){
-            departments = new DepartmentsMySQL(con);
+            departments = new DepartmentsMySQL();
         }
         return departments;
     }
@@ -58,7 +45,7 @@ public class DaoManagerMySQL implements IDaoManager {
     @Override
     public Employees getEmployees() {
         if(employees == null){
-            employees = new EmployeesMySQL(con);
+            employees = new EmployeesMySQL();
         }
         return employees;
     }
@@ -66,7 +53,7 @@ public class DaoManagerMySQL implements IDaoManager {
     @Override
     public Managers getManagers() {
         if(managers == null){
-            managers = new ManagersMySQL(con);
+            managers = new ManagersMySQL();
         }
         return managers;
     }
@@ -74,7 +61,7 @@ public class DaoManagerMySQL implements IDaoManager {
     @Override
     public Orders getOrders() {
         if(orders == null){
-            orders = new OrdersMySQL(con);
+            orders = new OrdersMySQL();
         }
         return orders;
     }
@@ -82,7 +69,7 @@ public class DaoManagerMySQL implements IDaoManager {
     @Override
     public Products getProducts() {
         if(products == null){
-            products = new ProductsMySQL(con);
+            products = new ProductsMySQL();
         }
         return products;
     }
@@ -90,7 +77,7 @@ public class DaoManagerMySQL implements IDaoManager {
     @Override
     public Promos getPromos() {
         if(promos == null){
-            promos = new PromosMySQL(con);
+            promos = new PromosMySQL();
         }
         return promos;
     }
@@ -98,7 +85,7 @@ public class DaoManagerMySQL implements IDaoManager {
     @Override
     public Purchases getPurchases() {
         if(purchases == null){
-            purchases = new PurchasesMySQL(con);
+            purchases = new PurchasesMySQL();
         }
         return purchases;
     }
@@ -106,7 +93,7 @@ public class DaoManagerMySQL implements IDaoManager {
     @Override
     public Suppliers getSuppliers() {
         if(suppliers == null){
-            suppliers = new SuppliersMySQL(con);
+            suppliers = new SuppliersMySQL();
         }
         return suppliers;
     }
@@ -114,7 +101,7 @@ public class DaoManagerMySQL implements IDaoManager {
     @Override
     public Deliverys getDeliverys() {
         if(delivery == null){
-            delivery = new DeliverysMySQL(con);
+            delivery = new DeliverysMySQL();
         }
         return  delivery;
     }
@@ -122,16 +109,8 @@ public class DaoManagerMySQL implements IDaoManager {
     @Override
     public Licenses getLicenses() {
         if(licenses == null){
-            licenses = new LicensesMySQL(con);
+            licenses = new LicensesMySQL();
         }
         return licenses;
-    }
-
-    public void closeConnection() {
-        try {
-            con.close();
-        } catch (SQLException e) {
-            logger.info("ERROR CLOSING THE CONNECTION");
-        }
     }
 }

@@ -39,7 +39,7 @@ public class JDBC {
                 //CUSTOMERS TABLE
                 case 1 ->{
                     do {
-                        DaoManagerMySQL man = new DaoManagerMySQL("localhost","root","root","supermarket");
+                        DaoManagerMySQL man = new DaoManagerMySQL();
                         Arrays.stream(menu).map(v -> (v.ordinal()+1)+") "+ v).forEach(logger::info);
                         logger.info("0) Exit.");
                         option = sc.nextInt();
@@ -51,7 +51,6 @@ public class JDBC {
 
                             ((CustomerMySQL) man.getCustomers()).insert(customer);
                             logger.info("Customer inserted!");
-                            man.closeConnection();
                         }
                         if (option == 2){
                             // code to update
@@ -62,29 +61,26 @@ public class JDBC {
 
                             ((CustomerMySQL) man.getCustomers()).update(customer);
                             logger.info("Customer updated!");
-                            man.closeConnection();
                         }
                         if (option == 3){
                             // code to delete
                             Customers customer = new Customers();
                             logger.info("Enter the customer ID");
                             customer.setId(sc.nextInt());
+
                             ((CustomerMySQL) man.getCustomers()).delete(customer);
                             logger.info("Customer deleted!");
-                            man.closeConnection();
                         }
                         if (option == 4){
                             // code to get all
                             List<Customers> customers = ((CustomerMySQL) man.getCustomers()).getAll();
                             customers.forEach(logger::info);
-                            man.closeConnection();
                         }
                         if (option == 5){
                             // code to get by id
                             logger.info("Enter the customer ID");
                             Customers customer = ((CustomerMySQL) man.getCustomers()).getByID(sc.nextInt());
                             logger.info(customer);
-                            man.closeConnection();
                         }
 
                     }while (option != 0);
@@ -93,7 +89,7 @@ public class JDBC {
                 //EMPLOYEES TABLE
                 case 2 ->{
                     do {
-                        DaoManagerMySQL man = new DaoManagerMySQL("localhost","root","root","supermarket");
+                        DaoManagerMySQL man = new DaoManagerMySQL();
                         Arrays.stream(menu).map(v -> (v.ordinal()+1)+") "+ v).forEach(logger::info);
                         logger.info("0) Exit.");
                         option = sc.nextInt();
@@ -105,7 +101,6 @@ public class JDBC {
 
                             ((EmployeesMySQL) man.getEmployees()).insert(employee);
                             logger.info("Employee inserted!");
-                            man.closeConnection();
                         }
                         if (option == 2){
                             // code to update
@@ -116,29 +111,26 @@ public class JDBC {
 
                             ((EmployeesMySQL) man.getEmployees()).update(employee);
                             logger.info("Employee updated!");
-                            man.closeConnection();
                         }
                         if (option == 3){
                             // code to delete
                             Employees employee = new Employees();
                             logger.info("Enter the employee ID");
                             employee.setId(sc.nextInt());
+
                             ((EmployeesMySQL) man.getEmployees()).delete(employee);
                             logger.info("Employee deleted!");
-                            man.closeConnection();
                         }
                         if (option == 4){
                             // code to get all
                             List<Employees> employees = ((EmployeesMySQL) man.getEmployees()).getAll();
                             employees.forEach(logger::info);
-                            man.closeConnection();
                         }
                         if (option == 5){
                             // code to get by id
                             logger.info("Enter the employee ID");
                             Employees employee = ((EmployeesMySQL) man.getEmployees()).getByID(sc.nextInt());
                             logger.info(employee);
-                            man.closeConnection();
                         }
 
                     }while (option != 0);
@@ -147,7 +139,7 @@ public class JDBC {
                 //MANAGERS TABLE
                 case 3 ->{
                     do {
-                        DaoManagerMySQL man = new DaoManagerMySQL("localhost","root","root","supermarket");
+                        DaoManagerMySQL man = new DaoManagerMySQL();
                         Arrays.stream(menu).map(v -> (v.ordinal()+1)+") "+ v).forEach(logger::info);
                         logger.info("0) Exit.");
                         option = sc.nextInt();
@@ -159,7 +151,6 @@ public class JDBC {
 
                             ((ManagersMySQL) man.getManagers()).insert(manager);
                             logger.info("Manager inserted!");
-                            man.closeConnection();
                         }
                         if (option == 2){
                             // code to update
@@ -170,29 +161,26 @@ public class JDBC {
 
                             ((ManagersMySQL) man.getManagers()).update(manager);
                             logger.info("Manager updated!");
-                            man.closeConnection();
                         }
                         if (option == 3){
                             // code to delete
                             Managers manager = new Managers();
                             logger.info("Enter the manager ID");
                             manager.setId(sc.nextInt());
+
                             ((ManagersMySQL) man.getManagers()).delete(manager);
                             logger.info("Manager deleted!");
-                            man.closeConnection();
                         }
                         if (option == 4){
                             // code to get all
                             List<Managers> managers = ((ManagersMySQL) man.getManagers()).getAll();
                             managers.forEach(logger::info);
-                            man.closeConnection();
                         }
                         if (option == 5){
                             // code to get by id
                             logger.info("Enter the employee ID");
                             Managers manager = ((ManagersMySQL) man.getManagers()).getByID(sc.nextInt());
                             logger.info(manager);
-                            man.closeConnection();
                         }
 
                     }while (option != 0);
@@ -201,7 +189,7 @@ public class JDBC {
                 //DEPARTMENTS TABLE
                 case 4 ->{
                     do {
-                        DaoManagerMySQL man = new DaoManagerMySQL("localhost","root","root","supermarket");
+                        DaoManagerMySQL man = new DaoManagerMySQL();
                         Arrays.stream(menu).map(v -> (v.ordinal()+1)+") "+ v).forEach(logger::info);
                         logger.info("0) Exit.");
                         option = sc.nextInt();
@@ -212,7 +200,6 @@ public class JDBC {
                             department = department.create();
                             ((DepartmentsMySQL) man.getDepartments()).insert(department);
                             logger.info("Department inserted!");
-                            man.closeConnection();
                         }
                         if (option == 2){
                             // code to update
@@ -223,29 +210,26 @@ public class JDBC {
 
                             ((DepartmentsMySQL) man.getDepartments()).update(department);
                             logger.info("Manager updated!");
-                            man.closeConnection();
                         }
                         if (option == 3){
                             // code to delete
                             Departments department = new Departments();
                             logger.info("Enter the department ID");
                             department.setId(sc.nextInt());
+
                             ((DepartmentsMySQL) man.getDepartments()).delete(department);
                             logger.info("Department deleted!");
-                            man.closeConnection();
                         }
                         if (option == 4){
                             // code to get all
                             List<Departments> department = ((DepartmentsMySQL) man.getDepartments()).getAll();
                             department.forEach(logger::info);
-                            man.closeConnection();
                         }
                         if (option == 5){
                             // code to get by id
                             logger.info("Enter the department ID");
                             Departments department = ((DepartmentsMySQL) man.getDepartments()).getByID(sc.nextInt());
                             logger.info(department);
-                            man.closeConnection();
                         }
 
                     }while (option != 0);
@@ -254,7 +238,7 @@ public class JDBC {
                 //SUPPLIERS TABLE
                 case 5 ->{
                     do {
-                        DaoManagerMySQL man = new DaoManagerMySQL("localhost","root","root","supermarket");
+                        DaoManagerMySQL man = new DaoManagerMySQL();
                         Arrays.stream(menu).map(v -> (v.ordinal()+1)+") "+ v).forEach(logger::info);
                         logger.info("0) Exit.");
                         option = sc.nextInt();
@@ -266,7 +250,6 @@ public class JDBC {
 
                             ((SuppliersMySQL) man.getSuppliers()).insert(supplier);
                             logger.info("Supplier inserted!");
-                            man.closeConnection();
                         }
                         if (option == 2){
                             // code to update
@@ -277,29 +260,26 @@ public class JDBC {
 
                             ((SuppliersMySQL) man.getSuppliers()).update(supplier);
                             logger.info("supplier updated!");
-                            man.closeConnection();
                         }
                         if (option == 3){
                             // code to delete
                             Suppliers supplier = new Suppliers();
                             logger.info("Enter the supplier ID");
                             supplier.setId(sc.nextInt());
+
                             ((SuppliersMySQL) man.getSuppliers()).delete(supplier);
                             logger.info("Supplier deleted!");
-                            man.closeConnection();
                         }
                         if (option == 4){
                             // code to get all
                             List<Suppliers> suppliers = ((SuppliersMySQL) man.getSuppliers()).getAll();
                             suppliers.forEach(logger::info);
-                            man.closeConnection();
                         }
                         if (option == 5){
                             // code to get by id
                             logger.info("Enter the supplier ID");
                             Suppliers supplier = ((SuppliersMySQL) man.getSuppliers()).getByID(sc.nextInt());
                             logger.info(supplier);
-                            man.closeConnection();
                         }
 
                     }while (option != 0);
@@ -308,7 +288,7 @@ public class JDBC {
                 //PRODUCTS TABLE
                 case 6 ->{
                     do {
-                        DaoManagerMySQL man = new DaoManagerMySQL("localhost","root","root","supermarket");
+                        DaoManagerMySQL man = new DaoManagerMySQL();
                         Arrays.stream(menu).map(v -> (v.ordinal()+1)+") "+ v).forEach(logger::info);
                         logger.info("0) Exit.");
                         option = sc.nextInt();
@@ -320,7 +300,6 @@ public class JDBC {
 
                             ((ProductsMySQL) man.getProducts()).insert(product);
                             logger.info("Product inserted!");
-                            man.closeConnection();
                         }
                         if (option == 2){
                             // code to update
@@ -331,29 +310,26 @@ public class JDBC {
 
                             ((ProductsMySQL) man.getProducts()).update(product);
                             logger.info("Product updated!");
-                            man.closeConnection();
                         }
                         if (option == 3){
                             // code to delete
                             Products product = new Products();
                             logger.info("Enter the product ID");
                             product.setId(sc.nextInt());
+
                             ((ProductsMySQL) man.getProducts()).delete(product);
                             logger.info("Product deleted!");
-                            man.closeConnection();
                         }
                         if (option == 4){
                             // code to get all
                             List<Products> products = ((ProductsMySQL) man.getProducts()).getAll();
                             products.forEach(logger::info);
-                            man.closeConnection();
                         }
                         if (option == 5){
                             // code to get by id
                             logger.info("Enter the product ID");
                             Products product = ((ProductsMySQL) man.getProducts()).getByID(sc.nextInt());
                             logger.info(product);
-                            man.closeConnection();
                         }
 
                     }while (option != 0);
@@ -362,7 +338,7 @@ public class JDBC {
                 //PURCHASES TABLE
                 case 7 ->{
                     do {
-                        DaoManagerMySQL man = new DaoManagerMySQL("localhost","root","root","supermarket");
+                        DaoManagerMySQL man = new DaoManagerMySQL();
                         Arrays.stream(menu).map(v -> (v.ordinal()+1)+") "+ v).forEach(logger::info);
                         logger.info("0) Exit.");
                         option = sc.nextInt();
@@ -374,7 +350,6 @@ public class JDBC {
 
                             ((PurchasesMySQL) man.getPurchases()).insert(purchases);
                             logger.info("Purchases inserted!");
-                            man.closeConnection();
                         }
                         if (option == 2){
                             // code to update
@@ -385,29 +360,26 @@ public class JDBC {
 
                             ((PurchasesMySQL) man.getPurchases()).update(purchases);
                             logger.info("Purchase updated!");
-                            man.closeConnection();
                         }
                         if (option == 3){
                             // code to delete
                             Purchases purchases = new Purchases();
                             logger.info("Enter the purchase ID");
                             purchases.setId(sc.nextInt());
+
                             ((PurchasesMySQL) man.getPurchases()).delete(purchases);
                             logger.info("Purchase deleted!");
-                            man.closeConnection();
                         }
                         if (option == 4){
                             // code to get all
                             List<Purchases> purchases = ((PurchasesMySQL) man.getPurchases()).getAll();
                             purchases.forEach(logger::info);
-                            man.closeConnection();
                         }
                         if (option == 5){
                             // code to get by id
                             logger.info("Enter the purchase ID");
                             Purchases purchases = ((PurchasesMySQL) man.getPurchases()).getByID(sc.nextInt());
                             logger.info(purchases);
-                            man.closeConnection();
                         }
                         if(option == 6){
                             // code to get by id with customers
@@ -415,7 +387,6 @@ public class JDBC {
                             logger.info("Enter the purchase ID");
                             purchases = purchases.getFullDetails(sc.nextInt(), man);
                             logger.info("\n"+purchases+"\n"+purchases.getCustomers());
-                            man.closeConnection();
                         }
 
                     }while (option != 0);
@@ -424,7 +395,7 @@ public class JDBC {
                 //PROMOS TABLE
                 case 8 ->{
                     do {
-                        DaoManagerMySQL man = new DaoManagerMySQL("localhost","root","root","supermarket");
+                        DaoManagerMySQL man = new DaoManagerMySQL();
                         Arrays.stream(menu).map(v -> (v.ordinal()+1)+") "+ v).forEach(logger::info);
                         logger.info("0) Exit.");
                         option = sc.nextInt();
@@ -436,7 +407,6 @@ public class JDBC {
 
                             ((PromosMySQL) man.getPromos()).insert(promo);
                             logger.info("Promo inserted!");
-                            man.closeConnection();
                         }
                         if (option == 2){
                             // code to update
@@ -447,29 +417,26 @@ public class JDBC {
 
                             ((PromosMySQL) man.getPromos()).update(promo);
                             logger.info("Promo updated!");
-                            man.closeConnection();
                         }
                         if (option == 3){
                             // code to delete
                             Promos promo = new Promos();
                             logger.info("Enter the promo ID");
                             promo.setId(sc.nextInt());
+
                             ((PromosMySQL) man.getPromos()).delete(promo);
                             logger.info("Promo deleted!");
-                            man.closeConnection();
                         }
                         if (option == 4){
                             // code to get all
                             List<Promos> promo = ((PromosMySQL) man.getPromos()).getAll();
                             promo.forEach(logger::info);
-                            man.closeConnection();
                         }
                         if (option == 5){
                             // code to get by id
                             logger.info("Enter the employee ID");
                             Promos promo = ((PromosMySQL) man.getPromos()).getByID(sc.nextInt());
                             logger.info(promo);
-                            man.closeConnection();
                         }
 
                     }while (option != 0);
@@ -478,7 +445,7 @@ public class JDBC {
                 //ORDERS TABLE
                 case 9 ->{
                     do {
-                        DaoManagerMySQL man = new DaoManagerMySQL("localhost","root","root","supermarket");
+                        DaoManagerMySQL man = new DaoManagerMySQL();
                         Arrays.stream(menu).map(v -> (v.ordinal()+1)+") "+ v).forEach(logger::info);
                         logger.info("0) Exit.");
                         option = sc.nextInt();
@@ -490,7 +457,6 @@ public class JDBC {
 
                             ((OrdersMySQL) man.getOrders()).insert(order);
                             logger.info("Order inserted!");
-                            man.closeConnection();
                         }
                         if (option == 2){
                             // code to update
@@ -501,29 +467,26 @@ public class JDBC {
 
                             ((OrdersMySQL) man.getOrders()).update(order);
                             logger.info("Order updated!");
-                            man.closeConnection();
                         }
                         if (option == 3){
                             // code to delete
                             Orders order = new Orders();
                             logger.info("Enter the order ID");
                             order.setId(sc.nextInt());
+
                             ((OrdersMySQL) man.getOrders()).delete(order);
                             logger.info("Order deleted!");
-                            man.closeConnection();
                         }
                         if (option == 4){
                             // code to get all
                             List<Orders> order = ((OrdersMySQL) man.getOrders()).getAll();
                             order.forEach(logger::info);
-                            man.closeConnection();
                         }
                         if (option == 5){
                             // code to get by id
                             logger.info("Enter the order ID");
                             Orders order = ((OrdersMySQL) man.getOrders()).getByID(sc.nextInt());
                             logger.info(order);
-                            man.closeConnection();
                         }
 
                     }while (option != 0);
@@ -532,7 +495,7 @@ public class JDBC {
                 //BRANCHES TABLE
                 case 10 ->{
                     do {
-                        DaoManagerMySQL man = new DaoManagerMySQL("localhost","root","root","supermarket");
+                        DaoManagerMySQL man = new DaoManagerMySQL();
                         Arrays.stream(menu).map(v -> (v.ordinal()+1)+") "+ v).forEach(logger::info);
                         logger.info("0) Exit.");
                         option = sc.nextInt();
@@ -545,7 +508,6 @@ public class JDBC {
 
                                 ((BranchesMySQL) man.getBranches()).insert(branch);
                                 logger.info("Branch inserted!");
-                                man.closeConnection();
                             }
                             case 2 ->{
                                 // code to update
@@ -556,29 +518,26 @@ public class JDBC {
 
                                 ((BranchesMySQL) man.getBranches()).update(branch);
                                 logger.info("Branch updated!");
-                                man.closeConnection();
                             }
                             case 3 ->{
                                 // code to delete
                                 Branches branch = new Branches();
                                 logger.info("Enter the branch ID");
                                 branch.setId(sc.nextInt());
+
                                 ((BranchesMySQL) man.getBranches()).delete(branch);
                                 logger.info("Branch deleted!");
-                                man.closeConnection();
                             }
                             case 4 ->{
                                 // code to get all
                                 List<Branches> branches = ((BranchesMySQL) man.getBranches()).getAll();
                                 branches.forEach(logger::info);
-                                man.closeConnection();
                             }
                             case 5 ->{
                                 // code to get by id
                                 logger.info("Enter the branch ID");
                                 Branches branch = ((BranchesMySQL) man.getBranches()).getByID(sc.nextInt());
                                 logger.info(branch);
-                                man.closeConnection();
                             }
                         }
                     }while (option != 0);
@@ -587,7 +546,7 @@ public class JDBC {
                 //DELIVERYS TABLE
                 case 11 -> {
                     do {
-                        DaoManagerMySQL man = new DaoManagerMySQL("localhost","root","root","supermarket");
+                        DaoManagerMySQL man = new DaoManagerMySQL();
                         Arrays.stream(menu).map(v -> (v.ordinal()+1)+") "+ v).forEach(logger::info);
                         logger.info("0) Exit.");
                         option = sc.nextInt();
@@ -600,7 +559,6 @@ public class JDBC {
 
                                 ((DeliverysMySQL) man.getDeliverys()).insert(delivery);
                                 logger.info("Delivery inserted!");
-                                man.closeConnection();
                             }
                             case 2 ->{
                                 // code to update
@@ -611,29 +569,26 @@ public class JDBC {
 
                                 ((DeliverysMySQL) man.getDeliverys()).update(delivery);
                                 logger.info("Delivery updated!");
-                                man.closeConnection();
                             }
                             case 3 ->{
                                 // code to delete
                                 Deliverys delivery = new Deliverys();
                                 logger.info("Enter the delivery ID");
                                 delivery.setId(sc.nextInt());
+
                                 ((DeliverysMySQL) man.getDeliverys()).delete(delivery);
                                 logger.info("Delivery deleted!");
-                                man.closeConnection();
                             }
                             case 4 ->{
                                 // code to get all
                                 List<Deliverys> delivery = ((DeliverysMySQL) man.getDeliverys()).getAll();
                                 delivery.forEach(logger::info);
-                                man.closeConnection();
                             }
                             case 5 ->{
                                 // code to get by id
                                 logger.info("Enter the delivery ID");
                                 Deliverys delivery = ((DeliverysMySQL) man.getDeliverys()).getByID(sc.nextInt());
                                 logger.info(delivery);
-                                man.closeConnection();
                             }
                         }
                     }while (option != 0);
@@ -642,7 +597,7 @@ public class JDBC {
                 //LICENSES TABLE
                 case 12 -> {
                     do {
-                        DaoManagerMySQL man = new DaoManagerMySQL("localhost","root","root","supermarket");
+                        DaoManagerMySQL man = new DaoManagerMySQL();
                         Arrays.stream(menu).map(v -> (v.ordinal()+1)+") "+ v).forEach(logger::info);
                         logger.info("0) Exit.");
                         option = sc.nextInt();
@@ -655,7 +610,6 @@ public class JDBC {
 
                                 ((LicensesMySQL) man.getLicenses()).insert(license);
                                 logger.info("License inserted!");
-                                man.closeConnection();
                             }
                             case 2 ->{
                                 // code to update
@@ -666,29 +620,26 @@ public class JDBC {
 
                                 ((LicensesMySQL) man.getLicenses()).update(license);
                                 logger.info("License updated!");
-                                man.closeConnection();
                             }
                             case 3 ->{
                                 // code to delete
                                 Licenses license = new Licenses();
                                 logger.info("Enter the license ID");
                                 license.setId(sc.nextInt());
+
                                 ((LicensesMySQL) man.getLicenses()).delete(license);
                                 logger.info("License deleted!");
-                                man.closeConnection();
                             }
                             case 4 ->{
                                 // code to get all
                                 List<Licenses> license = ((LicensesMySQL) man.getLicenses()).getAll();
                                 license.forEach(logger::info);
-                                man.closeConnection();
                             }
                             case 5 ->{
                                 // code to get by id
                                 logger.info("Enter the license ID");
                                 Licenses license = ((LicensesMySQL) man.getLicenses()).getByID(sc.nextInt());
                                 logger.info(license);
-                                man.closeConnection();
                             }
                         }
                     }while (option !=0);

@@ -1,5 +1,6 @@
 package com.solvd.services;
 
+import com.solvd.connection_pool.dataSource;
 import com.solvd.dao.IPurchasesDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Purchases;
@@ -19,9 +20,12 @@ public class PurchasesMySQL extends Purchases implements IPurchasesDao {
     final String GET_ALL = "SELECT * FROM purchases";
     final String GET_ONE = "SELECT * FROM purchases WHERE p_id = ?";
     private final Connection con;
-
-    public PurchasesMySQL(Connection con) {
-        this.con = con;
+    {
+        try {
+            con = dataSource.getDataSource().getConnection();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -39,16 +43,17 @@ public class PurchasesMySQL extends Purchases implements IPurchasesDao {
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
             }
         } catch (SQLException e) {
-            e.printStackTrace();
             throw new DAOException("ERROR IN THE SQL INSERT");
         } finally {
-            if(statement != null){
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL INSERT");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL INSERT");
             }
         }
     }
@@ -69,16 +74,17 @@ public class PurchasesMySQL extends Purchases implements IPurchasesDao {
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
             }
         }catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR IN THE SQL UPDATE");
         }finally {
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL UPDATE");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL UPDATE");
             }
         }
     }
@@ -94,16 +100,17 @@ public class PurchasesMySQL extends Purchases implements IPurchasesDao {
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
             }
         } catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR IN THE SQL DELETE");
         }finally {
-            if (statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL DELETE");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL DELETE");
             }
         }
     }
@@ -133,24 +140,20 @@ public class PurchasesMySQL extends Purchases implements IPurchasesDao {
                 purchases.add(getPurchase(rs));
             }
         } catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR GETTING CUSTOMER BY ID");
         } finally {
-            if (rs != null){
-                try {
-                    rs.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR: THE RESULT SET CANNOT BE CLOSED");
-                }
-            }
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL SELECT");
                 }
+                if (rs != null){
+                    rs.close();
+                }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL SELECT");
             }
         }
         return purchases;
@@ -172,24 +175,20 @@ public class PurchasesMySQL extends Purchases implements IPurchasesDao {
                 throw new DAOException("ERROR: CLIENT DOES NOT EXIST");
             }
         } catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR GETTING CLIENT BY ID");
         } finally {
-            if (rs != null){
-                try {
-                    rs.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR: THE RESULT SET CANNOT BE CLOSED");
-                }
-            }
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL SELECT");
                 }
+                if (rs != null){
+                    rs.close();
+                }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL SELECT");
             }
         }
         return purchases;

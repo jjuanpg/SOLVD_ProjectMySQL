@@ -1,5 +1,6 @@
 package com.solvd.services;
 
+import com.solvd.connection_pool.dataSource;
 import com.solvd.dao.IPromosDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Promos;
@@ -19,9 +20,12 @@ public class PromosMySQL extends Promos implements IPromosDao {
     final String GET_ALL = "SELECT * FROM promos";
     final String GET_ONE = "SELECT * FROM promos WHERE p_id = ?";
     private final Connection con;
-
-    public PromosMySQL(Connection con) {
-        this.con = con;
+    {
+        try {
+            con = dataSource.getDataSource().getConnection();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -37,16 +41,17 @@ public class PromosMySQL extends Promos implements IPromosDao {
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
             }
         } catch (SQLException e) {
-            e.printStackTrace();
             throw new DAOException("ERROR IN THE SQL INSERT");
         } finally {
-            if(statement != null){
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL INSERT");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL INSERT");
             }
         }
     }
@@ -65,16 +70,17 @@ public class PromosMySQL extends Promos implements IPromosDao {
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
             }
         }catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR IN THE SQL UPDATE");
         }finally {
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL UPDATE");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL UPDATE");
             }
         }
     }
@@ -90,16 +96,17 @@ public class PromosMySQL extends Promos implements IPromosDao {
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
             }
         } catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR IN THE SQL DELETE");
         }finally {
-            if (statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL DELETE");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL DELETE");
             }
         }
     }
@@ -127,24 +134,20 @@ public class PromosMySQL extends Promos implements IPromosDao {
                 promos.add(getPromo(rs));
             }
         } catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR GETTING CUSTOMER BY ID");
         } finally {
-            if (rs != null){
-                try {
-                    rs.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR: THE RESULT SET CANNOT BE CLOSED");
-                }
-            }
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL SELECT");
                 }
+                if (rs != null){
+                    rs.close();
+                }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL SELECT");
             }
         }
         return promos;
@@ -166,24 +169,20 @@ public class PromosMySQL extends Promos implements IPromosDao {
                 throw new DAOException("ERROR: CLIENT DOES NOT EXIST");
             }
         } catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR GETTING CLIENT BY ID");
         } finally {
-            if (rs != null){
-                try {
-                    rs.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR: THE RESULT SET CANNOT BE CLOSED");
-                }
-            }
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL SELECT");
                 }
+                if (rs != null){
+                    rs.close();
+                }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL SELECT");
             }
         }
         return promos;

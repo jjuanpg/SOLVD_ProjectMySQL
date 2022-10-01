@@ -1,15 +1,10 @@
 package com.solvd.connection_pool;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Multithread implements Runnable, IConnectionPool {
-
-    private final String url;
-    private final String user;
-    private final String password;
 
     public boolean isRes() {
         return res;
@@ -21,12 +16,6 @@ public class Multithread implements Runnable, IConnectionPool {
 
     private boolean res;
     private boolean closing;
-
-    public Multithread(String url, String user, String password) {
-        this.url = url;
-        this.user = user;
-        this.password = password;
-    }
 
 
     @Override
@@ -56,7 +45,7 @@ public class Multithread implements Runnable, IConnectionPool {
 
     @Override
     public Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(url, user, password);
+        return dataSource.getDataSource().getConnection();
     }
 
     @Override
@@ -78,17 +67,17 @@ public class Multithread implements Runnable, IConnectionPool {
 
     @Override
     public String getUrl() {
-        return url;
+        return dataSource.getDataSource().getUrl();
     }
 
     @Override
     public String getUser() {
-        return user;
+        return dataSource.getDataSource().getUsername();
     }
 
     @Override
     public String getPassword() {
-        return password;
+        return dataSource.getDataSource().getPassword();
     }
 
     public boolean isClosing() {

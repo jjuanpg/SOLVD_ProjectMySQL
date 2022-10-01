@@ -1,5 +1,6 @@
 package com.solvd.services;
 
+import com.solvd.connection_pool.dataSource;
 import com.solvd.dao.ISuppliersDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Suppliers;
@@ -19,9 +20,12 @@ public class SuppliersMySQL extends Suppliers implements ISuppliersDao {
     final String GET_ALL = "SELECT * FROM suppliers";
     final String GET_ONE = "SELECT * FROM suppliers WHERE s_id = ?";
     private final Connection con;
-
-    public SuppliersMySQL(Connection con) {
-        this.con = con;
+    {
+        try {
+            con = dataSource.getDataSource().getConnection();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -38,16 +42,17 @@ public class SuppliersMySQL extends Suppliers implements ISuppliersDao {
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
             }
         } catch (SQLException e) {
-            e.printStackTrace();
             throw new DAOException("ERROR IN THE SQL INSERT");
         } finally {
-            if(statement != null){
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL INSERT");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL INSERT");
             }
         }
     }
@@ -67,16 +72,17 @@ public class SuppliersMySQL extends Suppliers implements ISuppliersDao {
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
             }
         }catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR IN THE SQL UPDATE");
         }finally {
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL UPDATE");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL UPDATE");
             }
         }
     }
@@ -92,16 +98,17 @@ public class SuppliersMySQL extends Suppliers implements ISuppliersDao {
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
             }
         } catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR IN THE SQL DELETE");
         }finally {
-            if (statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL DELETE");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL DELETE");
             }
         }
     }
@@ -130,24 +137,20 @@ public class SuppliersMySQL extends Suppliers implements ISuppliersDao {
                 suppliers.add(getSupplier(rs));
             }
         } catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR GETTING CUSTOMER BY ID");
         } finally {
-            if (rs != null){
-                try {
-                    rs.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR: THE RESULT SET CANNOT BE CLOSED");
-                }
-            }
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL SELECT");
                 }
+                if (rs != null){
+                    rs.close();
+                }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL SELECT");
             }
         }
         return suppliers;
@@ -169,24 +172,20 @@ public class SuppliersMySQL extends Suppliers implements ISuppliersDao {
                 throw new DAOException("ERROR: CLIENT DOES NOT EXIST");
             }
         } catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR GETTING CLIENT BY ID");
         } finally {
-            if (rs != null){
-                try {
-                    rs.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR: THE RESULT SET CANNOT BE CLOSED");
-                }
-            }
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL SELECT");
                 }
+                if (rs != null){
+                    rs.close();
+                }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL SELECT");
             }
         }
         return suppliers;

@@ -1,5 +1,6 @@
 package com.solvd.services;
 
+import com.solvd.connection_pool.dataSource;
 import com.solvd.dao.IDepartmentsDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Departments;
@@ -19,9 +20,12 @@ public class DepartmentsMySQL extends Departments implements IDepartmentsDao {
     final String GET_ALL = "SELECT * FROM departments";
     final String GET_ONE = "SELECT * FROM departments WHERE d_id = ?";
     private final Connection con;
-
-    public DepartmentsMySQL(Connection con) {
-        this.con = con;
+    {
+        try {
+            con = dataSource.getDataSource().getConnection();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -35,16 +39,17 @@ public class DepartmentsMySQL extends Departments implements IDepartmentsDao {
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
             }
         } catch (SQLException e) {
-            e.printStackTrace();
             throw new DAOException("ERROR IN THE SQL INSERT");
         } finally {
-            if(statement != null){
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL INSERT");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL INSERT");
             }
         }
     }
@@ -61,16 +66,17 @@ public class DepartmentsMySQL extends Departments implements IDepartmentsDao {
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
             }
         }catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR IN THE SQL UPDATE");
         }finally {
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL UPDATE");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL UPDATE");
             }
         }
     }
@@ -86,16 +92,17 @@ public class DepartmentsMySQL extends Departments implements IDepartmentsDao {
                 throw new DAOException("CHANGES MAY NOT HAVE BEEN SAVED");
             }
         } catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR IN THE SQL DELETE");
         }finally {
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL DELETE");
                 }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL DELETE");
             }
         }
     }
@@ -121,24 +128,20 @@ public class DepartmentsMySQL extends Departments implements IDepartmentsDao {
                 dept.add(getDepartment(rs));
             }
         } catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR GETTING DEPARTMENT BY ID");
         } finally {
-            if (rs != null){
-                try {
-                    rs.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR: THE RESULT SET CANNOT BE CLOSED");
-                }
-            }
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL SELECT");
                 }
+                if (rs != null){
+                    rs.close();
+                }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL SELECT");
             }
         }
         return dept;
@@ -160,24 +163,20 @@ public class DepartmentsMySQL extends Departments implements IDepartmentsDao {
                 throw new DAOException("ERROR: DEPARTMENT DOES NOT EXIST");
             }
         } catch (SQLException e){
-            e.printStackTrace();
             throw new DAOException("ERROR GETTING DEPARTMENT BY ID");
         } finally {
-            if (rs != null){
-                try {
-                    rs.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR: THE RESULT SET CANNOT BE CLOSED");
-                }
-            }
-            if(statement != null) {
-                try {
+            try {
+                if (statement != null){
                     statement.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    throw new DAOException("ERROR IN THE SQL SELECT");
                 }
+                if (rs != null){
+                    rs.close();
+                }
+                if (con != null){
+                    con.close();
+                }
+            } catch (SQLException e) {
+                throw new DAOException("ERROR IN THE SQL SELECT");
             }
         }
         return dept;
