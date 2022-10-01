@@ -1,7 +1,9 @@
 package com.solvd.services;
-import com.solvd.dao.DAO;
+
+import com.solvd.dao.IProductsDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Products;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -9,7 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductsMySQL extends Products implements DAO<Products, Integer> {
+public class ProductsMySQL extends Products implements IProductsDao {
 
     final String INSERT_FORMAT = "INSERT INTO products(p_name, quantity, price, create_by, supplier_id) VALUES (?, ?, ?, ?, ?)";
     final String UPDATE_FORMAT = "UPDATE products SET p_name = ?, quantity = ?, price = ?, create_by = ?, supplier_id = ? WHERE prod_id = ?";

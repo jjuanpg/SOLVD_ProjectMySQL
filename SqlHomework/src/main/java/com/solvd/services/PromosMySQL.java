@@ -1,6 +1,6 @@
 package com.solvd.services;
 
-import com.solvd.dao.DAO;
+import com.solvd.dao.IPromosDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Promos;
 
@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PromosMySQL extends Promos implements DAO<Promos, Integer> {
+public class PromosMySQL extends Promos implements IPromosDao {
 
     final String INSERT_FORMAT = "INSERT INTO promos(discount, valid_till, product_id) VALUES (?, ?, ?, ?)";
     final String UPDATE_FORMAT = "UPDATE promos SET discount = ?, valid_till = ?, product_id = ? WHERE p_id = ?";

@@ -1912,3 +1912,723 @@
 2022-09-27 11:04:24,103 INFO  [main] 11) Delivery table.
 2022-09-27 11:04:24,103 INFO  [main] 12) Licenses table.
 2022-09-27 11:04:24,103 INFO  [main] 0) Exit.
+2022-10-01 11:18:03,032 DEBUG  [main] ---------------01/10/2022 11:18---------------
+2022-10-01 11:18:03,051 INFO  [main] 1) Customers table.
+2022-10-01 11:18:03,052 INFO  [main] 2) Employees table.
+2022-10-01 11:18:03,052 INFO  [main] 3) Managers table.
+2022-10-01 11:18:03,052 INFO  [main] 4) Departments table.
+2022-10-01 11:18:03,052 INFO  [main] 5) Suppliers table.
+2022-10-01 11:18:03,053 INFO  [main] 6) Products table.
+2022-10-01 11:18:03,053 INFO  [main] 7) Purchases table.
+2022-10-01 11:18:03,053 INFO  [main] 8) Promos table.
+2022-10-01 11:18:03,053 INFO  [main] 9) Orders table.
+2022-10-01 11:18:03,054 INFO  [main] 10) Branches table.
+2022-10-01 11:18:03,054 INFO  [main] 11) Delivery table.
+2022-10-01 11:18:03,054 INFO  [main] 12) Licenses table.
+2022-10-01 11:18:03,054 INFO  [main] 0) Exit.
+2022-10-01 11:18:09,111 INFO  [main] 1) Insert.
+2022-10-01 11:18:09,112 INFO  [main] 2) Update.
+2022-10-01 11:18:09,112 INFO  [main] 3) Delete.
+2022-10-01 11:18:09,112 INFO  [main] 4) Get all.
+2022-10-01 11:18:09,112 INFO  [main] 5) Get by ID.
+2022-10-01 11:18:09,112 INFO  [main] 0) Exit.
+2022-10-01 11:18:14,626 INFO  [main] Enter the purchase ID
+2022-10-01 11:18:58,141 INFO  [main] Purchases{id=1, date=2022-09-20, total_spent=100, customer_id=3, dept_id=1, items='Bread'} [Customers[id=1, first_name= Juan Pablo, last_name= Gordillo, dob=2022-09-13, phone= 3624881392, email= juanpablogordillo375@gmail.com, address= Av. Edison]]
+2022-10-01 11:18:58,168 INFO  [main] 1) Insert.
+2022-10-01 11:18:58,168 INFO  [main] 2) Update.
+2022-10-01 11:18:58,169 INFO  [main] 3) Delete.
+2022-10-01 11:18:58,169 INFO  [main] 4) Get all.
+2022-10-01 11:18:58,169 INFO  [main] 5) Get by ID.
+2022-10-01 11:18:58,169 INFO  [main] 0) Exit.
+2022-10-01 11:19:32,809 INFO  [main] 1) Customers table.
+2022-10-01 11:19:32,809 INFO  [main] 2) Employees table.
+2022-10-01 11:19:32,810 INFO  [main] 3) Managers table.
+2022-10-01 11:19:32,810 INFO  [main] 4) Departments table.
+2022-10-01 11:19:32,810 INFO  [main] 5) Suppliers table.
+2022-10-01 11:19:32,810 INFO  [main] 6) Products table.
+2022-10-01 11:19:32,810 INFO  [main] 7) Purchases table.
+2022-10-01 11:19:32,811 INFO  [main] 8) Promos table.
+2022-10-01 11:19:32,811 INFO  [main] 9) Orders table.
+2022-10-01 11:19:32,811 INFO  [main] 10) Branches table.
+2022-10-01 11:19:32,811 INFO  [main] 11) Delivery table.
+2022-10-01 11:19:32,811 INFO  [main] 12) Licenses table.
+2022-10-01 11:19:32,811 INFO  [main] 0) Exit.
+2022-10-01 11:20:02,846 DEBUG  [main] ---------------01/10/2022 11:20---------------
+2022-10-01 11:20:02,856 INFO  [main] 1) Customers table.
+2022-10-01 11:20:02,857 INFO  [main] 2) Employees table.
+2022-10-01 11:20:02,857 INFO  [main] 3) Managers table.
+2022-10-01 11:20:02,857 INFO  [main] 4) Departments table.
+2022-10-01 11:20:02,858 INFO  [main] 5) Suppliers table.
+2022-10-01 11:20:02,858 INFO  [main] 6) Products table.
+2022-10-01 11:20:02,858 INFO  [main] 7) Purchases table.
+2022-10-01 11:20:02,858 INFO  [main] 8) Promos table.
+2022-10-01 11:20:02,859 INFO  [main] 9) Orders table.
+2022-10-01 11:20:02,859 INFO  [main] 10) Branches table.
+2022-10-01 11:20:02,859 INFO  [main] 11) Delivery table.
+2022-10-01 11:20:02,860 INFO  [main] 12) Licenses table.
+2022-10-01 11:20:02,860 INFO  [main] 0) Exit.
+2022-10-01 11:20:06,345 INFO  [main] 1) Insert.
+2022-10-01 11:20:06,345 INFO  [main] 2) Update.
+2022-10-01 11:20:06,345 INFO  [main] 3) Delete.
+2022-10-01 11:20:06,346 INFO  [main] 4) Get all.
+2022-10-01 11:20:06,346 INFO  [main] 5) Get by ID.
+2022-10-01 11:20:06,346 INFO  [main] 0) Exit.
+2022-10-01 11:20:08,018 INFO  [main] Enter the purchase ID
+2022-10-01 11:20:46,315 DEBUG  [main] ---------------01/10/2022 11:20---------------
+2022-10-01 11:20:46,325 INFO  [main] 1) Customers table.
+2022-10-01 11:20:46,326 INFO  [main] 2) Employees table.
+2022-10-01 11:20:46,326 INFO  [main] 3) Managers table.
+2022-10-01 11:20:46,326 INFO  [main] 4) Departments table.
+2022-10-01 11:20:46,327 INFO  [main] 5) Suppliers table.
+2022-10-01 11:20:46,327 INFO  [main] 6) Products table.
+2022-10-01 11:20:46,327 INFO  [main] 7) Purchases table.
+2022-10-01 11:20:46,328 INFO  [main] 8) Promos table.
+2022-10-01 11:20:46,328 INFO  [main] 9) Orders table.
+2022-10-01 11:20:46,328 INFO  [main] 10) Branches table.
+2022-10-01 11:20:46,329 INFO  [main] 11) Delivery table.
+2022-10-01 11:20:46,329 INFO  [main] 12) Licenses table.
+2022-10-01 11:20:46,329 INFO  [main] 0) Exit.
+2022-10-01 11:20:50,079 INFO  [main] 1) Insert.
+2022-10-01 11:20:50,079 INFO  [main] 2) Update.
+2022-10-01 11:20:50,079 INFO  [main] 3) Delete.
+2022-10-01 11:20:50,080 INFO  [main] 4) Get all.
+2022-10-01 11:20:50,080 INFO  [main] 5) Get by ID.
+2022-10-01 11:20:50,080 INFO  [main] 0) Exit.
+2022-10-01 11:20:51,010 INFO  [main] Enter the purchase ID
+2022-10-01 11:21:28,334 DEBUG  [main] ---------------01/10/2022 11:21---------------
+2022-10-01 11:21:28,347 INFO  [main] 1) Customers table.
+2022-10-01 11:21:28,347 INFO  [main] 2) Employees table.
+2022-10-01 11:21:28,348 INFO  [main] 3) Managers table.
+2022-10-01 11:21:28,348 INFO  [main] 4) Departments table.
+2022-10-01 11:21:28,349 INFO  [main] 5) Suppliers table.
+2022-10-01 11:21:28,349 INFO  [main] 6) Products table.
+2022-10-01 11:21:28,350 INFO  [main] 7) Purchases table.
+2022-10-01 11:21:28,350 INFO  [main] 8) Promos table.
+2022-10-01 11:21:28,350 INFO  [main] 9) Orders table.
+2022-10-01 11:21:28,351 INFO  [main] 10) Branches table.
+2022-10-01 11:21:28,351 INFO  [main] 11) Delivery table.
+2022-10-01 11:21:28,351 INFO  [main] 12) Licenses table.
+2022-10-01 11:21:28,351 INFO  [main] 0) Exit.
+2022-10-01 11:21:33,434 INFO  [main] 1) Insert.
+2022-10-01 11:21:33,435 INFO  [main] 2) Update.
+2022-10-01 11:21:33,435 INFO  [main] 3) Delete.
+2022-10-01 11:21:33,435 INFO  [main] 4) Get all.
+2022-10-01 11:21:33,435 INFO  [main] 5) Get by ID.
+2022-10-01 11:21:33,436 INFO  [main] 0) Exit.
+2022-10-01 11:21:34,593 INFO  [main] Enter the purchase ID
+2022-10-01 11:22:07,790 DEBUG  [main] ---------------01/10/2022 11:22---------------
+2022-10-01 11:22:07,800 INFO  [main] 1) Customers table.
+2022-10-01 11:22:07,801 INFO  [main] 2) Employees table.
+2022-10-01 11:22:07,801 INFO  [main] 3) Managers table.
+2022-10-01 11:22:07,802 INFO  [main] 4) Departments table.
+2022-10-01 11:22:07,802 INFO  [main] 5) Suppliers table.
+2022-10-01 11:22:07,802 INFO  [main] 6) Products table.
+2022-10-01 11:22:07,803 INFO  [main] 7) Purchases table.
+2022-10-01 11:22:07,803 INFO  [main] 8) Promos table.
+2022-10-01 11:22:07,803 INFO  [main] 9) Orders table.
+2022-10-01 11:22:07,803 INFO  [main] 10) Branches table.
+2022-10-01 11:22:07,804 INFO  [main] 11) Delivery table.
+2022-10-01 11:22:07,804 INFO  [main] 12) Licenses table.
+2022-10-01 11:22:07,805 INFO  [main] 0) Exit.
+2022-10-01 11:22:10,186 INFO  [main] 1) Insert.
+2022-10-01 11:22:10,186 INFO  [main] 2) Update.
+2022-10-01 11:22:10,186 INFO  [main] 3) Delete.
+2022-10-01 11:22:10,187 INFO  [main] 4) Get all.
+2022-10-01 11:22:10,187 INFO  [main] 5) Get by ID.
+2022-10-01 11:22:10,187 INFO  [main] 0) Exit.
+2022-10-01 11:22:12,050 INFO  [main] Enter the purchase ID
+2022-10-01 11:22:13,000 INFO c.s.p.Purchases [main] 3
+2022-10-01 11:22:48,903 DEBUG  [main] ---------------01/10/2022 11:22---------------
+2022-10-01 11:22:48,915 INFO  [main] 1) Customers table.
+2022-10-01 11:22:48,916 INFO  [main] 2) Employees table.
+2022-10-01 11:22:48,916 INFO  [main] 3) Managers table.
+2022-10-01 11:22:48,917 INFO  [main] 4) Departments table.
+2022-10-01 11:22:48,917 INFO  [main] 5) Suppliers table.
+2022-10-01 11:22:48,918 INFO  [main] 6) Products table.
+2022-10-01 11:22:48,918 INFO  [main] 7) Purchases table.
+2022-10-01 11:22:48,919 INFO  [main] 8) Promos table.
+2022-10-01 11:22:48,919 INFO  [main] 9) Orders table.
+2022-10-01 11:22:48,920 INFO  [main] 10) Branches table.
+2022-10-01 11:22:48,920 INFO  [main] 11) Delivery table.
+2022-10-01 11:22:48,920 INFO  [main] 12) Licenses table.
+2022-10-01 11:22:48,920 INFO  [main] 0) Exit.
+2022-10-01 11:22:51,551 INFO  [main] 1) Insert.
+2022-10-01 11:22:51,551 INFO  [main] 2) Update.
+2022-10-01 11:22:51,551 INFO  [main] 3) Delete.
+2022-10-01 11:22:51,552 INFO  [main] 4) Get all.
+2022-10-01 11:22:51,552 INFO  [main] 5) Get by ID.
+2022-10-01 11:22:51,552 INFO  [main] 0) Exit.
+2022-10-01 11:22:52,908 INFO  [main] Customers[id=1, first_name= Juan Pablo, last_name= Gordillo, dob=2022-09-13, phone= 3624881392, email= juanpablogordillo375@gmail.com, address= Av. Edison]
+2022-10-01 11:22:52,908 INFO  [main] Customers[id=2, first_name= Cesáreo, last_name= Martinez, dob=2022-09-13, phone= 3624455423, email= cesareomartinez@gmail.com, address= Av. Edison 1500]
+2022-10-01 11:22:52,909 INFO  [main] Customers[id=3, first_name= Julian, last_name= Alvarez, dob=2022-01-13, phone= 3624571698, email= jalvarez@gamil.com, address= Av. Chaco 200]
+2022-10-01 11:22:52,909 INFO  [main] Customers[id=4, first_name= Franco, last_name= Fernandez, dob=2022-05-23, phone= 3624923812, email= franco2001@gmail.com, address= Av. 9 de Julio 1000]
+2022-10-01 11:22:52,909 INFO  [main] Customers[id=5, first_name= Matias, last_name= Franco, dob=2022-10-13, phone= 3624881392, email= matiasfranco@live.com.ar, address= Colon 1921]
+2022-10-01 11:22:52,932 INFO  [main] 1) Insert.
+2022-10-01 11:22:52,933 INFO  [main] 2) Update.
+2022-10-01 11:22:52,933 INFO  [main] 3) Delete.
+2022-10-01 11:22:52,933 INFO  [main] 4) Get all.
+2022-10-01 11:22:52,933 INFO  [main] 5) Get by ID.
+2022-10-01 11:22:52,934 INFO  [main] 0) Exit.
+2022-10-01 11:22:59,329 INFO  [main] 1) Customers table.
+2022-10-01 11:22:59,329 INFO  [main] 2) Employees table.
+2022-10-01 11:22:59,330 INFO  [main] 3) Managers table.
+2022-10-01 11:22:59,330 INFO  [main] 4) Departments table.
+2022-10-01 11:22:59,330 INFO  [main] 5) Suppliers table.
+2022-10-01 11:22:59,330 INFO  [main] 6) Products table.
+2022-10-01 11:22:59,330 INFO  [main] 7) Purchases table.
+2022-10-01 11:22:59,330 INFO  [main] 8) Promos table.
+2022-10-01 11:22:59,331 INFO  [main] 9) Orders table.
+2022-10-01 11:22:59,331 INFO  [main] 10) Branches table.
+2022-10-01 11:22:59,331 INFO  [main] 11) Delivery table.
+2022-10-01 11:22:59,331 INFO  [main] 12) Licenses table.
+2022-10-01 11:22:59,331 INFO  [main] 0) Exit.
+2022-10-01 11:23:02,734 INFO  [main] 1) Insert.
+2022-10-01 11:23:02,735 INFO  [main] 2) Update.
+2022-10-01 11:23:02,735 INFO  [main] 3) Delete.
+2022-10-01 11:23:02,735 INFO  [main] 4) Get all.
+2022-10-01 11:23:02,735 INFO  [main] 5) Get by ID.
+2022-10-01 11:23:02,736 INFO  [main] 0) Exit.
+2022-10-01 11:23:04,482 INFO  [main] Enter the purchase ID
+2022-10-01 11:23:06,484 INFO c.s.p.Purchases [main] 3
+2022-10-01 11:23:06,491 INFO  [main] Purchases{id=1, date=2022-09-20, total_spent=100, customer_id=3, dept_id=1, items='Bread'} [Customers[id=3, first_name= Julian, last_name= Alvarez, dob=2022-01-13, phone= 3624571698, email= jalvarez@gamil.com, address= Av. Chaco 200]]
+2022-10-01 11:23:06,510 INFO  [main] 1) Insert.
+2022-10-01 11:23:06,510 INFO  [main] 2) Update.
+2022-10-01 11:23:06,510 INFO  [main] 3) Delete.
+2022-10-01 11:23:06,511 INFO  [main] 4) Get all.
+2022-10-01 11:23:06,511 INFO  [main] 5) Get by ID.
+2022-10-01 11:23:06,511 INFO  [main] 0) Exit.
+2022-10-01 11:23:25,161 INFO  [main] 1) Customers table.
+2022-10-01 11:23:25,162 INFO  [main] 2) Employees table.
+2022-10-01 11:23:25,162 INFO  [main] 3) Managers table.
+2022-10-01 11:23:25,162 INFO  [main] 4) Departments table.
+2022-10-01 11:23:25,162 INFO  [main] 5) Suppliers table.
+2022-10-01 11:23:25,162 INFO  [main] 6) Products table.
+2022-10-01 11:23:25,162 INFO  [main] 7) Purchases table.
+2022-10-01 11:23:25,163 INFO  [main] 8) Promos table.
+2022-10-01 11:23:25,163 INFO  [main] 9) Orders table.
+2022-10-01 11:23:25,163 INFO  [main] 10) Branches table.
+2022-10-01 11:23:25,163 INFO  [main] 11) Delivery table.
+2022-10-01 11:23:25,163 INFO  [main] 12) Licenses table.
+2022-10-01 11:23:25,163 INFO  [main] 0) Exit.
+2022-10-01 11:24:01,878 DEBUG  [main] ---------------01/10/2022 11:24---------------
+2022-10-01 11:24:01,891 INFO  [main] 1) Customers table.
+2022-10-01 11:24:01,891 INFO  [main] 2) Employees table.
+2022-10-01 11:24:01,892 INFO  [main] 3) Managers table.
+2022-10-01 11:24:01,892 INFO  [main] 4) Departments table.
+2022-10-01 11:24:01,892 INFO  [main] 5) Suppliers table.
+2022-10-01 11:24:01,893 INFO  [main] 6) Products table.
+2022-10-01 11:24:01,893 INFO  [main] 7) Purchases table.
+2022-10-01 11:24:01,893 INFO  [main] 8) Promos table.
+2022-10-01 11:24:01,893 INFO  [main] 9) Orders table.
+2022-10-01 11:24:01,894 INFO  [main] 10) Branches table.
+2022-10-01 11:24:01,894 INFO  [main] 11) Delivery table.
+2022-10-01 11:24:01,894 INFO  [main] 12) Licenses table.
+2022-10-01 11:24:01,895 INFO  [main] 0) Exit.
+2022-10-01 11:24:05,117 INFO  [main] 1) Insert.
+2022-10-01 11:24:05,118 INFO  [main] 2) Update.
+2022-10-01 11:24:05,118 INFO  [main] 3) Delete.
+2022-10-01 11:24:05,118 INFO  [main] 4) Get all.
+2022-10-01 11:24:05,118 INFO  [main] 5) Get by ID.
+2022-10-01 11:24:05,119 INFO  [main] 0) Exit.
+2022-10-01 11:24:06,530 INFO  [main] Enter the purchase ID
+2022-10-01 11:44:00,218 DEBUG  [main] ---------------01/10/2022 11:44---------------
+2022-10-01 11:44:00,233 INFO  [main] 1) Customers table.
+2022-10-01 11:44:00,233 INFO  [main] 2) Employees table.
+2022-10-01 11:44:00,234 INFO  [main] 3) Managers table.
+2022-10-01 11:44:00,234 INFO  [main] 4) Departments table.
+2022-10-01 11:44:00,234 INFO  [main] 5) Suppliers table.
+2022-10-01 11:44:00,235 INFO  [main] 6) Products table.
+2022-10-01 11:44:00,235 INFO  [main] 7) Purchases table.
+2022-10-01 11:44:00,235 INFO  [main] 8) Promos table.
+2022-10-01 11:44:00,236 INFO  [main] 9) Orders table.
+2022-10-01 11:44:00,236 INFO  [main] 10) Branches table.
+2022-10-01 11:44:00,236 INFO  [main] 11) Delivery table.
+2022-10-01 11:44:00,237 INFO  [main] 12) Licenses table.
+2022-10-01 11:44:00,237 INFO  [main] 0) Exit.
+2022-10-01 11:44:02,921 INFO  [main] 1) Insert.
+2022-10-01 11:44:02,921 INFO  [main] 2) Update.
+2022-10-01 11:44:02,921 INFO  [main] 3) Delete.
+2022-10-01 11:44:02,921 INFO  [main] 4) Get all.
+2022-10-01 11:44:02,922 INFO  [main] 5) Get by ID.
+2022-10-01 11:44:02,922 INFO  [main] 0) Exit.
+2022-10-01 11:44:03,924 INFO  [main] Enter the purchase ID
+2022-10-01 11:46:35,029 DEBUG  [main] ---------------01/10/2022 11:46---------------
+2022-10-01 11:46:35,040 INFO  [main] 1) Customers table.
+2022-10-01 11:46:35,041 INFO  [main] 2) Employees table.
+2022-10-01 11:46:35,041 INFO  [main] 3) Managers table.
+2022-10-01 11:46:35,042 INFO  [main] 4) Departments table.
+2022-10-01 11:46:35,042 INFO  [main] 5) Suppliers table.
+2022-10-01 11:46:35,042 INFO  [main] 6) Products table.
+2022-10-01 11:46:35,042 INFO  [main] 7) Purchases table.
+2022-10-01 11:46:35,043 INFO  [main] 8) Promos table.
+2022-10-01 11:46:35,043 INFO  [main] 9) Orders table.
+2022-10-01 11:46:35,044 INFO  [main] 10) Branches table.
+2022-10-01 11:46:35,044 INFO  [main] 11) Delivery table.
+2022-10-01 11:46:35,044 INFO  [main] 12) Licenses table.
+2022-10-01 11:46:35,044 INFO  [main] 0) Exit.
+2022-10-01 11:46:37,439 INFO  [main] 1) Insert.
+2022-10-01 11:46:37,440 INFO  [main] 2) Update.
+2022-10-01 11:46:37,440 INFO  [main] 3) Delete.
+2022-10-01 11:46:37,440 INFO  [main] 4) Get all.
+2022-10-01 11:46:37,440 INFO  [main] 5) Get by ID.
+2022-10-01 11:46:37,441 INFO  [main] 0) Exit.
+2022-10-01 11:46:39,140 INFO  [main] Enter the purchase ID
+2022-10-01 11:46:40,024 INFO  [main] Purchases{id=1, date=2022-09-20, total_spent=100, customer_id=3, dept_id=1, items='Bread'} [Customers[id=0, first_name= Julian, last_name= Alvarez, dob=null, phone= null, email= null, address= null]]
+2022-10-01 11:46:40,046 INFO  [main] 1) Insert.
+2022-10-01 11:46:40,047 INFO  [main] 2) Update.
+2022-10-01 11:46:40,047 INFO  [main] 3) Delete.
+2022-10-01 11:46:40,047 INFO  [main] 4) Get all.
+2022-10-01 11:46:40,047 INFO  [main] 5) Get by ID.
+2022-10-01 11:46:40,048 INFO  [main] 0) Exit.
+2022-10-01 11:46:50,812 INFO  [main] 1) Customers table.
+2022-10-01 11:46:50,812 INFO  [main] 2) Employees table.
+2022-10-01 11:46:50,812 INFO  [main] 3) Managers table.
+2022-10-01 11:46:50,812 INFO  [main] 4) Departments table.
+2022-10-01 11:46:50,812 INFO  [main] 5) Suppliers table.
+2022-10-01 11:46:50,813 INFO  [main] 6) Products table.
+2022-10-01 11:46:50,813 INFO  [main] 7) Purchases table.
+2022-10-01 11:46:50,813 INFO  [main] 8) Promos table.
+2022-10-01 11:46:50,813 INFO  [main] 9) Orders table.
+2022-10-01 11:46:50,813 INFO  [main] 10) Branches table.
+2022-10-01 11:46:50,813 INFO  [main] 11) Delivery table.
+2022-10-01 11:46:50,814 INFO  [main] 12) Licenses table.
+2022-10-01 11:46:50,814 INFO  [main] 0) Exit.
+2022-10-01 11:49:15,939 DEBUG  [main] ---------------01/10/2022 11:49---------------
+2022-10-01 11:49:15,950 INFO  [main] 1) Customers table.
+2022-10-01 11:49:15,951 INFO  [main] 2) Employees table.
+2022-10-01 11:49:15,951 INFO  [main] 3) Managers table.
+2022-10-01 11:49:15,951 INFO  [main] 4) Departments table.
+2022-10-01 11:49:15,952 INFO  [main] 5) Suppliers table.
+2022-10-01 11:49:15,952 INFO  [main] 6) Products table.
+2022-10-01 11:49:15,953 INFO  [main] 7) Purchases table.
+2022-10-01 11:49:15,953 INFO  [main] 8) Promos table.
+2022-10-01 11:49:15,953 INFO  [main] 9) Orders table.
+2022-10-01 11:49:15,953 INFO  [main] 10) Branches table.
+2022-10-01 11:49:15,954 INFO  [main] 11) Delivery table.
+2022-10-01 11:49:15,954 INFO  [main] 12) Licenses table.
+2022-10-01 11:49:15,954 INFO  [main] 0) Exit.
+2022-10-01 11:49:17,927 INFO  [main] 1) Insert.
+2022-10-01 11:49:17,927 INFO  [main] 2) Update.
+2022-10-01 11:49:17,927 INFO  [main] 3) Delete.
+2022-10-01 11:49:17,927 INFO  [main] 4) Get all.
+2022-10-01 11:49:17,928 INFO  [main] 5) Get by ID.
+2022-10-01 11:49:17,928 INFO  [main] 0) Exit.
+2022-10-01 11:49:19,093 INFO  [main] Enter the purchase ID
+2022-10-01 11:49:41,718 DEBUG  [main] ---------------01/10/2022 11:49---------------
+2022-10-01 11:49:41,730 INFO  [main] 1) Customers table.
+2022-10-01 11:49:41,730 INFO  [main] 2) Employees table.
+2022-10-01 11:49:41,731 INFO  [main] 3) Managers table.
+2022-10-01 11:49:41,731 INFO  [main] 4) Departments table.
+2022-10-01 11:49:41,731 INFO  [main] 5) Suppliers table.
+2022-10-01 11:49:41,731 INFO  [main] 6) Products table.
+2022-10-01 11:49:41,732 INFO  [main] 7) Purchases table.
+2022-10-01 11:49:41,732 INFO  [main] 8) Promos table.
+2022-10-01 11:49:41,732 INFO  [main] 9) Orders table.
+2022-10-01 11:49:41,733 INFO  [main] 10) Branches table.
+2022-10-01 11:49:41,733 INFO  [main] 11) Delivery table.
+2022-10-01 11:49:41,733 INFO  [main] 12) Licenses table.
+2022-10-01 11:49:41,734 INFO  [main] 0) Exit.
+2022-10-01 11:49:43,848 INFO  [main] 1) Insert.
+2022-10-01 11:49:43,848 INFO  [main] 2) Update.
+2022-10-01 11:49:43,848 INFO  [main] 3) Delete.
+2022-10-01 11:49:43,848 INFO  [main] 4) Get all.
+2022-10-01 11:49:43,849 INFO  [main] 5) Get by ID.
+2022-10-01 11:49:43,849 INFO  [main] 0) Exit.
+2022-10-01 11:49:44,637 INFO  [main] Enter the purchase ID
+2022-10-01 11:50:09,507 DEBUG  [main] ---------------01/10/2022 11:50---------------
+2022-10-01 11:50:09,519 INFO  [main] 1) Customers table.
+2022-10-01 11:50:09,520 INFO  [main] 2) Employees table.
+2022-10-01 11:50:09,520 INFO  [main] 3) Managers table.
+2022-10-01 11:50:09,521 INFO  [main] 4) Departments table.
+2022-10-01 11:50:09,521 INFO  [main] 5) Suppliers table.
+2022-10-01 11:50:09,521 INFO  [main] 6) Products table.
+2022-10-01 11:50:09,522 INFO  [main] 7) Purchases table.
+2022-10-01 11:50:09,522 INFO  [main] 8) Promos table.
+2022-10-01 11:50:09,522 INFO  [main] 9) Orders table.
+2022-10-01 11:50:09,523 INFO  [main] 10) Branches table.
+2022-10-01 11:50:09,523 INFO  [main] 11) Delivery table.
+2022-10-01 11:50:09,523 INFO  [main] 12) Licenses table.
+2022-10-01 11:50:09,523 INFO  [main] 0) Exit.
+2022-10-01 11:50:11,508 INFO  [main] 1) Insert.
+2022-10-01 11:50:11,508 INFO  [main] 2) Update.
+2022-10-01 11:50:11,509 INFO  [main] 3) Delete.
+2022-10-01 11:50:11,509 INFO  [main] 4) Get all.
+2022-10-01 11:50:11,509 INFO  [main] 5) Get by ID.
+2022-10-01 11:50:11,509 INFO  [main] 0) Exit.
+2022-10-01 11:50:13,108 INFO  [main] Enter the purchase ID
+2022-10-01 11:51:27,434 DEBUG  [main] ---------------01/10/2022 11:51---------------
+2022-10-01 11:51:27,434 INFO  [main] 1) Customers table.
+2022-10-01 11:51:27,434 INFO  [main] 2) Employees table.
+2022-10-01 11:51:27,450 INFO  [main] 3) Managers table.
+2022-10-01 11:51:27,450 INFO  [main] 4) Departments table.
+2022-10-01 11:51:27,450 INFO  [main] 5) Suppliers table.
+2022-10-01 11:51:27,450 INFO  [main] 6) Products table.
+2022-10-01 11:51:27,450 INFO  [main] 7) Purchases table.
+2022-10-01 11:51:27,450 INFO  [main] 8) Promos table.
+2022-10-01 11:51:27,450 INFO  [main] 9) Orders table.
+2022-10-01 11:51:27,450 INFO  [main] 10) Branches table.
+2022-10-01 11:51:27,450 INFO  [main] 11) Delivery table.
+2022-10-01 11:51:27,450 INFO  [main] 12) Licenses table.
+2022-10-01 11:51:27,450 INFO  [main] 0) Exit.
+2022-10-01 11:51:30,402 INFO  [main] 1) Insert.
+2022-10-01 11:51:30,402 INFO  [main] 2) Update.
+2022-10-01 11:51:30,402 INFO  [main] 3) Delete.
+2022-10-01 11:51:30,402 INFO  [main] 4) Get all.
+2022-10-01 11:51:30,402 INFO  [main] 5) Get by ID.
+2022-10-01 11:51:30,402 INFO  [main] 0) Exit.
+2022-10-01 11:51:32,088 INFO  [main] Enter the purchase ID
+2022-10-01 11:52:17,805 DEBUG  [main] ---------------01/10/2022 11:52---------------
+2022-10-01 11:52:17,817 INFO  [main] 1) Customers table.
+2022-10-01 11:52:17,817 INFO  [main] 2) Employees table.
+2022-10-01 11:52:17,818 INFO  [main] 3) Managers table.
+2022-10-01 11:52:17,818 INFO  [main] 4) Departments table.
+2022-10-01 11:52:17,819 INFO  [main] 5) Suppliers table.
+2022-10-01 11:52:17,819 INFO  [main] 6) Products table.
+2022-10-01 11:52:17,819 INFO  [main] 7) Purchases table.
+2022-10-01 11:52:17,819 INFO  [main] 8) Promos table.
+2022-10-01 11:52:17,820 INFO  [main] 9) Orders table.
+2022-10-01 11:52:17,820 INFO  [main] 10) Branches table.
+2022-10-01 11:52:17,820 INFO  [main] 11) Delivery table.
+2022-10-01 11:52:17,821 INFO  [main] 12) Licenses table.
+2022-10-01 11:52:17,821 INFO  [main] 0) Exit.
+2022-10-01 11:52:20,138 INFO  [main] 1) Insert.
+2022-10-01 11:52:20,138 INFO  [main] 2) Update.
+2022-10-01 11:52:20,138 INFO  [main] 3) Delete.
+2022-10-01 11:52:20,138 INFO  [main] 4) Get all.
+2022-10-01 11:52:20,139 INFO  [main] 5) Get by ID.
+2022-10-01 11:52:20,139 INFO  [main] 0) Exit.
+2022-10-01 11:52:21,389 INFO  [main] Enter the purchase ID
+2022-10-01 11:52:22,426 INFO  [main] Purchases{id=1, date=2022-09-20, total_spent=100, customer_id=3, dept_id=1, items='Bread'}
+[Customers[id=3, first_name= Julian, last_name= Alvarez, dob=null, phone= null, email= null, address= null]]
+2022-10-01 11:52:22,450 INFO  [main] 1) Insert.
+2022-10-01 11:52:22,451 INFO  [main] 2) Update.
+2022-10-01 11:52:22,451 INFO  [main] 3) Delete.
+2022-10-01 11:52:22,451 INFO  [main] 4) Get all.
+2022-10-01 11:52:22,451 INFO  [main] 5) Get by ID.
+2022-10-01 11:52:22,452 INFO  [main] 0) Exit.
+2022-10-01 11:52:48,044 INFO  [main] Enter the purchase ID
+2022-10-01 11:52:49,722 INFO  [main] Purchases{id=2, date=2022-09-20, total_spent=55, customer_id=1, dept_id=2, items='Olive oil'}
+[Customers[id=1, first_name= Juan Pablo, last_name= Gordillo, dob=null, phone= null, email= null, address= null]]
+2022-10-01 11:52:49,744 INFO  [main] 1) Insert.
+2022-10-01 11:52:49,744 INFO  [main] 2) Update.
+2022-10-01 11:52:49,744 INFO  [main] 3) Delete.
+2022-10-01 11:52:49,744 INFO  [main] 4) Get all.
+2022-10-01 11:52:49,745 INFO  [main] 5) Get by ID.
+2022-10-01 11:52:49,745 INFO  [main] 0) Exit.
+2022-10-01 11:57:43,381 INFO  [main] 1) Customers table.
+2022-10-01 11:57:43,382 INFO  [main] 2) Employees table.
+2022-10-01 11:57:43,382 INFO  [main] 3) Managers table.
+2022-10-01 11:57:43,382 INFO  [main] 4) Departments table.
+2022-10-01 11:57:43,382 INFO  [main] 5) Suppliers table.
+2022-10-01 11:57:43,382 INFO  [main] 6) Products table.
+2022-10-01 11:57:43,383 INFO  [main] 7) Purchases table.
+2022-10-01 11:57:43,383 INFO  [main] 8) Promos table.
+2022-10-01 11:57:43,383 INFO  [main] 9) Orders table.
+2022-10-01 11:57:43,383 INFO  [main] 10) Branches table.
+2022-10-01 11:57:43,383 INFO  [main] 11) Delivery table.
+2022-10-01 11:57:43,383 INFO  [main] 12) Licenses table.
+2022-10-01 11:57:43,384 INFO  [main] 0) Exit.
+2022-10-01 11:57:51,668 DEBUG  [main] ---------------01/10/2022 11:57---------------
+2022-10-01 11:57:51,680 INFO  [main] 1) Customers table.
+2022-10-01 11:57:51,681 INFO  [main] 2) Employees table.
+2022-10-01 11:57:51,681 INFO  [main] 3) Managers table.
+2022-10-01 11:57:51,681 INFO  [main] 4) Departments table.
+2022-10-01 11:57:51,682 INFO  [main] 5) Suppliers table.
+2022-10-01 11:57:51,682 INFO  [main] 6) Products table.
+2022-10-01 11:57:51,682 INFO  [main] 7) Purchases table.
+2022-10-01 11:57:51,683 INFO  [main] 8) Promos table.
+2022-10-01 11:57:51,683 INFO  [main] 9) Orders table.
+2022-10-01 11:57:51,683 INFO  [main] 10) Branches table.
+2022-10-01 11:57:51,684 INFO  [main] 11) Delivery table.
+2022-10-01 11:57:51,684 INFO  [main] 12) Licenses table.
+2022-10-01 11:57:51,684 INFO  [main] 0) Exit.
+2022-10-01 11:57:53,525 INFO  [main] 1) Insert.
+2022-10-01 11:57:53,525 INFO  [main] 2) Update.
+2022-10-01 11:57:53,526 INFO  [main] 3) Delete.
+2022-10-01 11:57:53,526 INFO  [main] 4) Get all.
+2022-10-01 11:57:53,526 INFO  [main] 5) Get by ID.
+2022-10-01 11:57:53,526 INFO  [main] 0) Exit.
+2022-10-01 11:57:54,853 INFO  [main] Enter the purchase ID
+2022-10-01 11:57:55,915 INFO  [main] 
+Purchases{id=1, date=2022-09-20, total_spent=100, customer_id=3, dept_id=1, items='Bread'}
+[Customers[id=3, first_name= Julian, last_name= Alvarez, dob=null, phone= null, email= null, address= null]]
+2022-10-01 11:57:55,936 INFO  [main] 1) Insert.
+2022-10-01 11:57:55,936 INFO  [main] 2) Update.
+2022-10-01 11:57:55,937 INFO  [main] 3) Delete.
+2022-10-01 11:57:55,937 INFO  [main] 4) Get all.
+2022-10-01 11:57:55,937 INFO  [main] 5) Get by ID.
+2022-10-01 11:57:55,938 INFO  [main] 0) Exit.
+2022-10-01 11:58:38,484 DEBUG  [main] ---------------01/10/2022 11:58---------------
+2022-10-01 11:58:38,495 INFO  [main] 1) Customers table.
+2022-10-01 11:58:38,496 INFO  [main] 2) Employees table.
+2022-10-01 11:58:38,496 INFO  [main] 3) Managers table.
+2022-10-01 11:58:38,496 INFO  [main] 4) Departments table.
+2022-10-01 11:58:38,497 INFO  [main] 5) Suppliers table.
+2022-10-01 11:58:38,497 INFO  [main] 6) Products table.
+2022-10-01 11:58:38,497 INFO  [main] 7) Purchases table.
+2022-10-01 11:58:38,497 INFO  [main] 8) Promos table.
+2022-10-01 11:58:38,498 INFO  [main] 9) Orders table.
+2022-10-01 11:58:38,498 INFO  [main] 10) Branches table.
+2022-10-01 11:58:38,498 INFO  [main] 11) Delivery table.
+2022-10-01 11:58:38,498 INFO  [main] 12) Licenses table.
+2022-10-01 11:58:38,499 INFO  [main] 0) Exit.
+2022-10-01 11:58:40,849 INFO  [main] 1) Insert.
+2022-10-01 11:58:40,850 INFO  [main] 2) Update.
+2022-10-01 11:58:40,850 INFO  [main] 3) Delete.
+2022-10-01 11:58:40,850 INFO  [main] 4) Get all.
+2022-10-01 11:58:40,850 INFO  [main] 5) Get by ID.
+2022-10-01 11:58:40,850 INFO  [main] 0) Exit.
+2022-10-01 11:58:42,358 INFO  [main] Enter the purchase ID
+2022-10-01 11:58:44,781 INFO  [main] 
+Purchases{id=1, date=2022-09-20, total_spent=100, customer_id=3, dept_id=1, items='Bread'}
+[Customers[id=3, first_name= Julian, last_name= Alvarez, dob=2022-01-13, phone= 3624571698, email= jalvarez@gamil.com, address= Av. Chaco 200]]
+2022-10-01 11:58:44,806 INFO  [main] 1) Insert.
+2022-10-01 11:58:44,807 INFO  [main] 2) Update.
+2022-10-01 11:58:44,807 INFO  [main] 3) Delete.
+2022-10-01 11:58:44,807 INFO  [main] 4) Get all.
+2022-10-01 11:58:44,807 INFO  [main] 5) Get by ID.
+2022-10-01 11:58:44,808 INFO  [main] 0) Exit.
+2022-10-01 13:24:36,775 DEBUG  [main] ---------------01/10/2022 13:24---------------
+2022-10-01 13:24:36,797 INFO  [main] 1) Customers table.
+2022-10-01 13:24:36,798 INFO  [main] 2) Employees table.
+2022-10-01 13:24:36,798 INFO  [main] 3) Managers table.
+2022-10-01 13:24:36,798 INFO  [main] 4) Departments table.
+2022-10-01 13:24:36,798 INFO  [main] 5) Suppliers table.
+2022-10-01 13:24:36,798 INFO  [main] 6) Products table.
+2022-10-01 13:24:36,799 INFO  [main] 7) Purchases table.
+2022-10-01 13:24:36,799 INFO  [main] 8) Promos table.
+2022-10-01 13:24:36,799 INFO  [main] 9) Orders table.
+2022-10-01 13:24:36,799 INFO  [main] 10) Branches table.
+2022-10-01 13:24:36,800 INFO  [main] 11) Delivery table.
+2022-10-01 13:24:36,800 INFO  [main] 12) Licenses table.
+2022-10-01 13:24:36,800 INFO  [main] 0) Exit.
+2022-10-01 13:24:43,718 INFO  [main] 1) Insert.
+2022-10-01 13:24:43,719 INFO  [main] 2) Update.
+2022-10-01 13:24:43,719 INFO  [main] 3) Delete.
+2022-10-01 13:24:43,719 INFO  [main] 4) Get all.
+2022-10-01 13:24:43,719 INFO  [main] 5) Get by ID.
+2022-10-01 13:24:43,720 INFO  [main] 0) Exit.
+2022-10-01 13:24:45,352 INFO  [main] Customers[id=1, first_name= Juan Pablo, last_name= Gordillo, dob=2022-09-13, phone= 3624881392, email= juanpablogordillo375@gmail.com, address= Av. Edison]
+2022-10-01 13:24:45,353 INFO  [main] Customers[id=2, first_name= Cesáreo, last_name= Martinez, dob=2022-09-13, phone= 3624455423, email= cesareomartinez@gmail.com, address= Av. Edison 1500]
+2022-10-01 13:24:45,353 INFO  [main] Customers[id=3, first_name= Julian, last_name= Alvarez, dob=2022-01-13, phone= 3624571698, email= jalvarez@gamil.com, address= Av. Chaco 200]
+2022-10-01 13:24:45,353 INFO  [main] Customers[id=4, first_name= Franco, last_name= Fernandez, dob=2022-05-23, phone= 3624923812, email= franco2001@gmail.com, address= Av. 9 de Julio 1000]
+2022-10-01 13:24:45,353 INFO  [main] Customers[id=5, first_name= Matias, last_name= Franco, dob=2022-10-13, phone= 3624881392, email= matiasfranco@live.com.ar, address= Colon 1921]
+2022-10-01 13:24:45,401 INFO  [main] 1) Insert.
+2022-10-01 13:24:45,401 INFO  [main] 2) Update.
+2022-10-01 13:24:45,402 INFO  [main] 3) Delete.
+2022-10-01 13:24:45,402 INFO  [main] 4) Get all.
+2022-10-01 13:24:45,402 INFO  [main] 5) Get by ID.
+2022-10-01 13:24:45,402 INFO  [main] 0) Exit.
+2022-10-01 13:24:48,045 INFO  [main] 1) Customers table.
+2022-10-01 13:24:48,045 INFO  [main] 2) Employees table.
+2022-10-01 13:24:48,046 INFO  [main] 3) Managers table.
+2022-10-01 13:24:48,046 INFO  [main] 4) Departments table.
+2022-10-01 13:24:48,046 INFO  [main] 5) Suppliers table.
+2022-10-01 13:24:48,046 INFO  [main] 6) Products table.
+2022-10-01 13:24:48,046 INFO  [main] 7) Purchases table.
+2022-10-01 13:24:48,046 INFO  [main] 8) Promos table.
+2022-10-01 13:24:48,047 INFO  [main] 9) Orders table.
+2022-10-01 13:24:48,047 INFO  [main] 10) Branches table.
+2022-10-01 13:24:48,047 INFO  [main] 11) Delivery table.
+2022-10-01 13:24:48,047 INFO  [main] 12) Licenses table.
+2022-10-01 13:24:48,047 INFO  [main] 0) Exit.
+2022-10-01 13:24:50,002 INFO  [main] 1) Insert.
+2022-10-01 13:24:50,002 INFO  [main] 2) Update.
+2022-10-01 13:24:50,002 INFO  [main] 3) Delete.
+2022-10-01 13:24:50,003 INFO  [main] 4) Get all.
+2022-10-01 13:24:50,003 INFO  [main] 5) Get by ID.
+2022-10-01 13:24:50,003 INFO  [main] 0) Exit.
+2022-10-01 13:24:51,909 INFO  [main] Enter the purchase ID
+2022-10-01 13:26:05,634 DEBUG  [main] ---------------01/10/2022 13:26---------------
+2022-10-01 13:26:05,646 INFO  [main] 1) Customers table.
+2022-10-01 13:26:05,646 INFO  [main] 2) Employees table.
+2022-10-01 13:26:05,646 INFO  [main] 3) Managers table.
+2022-10-01 13:26:05,647 INFO  [main] 4) Departments table.
+2022-10-01 13:26:05,647 INFO  [main] 5) Suppliers table.
+2022-10-01 13:26:05,648 INFO  [main] 6) Products table.
+2022-10-01 13:26:05,648 INFO  [main] 7) Purchases table.
+2022-10-01 13:26:05,648 INFO  [main] 8) Promos table.
+2022-10-01 13:26:05,649 INFO  [main] 9) Orders table.
+2022-10-01 13:26:05,649 INFO  [main] 10) Branches table.
+2022-10-01 13:26:05,649 INFO  [main] 11) Delivery table.
+2022-10-01 13:26:05,649 INFO  [main] 12) Licenses table.
+2022-10-01 13:26:05,650 INFO  [main] 0) Exit.
+2022-10-01 13:26:08,121 INFO  [main] 1) Insert.
+2022-10-01 13:26:08,121 INFO  [main] 2) Update.
+2022-10-01 13:26:08,121 INFO  [main] 3) Delete.
+2022-10-01 13:26:08,121 INFO  [main] 4) Get all.
+2022-10-01 13:26:08,122 INFO  [main] 5) Get by ID.
+2022-10-01 13:26:08,122 INFO  [main] 0) Exit.
+2022-10-01 13:26:09,313 INFO  [main] Customers[id=1, first_name= Juan Pablo, last_name= Gordillo, dob=2022-09-13, phone= 3624881392, email= juanpablogordillo375@gmail.com, address= Av. Edison]
+2022-10-01 13:26:09,314 INFO  [main] Customers[id=2, first_name= Cesáreo, last_name= Martinez, dob=2022-09-13, phone= 3624455423, email= cesareomartinez@gmail.com, address= Av. Edison 1500]
+2022-10-01 13:26:09,314 INFO  [main] Customers[id=3, first_name= Julian, last_name= Alvarez, dob=2022-01-13, phone= 3624571698, email= jalvarez@gamil.com, address= Av. Chaco 200]
+2022-10-01 13:26:09,315 INFO  [main] Customers[id=4, first_name= Franco, last_name= Fernandez, dob=2022-05-23, phone= 3624923812, email= franco2001@gmail.com, address= Av. 9 de Julio 1000]
+2022-10-01 13:26:09,315 INFO  [main] Customers[id=5, first_name= Matias, last_name= Franco, dob=2022-10-13, phone= 3624881392, email= matiasfranco@live.com.ar, address= Colon 1921]
+2022-10-01 13:26:09,344 INFO  [main] 1) Insert.
+2022-10-01 13:26:09,344 INFO  [main] 2) Update.
+2022-10-01 13:26:09,344 INFO  [main] 3) Delete.
+2022-10-01 13:26:09,344 INFO  [main] 4) Get all.
+2022-10-01 13:26:09,345 INFO  [main] 5) Get by ID.
+2022-10-01 13:26:09,345 INFO  [main] 0) Exit.
+2022-10-01 13:26:10,886 INFO  [main] 1) Customers table.
+2022-10-01 13:26:10,886 INFO  [main] 2) Employees table.
+2022-10-01 13:26:10,886 INFO  [main] 3) Managers table.
+2022-10-01 13:26:10,886 INFO  [main] 4) Departments table.
+2022-10-01 13:26:10,887 INFO  [main] 5) Suppliers table.
+2022-10-01 13:26:10,887 INFO  [main] 6) Products table.
+2022-10-01 13:26:10,887 INFO  [main] 7) Purchases table.
+2022-10-01 13:26:10,887 INFO  [main] 8) Promos table.
+2022-10-01 13:26:10,887 INFO  [main] 9) Orders table.
+2022-10-01 13:26:10,887 INFO  [main] 10) Branches table.
+2022-10-01 13:26:10,888 INFO  [main] 11) Delivery table.
+2022-10-01 13:26:10,888 INFO  [main] 12) Licenses table.
+2022-10-01 13:26:10,888 INFO  [main] 0) Exit.
+2022-10-01 13:26:11,986 INFO  [main] 1) Insert.
+2022-10-01 13:26:11,986 INFO  [main] 2) Update.
+2022-10-01 13:26:11,986 INFO  [main] 3) Delete.
+2022-10-01 13:26:11,987 INFO  [main] 4) Get all.
+2022-10-01 13:26:11,987 INFO  [main] 5) Get by ID.
+2022-10-01 13:26:11,987 INFO  [main] 0) Exit.
+2022-10-01 13:26:13,383 INFO  [main] Employees{id=1, first_name='Antonio', last_name='Banderas', dob=2022-05-13, phone='3624920267', email='antonio@gmail.com', address='Av. 25 de Mayo 100', salary=1500, dept_id=2}
+2022-10-01 13:26:13,383 INFO  [main] Employees{id=2, first_name='Walter', last_name='Farias', dob=2022-05-13, phone='3624574682', email='walter@gmail.com', address='Carrasco 1839', salary=1300, dept_id=1}
+2022-10-01 13:26:13,384 INFO  [main] Employees{id=3, first_name='Mariano', last_name='Flores', dob=2022-05-02, phone='3624158342', email='mflores@gmail.com', address='Av. Piacentini 2000', salary=1500, dept_id=3}
+2022-10-01 13:26:13,384 INFO  [main] Employees{id=4, first_name='Julieta', last_name='Banderas', dob=2022-05-13, phone='3624674238', email='julieta@gmail.com', address='Av. 9 de Julio 1500', salary=1500, dept_id=5}
+2022-10-01 13:26:13,384 INFO  [main] Employees{id=5, first_name='Alejandro', last_name='Fernandez', dob=2022-05-17, phone='3624348265', email='alejandro@gmail.com', address='French 400', salary=1600, dept_id=4}
+2022-10-01 13:26:13,405 INFO  [main] 1) Insert.
+2022-10-01 13:26:13,405 INFO  [main] 2) Update.
+2022-10-01 13:26:13,405 INFO  [main] 3) Delete.
+2022-10-01 13:26:13,406 INFO  [main] 4) Get all.
+2022-10-01 13:26:13,406 INFO  [main] 5) Get by ID.
+2022-10-01 13:26:13,406 INFO  [main] 0) Exit.
+2022-10-01 13:26:14,638 INFO  [main] 1) Customers table.
+2022-10-01 13:26:14,639 INFO  [main] 2) Employees table.
+2022-10-01 13:26:14,639 INFO  [main] 3) Managers table.
+2022-10-01 13:26:14,640 INFO  [main] 4) Departments table.
+2022-10-01 13:26:14,640 INFO  [main] 5) Suppliers table.
+2022-10-01 13:26:14,640 INFO  [main] 6) Products table.
+2022-10-01 13:26:14,640 INFO  [main] 7) Purchases table.
+2022-10-01 13:26:14,640 INFO  [main] 8) Promos table.
+2022-10-01 13:26:14,641 INFO  [main] 9) Orders table.
+2022-10-01 13:26:14,641 INFO  [main] 10) Branches table.
+2022-10-01 13:26:14,641 INFO  [main] 11) Delivery table.
+2022-10-01 13:26:14,641 INFO  [main] 12) Licenses table.
+2022-10-01 13:26:14,641 INFO  [main] 0) Exit.
+2022-10-01 13:26:15,954 INFO  [main] 1) Insert.
+2022-10-01 13:26:15,954 INFO  [main] 2) Update.
+2022-10-01 13:26:15,954 INFO  [main] 3) Delete.
+2022-10-01 13:26:15,954 INFO  [main] 4) Get all.
+2022-10-01 13:26:15,955 INFO  [main] 5) Get by ID.
+2022-10-01 13:26:15,955 INFO  [main] 0) Exit.
+2022-10-01 13:26:17,265 INFO  [main] Managers{id=1, first_name='Andrew', last_name='Nazarenko', dob=2022-02-06, phone='3705154725', email='andrewn@gmail.com', address='Av. Sarmiento 1000', salary=3000, dept_id=1}
+2022-10-01 13:26:17,265 INFO  [main] Managers{id=2, first_name='Jose', last_name='Canavire', dob=2022-02-15, phone='3624182753', email='jcanavire@gmail.com', address='French 530', salary=3000, dept_id=2}
+2022-10-01 13:26:17,266 INFO  [main] Managers{id=3, first_name='Dzmitry', last_name='Prymudrau', dob=2022-02-08, phone='3624235725', email='dzmitry@gmail.com', address='Pecini 87', salary=3000, dept_id=3}
+2022-10-01 13:26:17,266 INFO  [main] Managers{id=4, first_name='Luck', last_name='Skywalker', dob=2022-02-22, phone='3705287453', email='luciano@outlook.com', address='Av. Castelli 2500', salary=3000, dept_id=5}
+2022-10-01 13:26:17,266 INFO  [main] Managers{id=5, first_name='Alesya', last_name='Milanovic', dob=2022-02-14, phone='3705496782', email='milanovic@live.com', address='Av. Soberania 2000', salary=3000, dept_id=4}
+2022-10-01 13:26:17,285 INFO  [main] 1) Insert.
+2022-10-01 13:26:17,285 INFO  [main] 2) Update.
+2022-10-01 13:26:17,286 INFO  [main] 3) Delete.
+2022-10-01 13:26:17,286 INFO  [main] 4) Get all.
+2022-10-01 13:26:17,286 INFO  [main] 5) Get by ID.
+2022-10-01 13:26:17,286 INFO  [main] 0) Exit.
+2022-10-01 13:26:19,990 INFO  [main] 1) Customers table.
+2022-10-01 13:26:19,990 INFO  [main] 2) Employees table.
+2022-10-01 13:26:19,990 INFO  [main] 3) Managers table.
+2022-10-01 13:26:19,991 INFO  [main] 4) Departments table.
+2022-10-01 13:26:19,991 INFO  [main] 5) Suppliers table.
+2022-10-01 13:26:19,991 INFO  [main] 6) Products table.
+2022-10-01 13:26:19,991 INFO  [main] 7) Purchases table.
+2022-10-01 13:26:19,991 INFO  [main] 8) Promos table.
+2022-10-01 13:26:19,992 INFO  [main] 9) Orders table.
+2022-10-01 13:26:19,992 INFO  [main] 10) Branches table.
+2022-10-01 13:26:19,992 INFO  [main] 11) Delivery table.
+2022-10-01 13:26:19,992 INFO  [main] 12) Licenses table.
+2022-10-01 13:26:19,992 INFO  [main] 0) Exit.
+2022-10-01 13:26:21,903 INFO  [main] 1) Insert.
+2022-10-01 13:26:21,903 INFO  [main] 2) Update.
+2022-10-01 13:26:21,904 INFO  [main] 3) Delete.
+2022-10-01 13:26:21,904 INFO  [main] 4) Get all.
+2022-10-01 13:26:21,904 INFO  [main] 5) Get by ID.
+2022-10-01 13:26:21,904 INFO  [main] 0) Exit.
+2022-10-01 13:26:23,706 INFO  [main] Suppliers{id=1, name='Maxiconsumo', address='Ruta Nac.11, Km 1005', phone='3624464037', email='maxiconsumo@gmail.com'}
+2022-10-01 13:26:23,706 INFO  [main] Suppliers{id=2, name='Vea', address='Av. Alberdi 528', phone='3624595214', email='vea_supplier@gmail.com'}
+2022-10-01 13:26:23,706 INFO  [main] Suppliers{id=3, name='Distributor Crokangol', address='Av. Alberdi 499', phone='3624441368', email='crokangol@live.com'}
+2022-10-01 13:26:23,706 INFO  [main] Suppliers{id=4, name='Libertad S.A.', address=' Ruta Nacional 16 y Av. Sabin 3500', phone='3624458490', email='libertad@outlook.com'}
+2022-10-01 13:26:23,706 INFO  [main] Suppliers{id=5, name='Easy', address=' RN16, H3500 Resistencia', phone='0810-999-3279', email='easy@gmail.com'}
+2022-10-01 13:26:23,723 INFO  [main] 1) Insert.
+2022-10-01 13:26:23,724 INFO  [main] 2) Update.
+2022-10-01 13:26:23,724 INFO  [main] 3) Delete.
+2022-10-01 13:26:23,724 INFO  [main] 4) Get all.
+2022-10-01 13:26:23,724 INFO  [main] 5) Get by ID.
+2022-10-01 13:26:23,724 INFO  [main] 0) Exit.
+2022-10-01 13:26:25,749 INFO  [main] 1) Customers table.
+2022-10-01 13:26:25,750 INFO  [main] 2) Employees table.
+2022-10-01 13:26:25,750 INFO  [main] 3) Managers table.
+2022-10-01 13:26:25,750 INFO  [main] 4) Departments table.
+2022-10-01 13:26:25,750 INFO  [main] 5) Suppliers table.
+2022-10-01 13:26:25,750 INFO  [main] 6) Products table.
+2022-10-01 13:26:25,751 INFO  [main] 7) Purchases table.
+2022-10-01 13:26:25,751 INFO  [main] 8) Promos table.
+2022-10-01 13:26:25,751 INFO  [main] 9) Orders table.
+2022-10-01 13:26:25,751 INFO  [main] 10) Branches table.
+2022-10-01 13:26:25,751 INFO  [main] 11) Delivery table.
+2022-10-01 13:26:25,751 INFO  [main] 12) Licenses table.
+2022-10-01 13:26:25,752 INFO  [main] 0) Exit.
+2022-10-01 13:26:27,430 INFO  [main] 1) Insert.
+2022-10-01 13:26:27,430 INFO  [main] 2) Update.
+2022-10-01 13:26:27,431 INFO  [main] 3) Delete.
+2022-10-01 13:26:27,431 INFO  [main] 4) Get all.
+2022-10-01 13:26:27,431 INFO  [main] 5) Get by ID.
+2022-10-01 13:26:27,431 INFO  [main] 0) Exit.
+2022-10-01 13:26:30,194 INFO  [main] Products{id=1, name='Bread', quantity=350, price=12, creator_id=2, supplier_id=2}
+2022-10-01 13:26:30,194 INFO  [main] Products{id=2, name='Olive oil', quantity=100, price=25, creator_id=1, supplier_id=1}
+2022-10-01 13:26:30,194 INFO  [main] Products{id=3, name='Cafe', quantity=100, price=12, creator_id=3, supplier_id=3}
+2022-10-01 13:26:30,194 INFO  [main] Products{id=4, name='Noodles', quantity=200, price=5, creator_id=4, supplier_id=5}
+2022-10-01 13:26:30,194 INFO  [main] Products{id=5, name='Sugar', quantity=300, price=10, creator_id=5, supplier_id=4}
+2022-10-01 13:26:30,220 INFO  [main] 1) Insert.
+2022-10-01 13:26:30,220 INFO  [main] 2) Update.
+2022-10-01 13:26:30,220 INFO  [main] 3) Delete.
+2022-10-01 13:26:30,220 INFO  [main] 4) Get all.
+2022-10-01 13:26:30,221 INFO  [main] 5) Get by ID.
+2022-10-01 13:26:30,221 INFO  [main] 0) Exit.
+2022-10-01 13:26:32,661 INFO  [main] 1) Customers table.
+2022-10-01 13:26:32,661 INFO  [main] 2) Employees table.
+2022-10-01 13:26:32,662 INFO  [main] 3) Managers table.
+2022-10-01 13:26:32,662 INFO  [main] 4) Departments table.
+2022-10-01 13:26:32,662 INFO  [main] 5) Suppliers table.
+2022-10-01 13:26:32,662 INFO  [main] 6) Products table.
+2022-10-01 13:26:32,662 INFO  [main] 7) Purchases table.
+2022-10-01 13:26:32,662 INFO  [main] 8) Promos table.
+2022-10-01 13:26:32,662 INFO  [main] 9) Orders table.
+2022-10-01 13:26:32,663 INFO  [main] 10) Branches table.
+2022-10-01 13:26:32,663 INFO  [main] 11) Delivery table.
+2022-10-01 13:26:32,663 INFO  [main] 12) Licenses table.
+2022-10-01 13:26:32,663 INFO  [main] 0) Exit.
+2022-10-01 13:26:34,284 INFO  [main] 1) Insert.
+2022-10-01 13:26:34,284 INFO  [main] 2) Update.
+2022-10-01 13:26:34,284 INFO  [main] 3) Delete.
+2022-10-01 13:26:34,284 INFO  [main] 4) Get all.
+2022-10-01 13:26:34,284 INFO  [main] 5) Get by ID.
+2022-10-01 13:26:34,284 INFO  [main] 0) Exit.
+2022-10-01 13:26:35,653 INFO  [main] Enter the purchase ID
+2022-10-01 13:26:36,851 INFO  [main] 
+Purchases{id=3, date=2022-09-20, total_spent=38, customer_id=5, dept_id=3, items='Sugar'}
+Customers[id=5, first_name= Matias, last_name= Franco, dob=2022-10-13, phone= 3624881392, email= matiasfranco@live.com.ar, address= Colon 1921]
+2022-10-01 13:26:36,865 INFO  [main] 1) Insert.
+2022-10-01 13:26:36,865 INFO  [main] 2) Update.
+2022-10-01 13:26:36,865 INFO  [main] 3) Delete.
+2022-10-01 13:26:36,865 INFO  [main] 4) Get all.
+2022-10-01 13:26:36,867 INFO  [main] 5) Get by ID.
+2022-10-01 13:26:36,867 INFO  [main] 0) Exit.
+2022-10-01 13:26:44,974 INFO  [main] 1) Customers table.
+2022-10-01 13:26:44,974 INFO  [main] 2) Employees table.
+2022-10-01 13:26:44,974 INFO  [main] 3) Managers table.
+2022-10-01 13:26:44,974 INFO  [main] 4) Departments table.
+2022-10-01 13:26:44,975 INFO  [main] 5) Suppliers table.
+2022-10-01 13:26:44,975 INFO  [main] 6) Products table.
+2022-10-01 13:26:44,975 INFO  [main] 7) Purchases table.
+2022-10-01 13:26:44,975 INFO  [main] 8) Promos table.
+2022-10-01 13:26:44,975 INFO  [main] 9) Orders table.
+2022-10-01 13:26:44,975 INFO  [main] 10) Branches table.
+2022-10-01 13:26:44,975 INFO  [main] 11) Delivery table.
+2022-10-01 13:26:44,975 INFO  [main] 12) Licenses table.
+2022-10-01 13:26:44,976 INFO  [main] 0) Exit.

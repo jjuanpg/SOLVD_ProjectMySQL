@@ -1,9 +1,12 @@
 package com.solvd.pojos;
 
+import com.solvd.exception.DAOException;
+import com.solvd.services.DaoManagerMySQL;
+import com.solvd.services.PurchasesMySQL;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.sql.Date;
+import java.sql.*;
 import java.util.Scanner;
 
 public class Purchases {
@@ -16,6 +19,7 @@ public class Purchases {
     private int customer_id;
     private int dept_id;
     private String items;
+    private Customers customer;
 
     public int getDept_id() {
         return dept_id;
@@ -91,5 +95,40 @@ public class Purchases {
         purchases.setItems(sc.next());
 
         return purchases;
+    }
+
+    public Purchases getFullDetails(int id, DaoManagerMySQL man) throws DAOException, SQLException {
+        Purchases purchases = ((PurchasesMySQL) man.getPurchases()).getByID(id);
+
+        String GET = "SELECT * FROM customers WHERE c_id = ?";
+        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/supermarket","root","root");
+        ResultSet rs;
+        PreparedStatement statement;
+        Customers customer = new Customers();
+
+        statement = con.prepareStatement(GET);
+        statement.setInt(1, purchases.getCustomer_id());
+        rs = statement.executeQuery();
+
+        rs.next();
+        customer.setId(rs.getInt("c_id"));
+        customer.setFirst_name(rs.getString("first_name"));
+        customer.setLast_name(rs.getString("last_name"));
+        customer.setDob(rs.getDate("bod"));
+        customer.setPhone(rs.getString("phone"));
+        customer.setEmail(rs.getString("email"));
+        customer.setAddress(rs.getString("address"));
+        purchases.setCustomers(customer);
+
+        con.close();
+        return purchases;
+    }
+
+    public Customers getCustomers() {
+        return customer;
+    }
+
+    public void setCustomers(Customers customer) {
+        this.customer = customer;
     }
 }

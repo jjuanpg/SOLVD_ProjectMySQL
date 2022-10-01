@@ -1,6 +1,6 @@
 package com.solvd.services;
 
-import com.solvd.dao.DAO;
+import com.solvd.dao.ISuppliersDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Suppliers;
 
@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SuppliersMySQL extends Suppliers implements DAO<Suppliers, Integer> {
+public class SuppliersMySQL extends Suppliers implements ISuppliersDao {
 
     final String INSERT_FORMAT = "INSERT INTO suppliers(s_name, s_address, s_phone, s_email) VALUES (?, ?, ?, ?)";
     final String UPDATE_FORMAT = "UPDATE suppliers SET s_name = ?, s_address = ?, s_phone = ?, s_email = ? WHERE p_id = ?";

@@ -1,6 +1,6 @@
 package com.solvd.services;
 
-import com.solvd.dao.DAO;
+import com.solvd.dao.IPurchasesDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Purchases;
 
@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PurchasesMySQL extends Purchases implements DAO<Purchases, Integer> {
+public class PurchasesMySQL extends Purchases implements IPurchasesDao {
 
     final String INSERT_FORMAT = "INSERT INTO purchases(p_date, total_spent, costumer_id, dept_id, items) VALUES (?, ?, ?, ?, ?)";
     final String UPDATE_FORMAT = "UPDATE purchases SET p_date = ?, total_spent = ?, costumer_id = ?, dept_id = ?, items = ? WHERE p_id = ?";

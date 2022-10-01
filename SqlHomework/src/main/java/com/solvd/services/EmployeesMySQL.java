@@ -1,7 +1,9 @@
 package com.solvd.services;
-import com.solvd.dao.DAO;
+
+import com.solvd.dao.IEmployeesDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Employees;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -9,7 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmployeesMySQL extends Employees implements DAO<Employees, Integer> {
+public class EmployeesMySQL extends Employees implements IEmployeesDao {
 
     final String INSERT_FORMAT = "INSERT INTO employees(first_name, last_name, bod, phone, email, address, salary, dept_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
     final String UPDATE_FORMAT = "UPDATE employees SET first_name = ?, last_name = ?, bod = ?, phone = ?, email = ?, address = ?, salary = ?, dept_id = ? WHERE e_id = ?";

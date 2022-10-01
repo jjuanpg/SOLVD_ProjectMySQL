@@ -1,6 +1,6 @@
 package com.solvd.services;
 
-import com.solvd.dao.DAO;
+import com.solvd.dao.IOrdersDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Orders;
 
@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class OrdersMySQL extends Orders implements DAO<Orders, Integer> {
+public class OrdersMySQL extends Orders implements IOrdersDao {
 
     final String INSERT_FORMAT = "INSERT INTO orders(o_date, product, quantity, department, supplier_id, o_status) VALUES (?, ?, ?, ?, ?, ?)";
     final String UPDATE_FORMAT = "UPDATE orders SET o_date = ?, product = ?, quantity = ?, department = ?, supplier_id = ?, o_status = ? WHERE o_id = ?";

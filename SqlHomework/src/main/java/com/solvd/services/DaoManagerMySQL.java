@@ -1,6 +1,6 @@
 package com.solvd.services;
 
-import com.solvd.dao.DAOManager;
+import com.solvd.dao.IDaoManager;
 import com.solvd.pojos.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,7 +9,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class DaoManagerMySQL implements DAOManager {
+public class DaoManagerMySQL implements IDaoManager {
 
     private static final Logger logger = LogManager.getLogger(DaoManagerMySQL.class);
     private final Connection con;

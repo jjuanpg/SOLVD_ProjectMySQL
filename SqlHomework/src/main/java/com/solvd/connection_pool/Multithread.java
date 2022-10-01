@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Multithread implements Runnable, ConnectionPool{
+public class Multithread implements Runnable, IConnectionPool {
 
     private final String url;
     private final String user;

@@ -1,6 +1,6 @@
 package com.solvd.services;
 
-import com.solvd.dao.DAO;
+import com.solvd.dao.IDeliverysDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Deliverys;
 
@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DeliverysMySQL extends Deliverys implements DAO<Deliverys, Integer> {
+public class DeliverysMySQL extends Deliverys implements IDeliverysDao {
 
     final String INSERT_FORMAT = "INSERT INTO deliverys(d_name, vehicle, purchase_id, license_id) VALUES (?, ?, ?, ?)";
     final String UPDATE_FORMAT = "UPDATE deliverys SET d_name = ?, vehicle = ?, purchase_id = ?, license_id = ? WHERE d_id = ?";

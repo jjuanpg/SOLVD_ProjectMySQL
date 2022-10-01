@@ -1,6 +1,6 @@
 package com.solvd.services;
 
-import com.solvd.dao.DAO;
+import com.solvd.dao.ICustomerDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Customers;
 
@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomerMySQL extends Customers implements DAO<Customers, Integer> {
+public class CustomerMySQL extends Customers implements ICustomerDao {
 
     final String INSERT_FORMAT = "INSERT INTO customers(first_name, last_name, bod, phone, email, address) VALUES (?, ?, ?, ?, ?, ?)";
     final String UPDATE_FORMAT = "UPDATE customers SET first_name = ?, last_name = ?, bod = ?, phone = ?, email = ?, address = ? WHERE c_id = ?";

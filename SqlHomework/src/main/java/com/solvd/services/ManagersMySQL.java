@@ -1,6 +1,6 @@
 package com.solvd.services;
 
-import com.solvd.dao.DAO;
+import com.solvd.dao.IManagersDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Managers;
 
@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ManagersMySQL extends Managers implements DAO<Managers, Integer> {
+public class ManagersMySQL extends Managers implements IManagersDao {
 
     final String INSERT_FORMAT = "INSERT INTO mangers(first_name, last_name, bod, phone, email, address, salary, dept_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
     final String UPDATE_FORMAT = "UPDATE managers SET first_name = ?, last_name = ?, bod = ?, phone = ?, email = ?, address = ?, salary = ?, dept_id = ? WHERE m_id = ?";

@@ -1,6 +1,6 @@
 package com.solvd.services;
 
-import com.solvd.dao.DAO;
+import com.solvd.dao.IDepartmentsDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Departments;
 
@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DepartmentsMySQL extends Departments implements DAO<Departments, Integer> {
+public class DepartmentsMySQL extends Departments implements IDepartmentsDao {
 
     final String INSERT_FORMAT = "INSERT INTO departments(d_name) VALUES (?)";
     final String UPDATE_FORMAT = "UPDATE departments SET d_name = ? WHERE d_id = ?";

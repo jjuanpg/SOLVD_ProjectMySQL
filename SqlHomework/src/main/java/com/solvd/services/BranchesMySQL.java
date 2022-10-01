@@ -1,12 +1,17 @@
 package com.solvd.services;
-import com.solvd.dao.DAO;
+
+import com.solvd.dao.IBranchesDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Branches;
-import java.sql.*;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BranchesMySQL extends Branches implements DAO<Branches, Integer> {
+public class BranchesMySQL extends Branches implements IBranchesDao {
 
     final String INSERT_FORMAT = "INSERT INTO branches(b_name, b_address, manager_id) VALUES (?, ?, ?)";
     final String UPDATE_FORMAT = "UPDATE branches SET b_name = ?, b_address = ?, manager_id = ? WHERE b_id = ?";

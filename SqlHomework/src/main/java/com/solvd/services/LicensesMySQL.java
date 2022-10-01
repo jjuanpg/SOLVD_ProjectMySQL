@@ -1,6 +1,6 @@
 package com.solvd.services;
 
-import com.solvd.dao.DAO;
+import com.solvd.dao.ILicensesDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Licenses;
 
@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LicensesMySQL extends Licenses implements DAO<Licenses, Integer> {
+public class LicensesMySQL extends Licenses implements ILicensesDao {
 
     final String INSERT_FORMAT = "INSERT INTO licenses(license_type, delivery_id) VALUES (?, ?)";
     final String UPDATE_FORMAT = "UPDATE licenses SET license_type = ?, delivery_id = ? WHERE l_id = ?";

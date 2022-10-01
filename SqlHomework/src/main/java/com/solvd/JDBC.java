@@ -404,9 +404,17 @@ public class JDBC {
                         }
                         if (option == 5){
                             // code to get by id
-                            logger.info("Enter the employee ID");
+                            logger.info("Enter the purchase ID");
                             Purchases purchases = ((PurchasesMySQL) man.getPurchases()).getByID(sc.nextInt());
                             logger.info(purchases);
+                            man.closeConnection();
+                        }
+                        if(option == 6){
+                            // code to get by id with customers
+                            Purchases purchases = new Purchases();
+                            logger.info("Enter the purchase ID");
+                            purchases = purchases.getFullDetails(sc.nextInt(), man);
+                            logger.info("\n"+purchases+"\n"+purchases.getCustomers());
                             man.closeConnection();
                         }
 
