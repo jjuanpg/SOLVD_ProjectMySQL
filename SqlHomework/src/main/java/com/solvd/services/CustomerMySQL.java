@@ -1,6 +1,6 @@
 package com.solvd.services;
 
-import com.solvd.connection_pool.dataSource;
+import com.solvd.connection_pool.DataSource;
 import com.solvd.dao.ICustomerDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Customers;
@@ -22,7 +22,7 @@ public class CustomerMySQL extends Customers implements ICustomerDao {
     private final Connection con;
     {
         try {
-            con = dataSource.getDataSource().getConnection();
+            con = DataSource.getDataSource().getConnection();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

@@ -1,6 +1,6 @@
 package com.solvd.services;
 
-import com.solvd.connection_pool.dataSource;
+import com.solvd.connection_pool.DataSource;
 import com.solvd.dao.IProductsDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Products;
@@ -22,7 +22,7 @@ public class ProductsMySQL extends Products implements IProductsDao {
     private final Connection con;
     {
         try {
-            con = dataSource.getDataSource().getConnection();
+            con = DataSource.getDataSource().getConnection();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

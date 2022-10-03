@@ -3179,3 +3179,35 @@ Customers[id=5, first_name= Matias, last_name= Franco, dob=2022-10-13, phone= 36
 2022-10-01 15:11:41,563 INFO  [main] 11) Delivery table.
 2022-10-01 15:11:41,563 INFO  [main] 12) Licenses table.
 2022-10-01 15:11:41,563 INFO  [main] 0) Exit.
+2022-10-03 09:54:33,026 DEBUG  [main] ---------------03/10/2022 09:54---------------
+2022-10-03 09:54:33,052 INFO  [main] 1) Customers table.
+2022-10-03 09:54:33,052 INFO  [main] 2) Employees table.
+2022-10-03 09:54:33,053 INFO  [main] 3) Managers table.
+2022-10-03 09:54:33,053 INFO  [main] 4) Departments table.
+2022-10-03 09:54:33,053 INFO  [main] 5) Suppliers table.
+2022-10-03 09:54:33,053 INFO  [main] 6) Products table.
+2022-10-03 09:54:33,054 INFO  [main] 7) Purchases table.
+2022-10-03 09:54:33,054 INFO  [main] 8) Promos table.
+2022-10-03 09:54:33,054 INFO  [main] 9) Orders table.
+2022-10-03 09:54:33,054 INFO  [main] 10) Branches table.
+2022-10-03 09:54:33,055 INFO  [main] 11) Delivery table.
+2022-10-03 09:54:33,055 INFO  [main] 12) Licenses table.
+2022-10-03 09:54:33,055 INFO  [main] 0) Exit.
+2022-10-03 09:54:36,875 INFO  [main] 1) Insert.
+2022-10-03 09:54:36,875 INFO  [main] 2) Update.
+2022-10-03 09:54:36,875 INFO  [main] 3) Delete.
+2022-10-03 09:54:36,875 INFO  [main] 4) Get all.
+2022-10-03 09:54:36,876 INFO  [main] 5) Get by ID.
+2022-10-03 09:54:36,876 INFO  [main] 0) Exit.
+2022-10-03 09:54:40,495 INFO  [main] Customers[id=1, first_name= Juan Pablo, last_name= Gordillo, dob=2022-09-13, phone= 3624881392, email= juanpablogordillo375@gmail.com, address= Av. Edison]
+2022-10-03 09:54:40,496 INFO  [main] Customers[id=2, first_name= Cesáreo, last_name= Martinez, dob=2022-09-13, phone= 3624455423, email= cesareomartinez@gmail.com, address= Av. Edison 1500]
+2022-10-03 09:54:40,496 INFO  [main] Customers[id=3, first_name= Julian, last_name= Alvarez, dob=2022-01-13, phone= 3624571698, email= jalvarez@gamil.com, address= Av. Chaco 200]
+2022-10-03 09:54:40,504 INFO  [main] Customers[id=4, first_name= Franco, last_name= Fernandez, dob=2022-05-23, phone= 3624923812, email= franco2001@gmail.com, address= Av. 9 de Julio 1000]
+2022-10-03 09:54:40,504 INFO  [main] Customers[id=5, first_name= Matias, last_name= Franco, dob=2022-10-13, phone= 3624881392, email= matiasfranco@live.com.ar, address= Colon 1921]
+2022-10-03 09:54:40,504 INFO  [main] 1) Insert.
+2022-10-03 09:54:40,505 INFO  [main] 2) Update.
+2022-10-03 09:54:40,505 INFO  [main] 3) Delete.
+2022-10-03 09:54:40,505 INFO  [main] 4) Get all.
+2022-10-03 09:54:40,505 INFO  [main] 5) Get by ID.
+2022-10-03 09:54:40,505 INFO  [main] 0) Exit.
+2022-10-03 09:54:43,949 INFO  [main] Enter the customer ID

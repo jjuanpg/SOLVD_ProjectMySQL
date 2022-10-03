@@ -1,6 +1,6 @@
 package com.solvd.services;
 
-import com.solvd.connection_pool.dataSource;
+import com.solvd.connection_pool.DataSource;
 import com.solvd.dao.IDeliverysDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Deliverys;
@@ -23,7 +23,7 @@ public class DeliverysMySQL extends Deliverys implements IDeliverysDao {
     private final Connection con;
     {
         try {
-            con = dataSource.getDataSource().getConnection();
+            con = DataSource.getDataSource().getConnection();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

@@ -1,7 +1,7 @@
 package com.solvd.services;
 
 import com.solvd.dao.IBranchesDao;
-import com.solvd.connection_pool.dataSource;
+import com.solvd.connection_pool.DataSource;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Branches;
 
@@ -22,7 +22,7 @@ public class BranchesMySQL extends Branches implements IBranchesDao {
     private final Connection con;
     {
         try {
-            con = dataSource.getDataSource().getConnection();
+            con = DataSource.getDataSource().getConnection();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

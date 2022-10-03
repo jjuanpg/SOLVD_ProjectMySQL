@@ -1,6 +1,6 @@
 package com.solvd.services;
 
-import com.solvd.connection_pool.dataSource;
+import com.solvd.connection_pool.DataSource;
 import com.solvd.dao.ILicensesDao;
 import com.solvd.exception.DAOException;
 import com.solvd.pojos.Licenses;
@@ -22,7 +22,7 @@ public class LicensesMySQL extends Licenses implements ILicensesDao {
     private final Connection con;
     {
         try {
-            con = dataSource.getDataSource().getConnection();
+            con = DataSource.getDataSource().getConnection();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

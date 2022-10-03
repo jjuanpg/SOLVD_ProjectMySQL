@@ -45,7 +45,7 @@ public class Multithread implements Runnable, IConnectionPool {
 
     @Override
     public Connection getConnection() throws SQLException {
-        return dataSource.getDataSource().getConnection();
+        return DataSource.getDataSource().getConnection();
     }
 
     @Override
@@ -67,17 +67,17 @@ public class Multithread implements Runnable, IConnectionPool {
 
     @Override
     public String getUrl() {
-        return dataSource.getDataSource().getUrl();
+        return DataSource.getDataSource().getUrl();
     }
 
     @Override
     public String getUser() {
-        return dataSource.getDataSource().getUsername();
+        return DataSource.getDataSource().getUsername();
     }
 
     @Override
     public String getPassword() {
-        return dataSource.getDataSource().getPassword();
+        return DataSource.getDataSource().getPassword();
     }
 
     public boolean isClosing() {
