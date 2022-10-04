@@ -18,8 +18,14 @@ public interface IPromoMapper {
     void deletePromo(int id);
 
     @Select("SELECT * FROM promos WHERE p_id = #{id}")
+    @Results(value = {
+            @Result(property = "id", column = "p_id")
+    })
     Promos getPromoById(int id);
 
     @Select("SELECT * FROM promos")
+    @Results(value = {
+            @Result(property = "id", column = "p_id")
+    })
     List<Promos> getAllPromos();
 }

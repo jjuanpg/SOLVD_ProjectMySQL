@@ -19,6 +19,7 @@ public interface IProductMapper {
 
     @Select("SELECT * FROM products WHERE prod_id = #{id}")
     @Results(value = {
+            @Result(property = "id", column = "prod_id"),
             @Result(property = "name", column = "p_name"),
             @Result(property = "creator_id", column = "create_by")
     })
@@ -26,6 +27,7 @@ public interface IProductMapper {
 
     @Select("SELECT * FROM products")
     @Results(value = {
+            @Result(property = "id", column = "prod_id"),
             @Result(property = "name", column = "p_name"),
             @Result(property = "creator_id", column = "create_by")
     })

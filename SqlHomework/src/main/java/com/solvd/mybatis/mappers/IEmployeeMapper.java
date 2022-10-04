@@ -3,6 +3,8 @@ package com.solvd.mybatis.mappers;
 import com.solvd.pojos.Employees;
 import org.apache.ibatis.annotations.*;
 
+import java.util.List;
+
 public interface IEmployeeMapper {
 
     @Insert("INSERT INTO employees(first_name, last_name, bod, phone, email, address, salary, dept_id) VALUES (#{first_name}, #{last_name}, #{dob}, #{phone}, #{email}, #{address}, #{salary}, #{dept_id})")
@@ -27,5 +29,5 @@ public interface IEmployeeMapper {
             @Result(property = "id", column = "e_id"),
             @Result(property="dob", column = "bod")  //typo in "bod" it should be dob too
     })
-    Employees getAllEmployees();
+    List<Employees> getAllEmployees();
 }

@@ -19,14 +19,14 @@ public interface IManagerMapper {
 
     @Select("SELECT * FROM managers WHERE m_id = #{id}")
     @Results(value = {
-            @Result(property = "id", column = "e_id"),
+            @Result(property = "id", column = "m_id"),
             @Result(property="dob", column = "bod")  //typo in "bod" it should be dob too
     })
     Managers getManagerById(int id);
 
     @Select("SELECT * FROM managers")
     @Results(value = {
-            @Result(property = "id", column = "e_id"),
+            @Result(property = "id", column = "m_id"),
             @Result(property="dob", column = "bod")
     })
     List<Managers> getAllManagers();
