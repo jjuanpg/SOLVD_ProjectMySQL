@@ -14,7 +14,7 @@ import java.util.List;
 
 public class PromosMySQL extends Promos implements IPromosDao {
 
-    final String INSERT_FORMAT = "INSERT INTO promos(discount, valid_till, product_id) VALUES (?, ?, ?, ?)";
+    final String INSERT_FORMAT = "INSERT INTO promos(discount, valid_till, product_id) VALUES (?, ?, ?)";
     final String UPDATE_FORMAT = "UPDATE promos SET discount = ?, valid_till = ?, product_id = ? WHERE p_id = ?";
     final String DELETE_FORMAT = "DELETE FROM promos WHERE p_id = ?";
     final String GET_ALL = "SELECT * FROM promos";

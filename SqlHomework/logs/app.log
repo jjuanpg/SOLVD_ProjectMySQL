@@ -3211,3 +3211,321 @@ Customers[id=5, first_name= Matias, last_name= Franco, dob=2022-10-13, phone= 36
 2022-10-03 09:54:40,505 INFO  [main] 5) Get by ID.
 2022-10-03 09:54:40,505 INFO  [main] 0) Exit.
 2022-10-03 09:54:43,949 INFO  [main] Enter the customer ID
+2022-10-03 14:04:58,082 INFO c.s.m.MyBatis [main] 1) Customers table.
+2022-10-03 14:04:58,085 INFO c.s.m.MyBatis [main] 2) Employees table.
+2022-10-03 14:04:58,086 INFO c.s.m.MyBatis [main] 3) Managers table.
+2022-10-03 14:04:58,086 INFO c.s.m.MyBatis [main] 4) Departments table.
+2022-10-03 14:04:58,086 INFO c.s.m.MyBatis [main] 5) Suppliers table.
+2022-10-03 14:04:58,086 INFO c.s.m.MyBatis [main] 6) Products table.
+2022-10-03 14:04:58,087 INFO c.s.m.MyBatis [main] 7) Purchases table.
+2022-10-03 14:04:58,087 INFO c.s.m.MyBatis [main] 8) Promos table.
+2022-10-03 14:04:58,087 INFO c.s.m.MyBatis [main] 9) Orders table.
+2022-10-03 14:04:58,087 INFO c.s.m.MyBatis [main] 10) Branches table.
+2022-10-03 14:04:58,088 INFO c.s.m.MyBatis [main] 11) Delivery table.
+2022-10-03 14:04:58,088 INFO c.s.m.MyBatis [main] 12) Licenses table.
+2022-10-03 14:04:58,088 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:05:08,041 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:05:08,041 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:05:08,041 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:05:08,041 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:05:08,042 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:05:08,042 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:05:11,152 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:05:11,152 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:05:11,152 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:05:11,152 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:05:11,153 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:05:11,153 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:05:13,607 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:05:13,607 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:05:13,608 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:05:13,608 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:05:13,609 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:05:13,609 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:05:15,231 INFO c.s.m.MyBatis [main] 1) Customers table.
+2022-10-03 14:05:15,231 INFO c.s.m.MyBatis [main] 2) Employees table.
+2022-10-03 14:05:15,231 INFO c.s.m.MyBatis [main] 3) Managers table.
+2022-10-03 14:05:15,231 INFO c.s.m.MyBatis [main] 4) Departments table.
+2022-10-03 14:05:15,231 INFO c.s.m.MyBatis [main] 5) Suppliers table.
+2022-10-03 14:05:15,232 INFO c.s.m.MyBatis [main] 6) Products table.
+2022-10-03 14:05:15,232 INFO c.s.m.MyBatis [main] 7) Purchases table.
+2022-10-03 14:05:15,232 INFO c.s.m.MyBatis [main] 8) Promos table.
+2022-10-03 14:05:15,232 INFO c.s.m.MyBatis [main] 9) Orders table.
+2022-10-03 14:05:15,232 INFO c.s.m.MyBatis [main] 10) Branches table.
+2022-10-03 14:05:15,232 INFO c.s.m.MyBatis [main] 11) Delivery table.
+2022-10-03 14:05:15,233 INFO c.s.m.MyBatis [main] 12) Licenses table.
+2022-10-03 14:05:15,233 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:05:16,432 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:05:16,432 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:05:16,432 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:05:16,432 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:05:16,433 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:05:16,433 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:05:17,622 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:05:17,622 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:05:17,622 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:05:17,623 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:05:17,623 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:05:17,623 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:05:18,886 INFO c.s.m.MyBatis [main] 1) Customers table.
+2022-10-03 14:05:18,887 INFO c.s.m.MyBatis [main] 2) Employees table.
+2022-10-03 14:05:18,887 INFO c.s.m.MyBatis [main] 3) Managers table.
+2022-10-03 14:05:18,887 INFO c.s.m.MyBatis [main] 4) Departments table.
+2022-10-03 14:05:18,888 INFO c.s.m.MyBatis [main] 5) Suppliers table.
+2022-10-03 14:05:18,888 INFO c.s.m.MyBatis [main] 6) Products table.
+2022-10-03 14:05:18,888 INFO c.s.m.MyBatis [main] 7) Purchases table.
+2022-10-03 14:05:18,889 INFO c.s.m.MyBatis [main] 8) Promos table.
+2022-10-03 14:05:18,889 INFO c.s.m.MyBatis [main] 9) Orders table.
+2022-10-03 14:05:18,889 INFO c.s.m.MyBatis [main] 10) Branches table.
+2022-10-03 14:05:18,889 INFO c.s.m.MyBatis [main] 11) Delivery table.
+2022-10-03 14:05:18,890 INFO c.s.m.MyBatis [main] 12) Licenses table.
+2022-10-03 14:05:18,890 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:05:20,632 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:05:20,632 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:05:20,632 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:05:20,632 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:05:20,632 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:05:20,632 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:05:26,590 INFO c.s.m.MyBatis [main] 1) Customers table.
+2022-10-03 14:05:26,590 INFO c.s.m.MyBatis [main] 2) Employees table.
+2022-10-03 14:05:26,590 INFO c.s.m.MyBatis [main] 3) Managers table.
+2022-10-03 14:05:26,591 INFO c.s.m.MyBatis [main] 4) Departments table.
+2022-10-03 14:05:26,591 INFO c.s.m.MyBatis [main] 5) Suppliers table.
+2022-10-03 14:05:26,591 INFO c.s.m.MyBatis [main] 6) Products table.
+2022-10-03 14:05:26,591 INFO c.s.m.MyBatis [main] 7) Purchases table.
+2022-10-03 14:05:26,591 INFO c.s.m.MyBatis [main] 8) Promos table.
+2022-10-03 14:05:26,591 INFO c.s.m.MyBatis [main] 9) Orders table.
+2022-10-03 14:05:26,591 INFO c.s.m.MyBatis [main] 10) Branches table.
+2022-10-03 14:05:26,592 INFO c.s.m.MyBatis [main] 11) Delivery table.
+2022-10-03 14:05:26,592 INFO c.s.m.MyBatis [main] 12) Licenses table.
+2022-10-03 14:05:26,592 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:16:13,101 INFO c.s.m.MyBatis [main] 1) Customers table.
+2022-10-03 14:16:13,105 INFO c.s.m.MyBatis [main] 2) Employees table.
+2022-10-03 14:16:13,105 INFO c.s.m.MyBatis [main] 3) Managers table.
+2022-10-03 14:16:13,105 INFO c.s.m.MyBatis [main] 4) Departments table.
+2022-10-03 14:16:13,106 INFO c.s.m.MyBatis [main] 5) Suppliers table.
+2022-10-03 14:16:13,106 INFO c.s.m.MyBatis [main] 6) Products table.
+2022-10-03 14:16:13,106 INFO c.s.m.MyBatis [main] 7) Purchases table.
+2022-10-03 14:16:13,106 INFO c.s.m.MyBatis [main] 8) Promos table.
+2022-10-03 14:16:13,107 INFO c.s.m.MyBatis [main] 9) Orders table.
+2022-10-03 14:16:13,107 INFO c.s.m.MyBatis [main] 10) Branches table.
+2022-10-03 14:16:13,107 INFO c.s.m.MyBatis [main] 11) Delivery table.
+2022-10-03 14:16:13,107 INFO c.s.m.MyBatis [main] 12) Licenses table.
+2022-10-03 14:16:13,107 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:16:17,034 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:16:17,034 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:16:17,035 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:16:17,035 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:16:17,035 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:16:17,036 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:16:20,002 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:16:20,002 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:16:20,002 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:16:20,003 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:16:20,003 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:16:20,003 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:16:23,272 INFO c.s.m.MyBatis [main] Enter the branch ID
+2022-10-03 14:16:24,980 INFO c.s.m.MyBatis [main] Branch{id=2, name='Supermarket 2', address='Av. Chaco 1200', manager_id=5}
+2022-10-03 14:16:24,980 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:16:24,980 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:16:24,980 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:16:24,981 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:16:24,981 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:16:24,981 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:16:29,424 INFO c.s.m.e.Branch [main] Enter the branch name
+2022-10-03 14:16:34,984 INFO c.s.m.e.Branch [main] Enter the branch address
+2022-10-03 14:16:38,800 INFO c.s.m.e.Branch [main] Enter the manager ID of the branch
+2022-10-03 14:19:17,483 INFO c.s.m.MyBatis [main] 1) Customers table.
+2022-10-03 14:19:17,486 INFO c.s.m.MyBatis [main] 2) Employees table.
+2022-10-03 14:19:17,487 INFO c.s.m.MyBatis [main] 3) Managers table.
+2022-10-03 14:19:17,487 INFO c.s.m.MyBatis [main] 4) Departments table.
+2022-10-03 14:19:17,487 INFO c.s.m.MyBatis [main] 5) Suppliers table.
+2022-10-03 14:19:17,488 INFO c.s.m.MyBatis [main] 6) Products table.
+2022-10-03 14:19:17,488 INFO c.s.m.MyBatis [main] 7) Purchases table.
+2022-10-03 14:19:17,488 INFO c.s.m.MyBatis [main] 8) Promos table.
+2022-10-03 14:19:17,488 INFO c.s.m.MyBatis [main] 9) Orders table.
+2022-10-03 14:19:17,489 INFO c.s.m.MyBatis [main] 10) Branches table.
+2022-10-03 14:19:17,489 INFO c.s.m.MyBatis [main] 11) Delivery table.
+2022-10-03 14:19:17,489 INFO c.s.m.MyBatis [main] 12) Licenses table.
+2022-10-03 14:19:17,490 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:19:19,754 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:19:19,754 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:19:19,755 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:19:19,755 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:19:19,755 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:19:19,755 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:19:24,041 INFO c.s.m.e.Branch [main] Enter the branch name
+2022-10-03 14:19:27,408 INFO c.s.m.e.Branch [main] Enter the branch address
+2022-10-03 14:19:31,840 INFO c.s.m.e.Branch [main] Enter the manager ID of the branch
+2022-10-03 14:19:39,119 INFO c.s.m.MyBatis [main] Enter the branch ID
+2022-10-03 14:22:18,977 INFO c.s.m.MyBatis [main] 1) Customers table.
+2022-10-03 14:22:18,980 INFO c.s.m.MyBatis [main] 2) Employees table.
+2022-10-03 14:22:18,980 INFO c.s.m.MyBatis [main] 3) Managers table.
+2022-10-03 14:22:18,981 INFO c.s.m.MyBatis [main] 4) Departments table.
+2022-10-03 14:22:18,981 INFO c.s.m.MyBatis [main] 5) Suppliers table.
+2022-10-03 14:22:18,981 INFO c.s.m.MyBatis [main] 6) Products table.
+2022-10-03 14:22:18,981 INFO c.s.m.MyBatis [main] 7) Purchases table.
+2022-10-03 14:22:18,981 INFO c.s.m.MyBatis [main] 8) Promos table.
+2022-10-03 14:22:18,982 INFO c.s.m.MyBatis [main] 9) Orders table.
+2022-10-03 14:22:18,982 INFO c.s.m.MyBatis [main] 10) Branches table.
+2022-10-03 14:22:18,982 INFO c.s.m.MyBatis [main] 11) Delivery table.
+2022-10-03 14:22:18,982 INFO c.s.m.MyBatis [main] 12) Licenses table.
+2022-10-03 14:22:18,983 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:22:21,426 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:22:21,426 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:22:21,426 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:22:21,426 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:22:21,427 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:22:21,427 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:22:23,545 INFO c.s.m.e.Branch [main] Enter the branch name
+2022-10-03 14:22:26,072 INFO c.s.m.e.Branch [main] Enter the branch address
+2022-10-03 14:22:28,168 INFO c.s.m.e.Branch [main] Enter the manager ID of the branch
+2022-10-03 14:22:32,352 INFO c.s.m.MyBatis [main] Enter the branch ID
+2022-10-03 14:22:33,520 INFO c.s.m.MyBatis [main] Record updated successfully
+2022-10-03 14:22:33,520 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:22:33,520 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:22:33,520 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:22:33,520 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:22:33,521 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:22:33,521 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:22:37,544 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:22:37,544 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:22:37,545 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:22:37,545 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:22:37,545 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:22:37,545 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:22:44,216 INFO c.s.m.e.Branch [main] Enter the branch name
+2022-10-03 14:22:55,600 INFO c.s.m.e.Branch [main] Enter the branch address
+2022-10-03 14:23:06,104 INFO c.s.m.e.Branch [main] Enter the manager ID of the branch
+2022-10-03 14:23:12,712 INFO c.s.m.MyBatis [main] Enter the branch ID
+2022-10-03 14:23:14,078 INFO c.s.m.MyBatis [main] Record updated successfully
+2022-10-03 14:23:14,078 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:23:14,079 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:23:14,079 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:23:14,079 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:23:14,079 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:23:14,079 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:23:17,159 INFO c.s.m.MyBatis [main] Enter the branch ID
+2022-10-03 14:23:18,587 INFO c.s.m.MyBatis [main] Branch{id=2, name='Supermarket 2', address='Colon 2000', manager_id=5}
+2022-10-03 14:23:18,587 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:23:18,587 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:23:18,587 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:23:18,588 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:23:18,588 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:23:18,588 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:23:22,793 INFO c.s.m.MyBatis [main] 1) Customers table.
+2022-10-03 14:23:22,793 INFO c.s.m.MyBatis [main] 2) Employees table.
+2022-10-03 14:23:22,793 INFO c.s.m.MyBatis [main] 3) Managers table.
+2022-10-03 14:23:22,793 INFO c.s.m.MyBatis [main] 4) Departments table.
+2022-10-03 14:23:22,793 INFO c.s.m.MyBatis [main] 5) Suppliers table.
+2022-10-03 14:23:22,794 INFO c.s.m.MyBatis [main] 6) Products table.
+2022-10-03 14:23:22,794 INFO c.s.m.MyBatis [main] 7) Purchases table.
+2022-10-03 14:23:22,794 INFO c.s.m.MyBatis [main] 8) Promos table.
+2022-10-03 14:23:22,794 INFO c.s.m.MyBatis [main] 9) Orders table.
+2022-10-03 14:23:22,795 INFO c.s.m.MyBatis [main] 10) Branches table.
+2022-10-03 14:23:22,795 INFO c.s.m.MyBatis [main] 11) Delivery table.
+2022-10-03 14:23:22,795 INFO c.s.m.MyBatis [main] 12) Licenses table.
+2022-10-03 14:23:22,795 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:55:26,012 INFO c.s.m.MyBatis [main] 1) Customers table.
+2022-10-03 14:55:26,016 INFO c.s.m.MyBatis [main] 2) Employees table.
+2022-10-03 14:55:26,016 INFO c.s.m.MyBatis [main] 3) Managers table.
+2022-10-03 14:55:26,017 INFO c.s.m.MyBatis [main] 4) Departments table.
+2022-10-03 14:55:26,017 INFO c.s.m.MyBatis [main] 5) Suppliers table.
+2022-10-03 14:55:26,017 INFO c.s.m.MyBatis [main] 6) Products table.
+2022-10-03 14:55:26,017 INFO c.s.m.MyBatis [main] 7) Purchases table.
+2022-10-03 14:55:26,018 INFO c.s.m.MyBatis [main] 8) Promos table.
+2022-10-03 14:55:26,018 INFO c.s.m.MyBatis [main] 9) Orders table.
+2022-10-03 14:55:26,018 INFO c.s.m.MyBatis [main] 10) Branches table.
+2022-10-03 14:55:26,019 INFO c.s.m.MyBatis [main] 11) Delivery table.
+2022-10-03 14:55:26,019 INFO c.s.m.MyBatis [main] 12) Licenses table.
+2022-10-03 14:55:26,019 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:55:28,292 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:55:28,292 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:55:28,293 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:55:28,293 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:55:28,293 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:55:28,293 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:55:29,794 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-03 14:55:29,794 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-03 14:55:29,794 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-03 14:55:29,794 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-03 14:55:29,794 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-03 14:55:29,795 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-03 14:55:35,836 INFO c.s.m.MyBatis [main] 1) Customers table.
+2022-10-03 14:55:35,837 INFO c.s.m.MyBatis [main] 2) Employees table.
+2022-10-03 14:55:35,837 INFO c.s.m.MyBatis [main] 3) Managers table.
+2022-10-03 14:55:35,837 INFO c.s.m.MyBatis [main] 4) Departments table.
+2022-10-03 14:55:35,837 INFO c.s.m.MyBatis [main] 5) Suppliers table.
+2022-10-03 14:55:35,838 INFO c.s.m.MyBatis [main] 6) Products table.
+2022-10-03 14:55:35,838 INFO c.s.m.MyBatis [main] 7) Purchases table.
+2022-10-03 14:55:35,838 INFO c.s.m.MyBatis [main] 8) Promos table.
+2022-10-03 14:55:35,838 INFO c.s.m.MyBatis [main] 9) Orders table.
+2022-10-03 14:55:35,839 INFO c.s.m.MyBatis [main] 10) Branches table.
+2022-10-03 14:55:35,839 INFO c.s.m.MyBatis [main] 11) Delivery table.
+2022-10-03 14:55:35,839 INFO c.s.m.MyBatis [main] 12) Licenses table.
+2022-10-03 14:55:35,839 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-04 09:35:53,442 INFO c.s.m.MyBatis [main] 1) Customers table.
+2022-10-04 09:35:53,445 INFO c.s.m.MyBatis [main] 2) Employees table.
+2022-10-04 09:35:53,446 INFO c.s.m.MyBatis [main] 3) Managers table.
+2022-10-04 09:35:53,446 INFO c.s.m.MyBatis [main] 4) Departments table.
+2022-10-04 09:35:53,446 INFO c.s.m.MyBatis [main] 5) Suppliers table.
+2022-10-04 09:35:53,446 INFO c.s.m.MyBatis [main] 6) Products table.
+2022-10-04 09:35:53,447 INFO c.s.m.MyBatis [main] 7) Purchases table.
+2022-10-04 09:35:53,447 INFO c.s.m.MyBatis [main] 8) Promos table.
+2022-10-04 09:35:53,447 INFO c.s.m.MyBatis [main] 9) Orders table.
+2022-10-04 09:35:53,447 INFO c.s.m.MyBatis [main] 10) Branches table.
+2022-10-04 09:35:53,448 INFO c.s.m.MyBatis [main] 11) Delivery table.
+2022-10-04 09:35:53,448 INFO c.s.m.MyBatis [main] 12) Licenses table.
+2022-10-04 09:35:53,448 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-04 09:35:56,883 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-04 09:35:56,884 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-04 09:35:56,884 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-04 09:35:56,884 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-04 09:35:56,885 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-04 09:35:56,885 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-04 09:37:07,851 INFO c.s.m.MyBatis [main] 1) Customers table.
+2022-10-04 09:37:07,856 INFO c.s.m.MyBatis [main] 2) Employees table.
+2022-10-04 09:37:07,857 INFO c.s.m.MyBatis [main] 3) Managers table.
+2022-10-04 09:37:07,857 INFO c.s.m.MyBatis [main] 4) Departments table.
+2022-10-04 09:37:07,858 INFO c.s.m.MyBatis [main] 5) Suppliers table.
+2022-10-04 09:37:07,858 INFO c.s.m.MyBatis [main] 6) Products table.
+2022-10-04 09:37:07,858 INFO c.s.m.MyBatis [main] 7) Purchases table.
+2022-10-04 09:37:07,859 INFO c.s.m.MyBatis [main] 8) Promos table.
+2022-10-04 09:37:07,859 INFO c.s.m.MyBatis [main] 9) Orders table.
+2022-10-04 09:37:07,860 INFO c.s.m.MyBatis [main] 10) Branches table.
+2022-10-04 09:37:07,860 INFO c.s.m.MyBatis [main] 11) Delivery table.
+2022-10-04 09:37:07,861 INFO c.s.m.MyBatis [main] 12) Licenses table.
+2022-10-04 09:37:07,861 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-04 09:37:09,618 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-04 09:37:09,618 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-04 09:37:09,618 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-04 09:37:09,619 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-04 09:37:09,619 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-04 09:37:09,619 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-04 09:37:11,143 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-04 09:37:11,143 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-04 09:37:11,144 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-04 09:37:11,144 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-04 09:37:11,144 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-04 09:37:11,145 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-04 09:37:12,945 INFO c.s.m.MyBatis [main] Enter the branch ID
+2022-10-04 09:37:13,842 INFO c.s.m.MyBatis [main] Branches{id=3, name='Supermarket 3', address='Av. Sarmiento 1200', manager_id=3}
+2022-10-04 09:37:13,843 INFO c.s.m.MyBatis [main] 1) Insert.
+2022-10-04 09:37:13,843 INFO c.s.m.MyBatis [main] 2) Update.
+2022-10-04 09:37:13,843 INFO c.s.m.MyBatis [main] 3) Delete.
+2022-10-04 09:37:13,844 INFO c.s.m.MyBatis [main] 4) Get all.
+2022-10-04 09:37:13,844 INFO c.s.m.MyBatis [main] 5) Get by ID.
+2022-10-04 09:37:13,845 INFO c.s.m.MyBatis [main] 0) Exit.
+2022-10-04 09:37:19,624 INFO c.s.m.MyBatis [main] 1) Customers table.
+2022-10-04 09:37:19,625 INFO c.s.m.MyBatis [main] 2) Employees table.
+2022-10-04 09:37:19,625 INFO c.s.m.MyBatis [main] 3) Managers table.
+2022-10-04 09:37:19,625 INFO c.s.m.MyBatis [main] 4) Departments table.
+2022-10-04 09:37:19,625 INFO c.s.m.MyBatis [main] 5) Suppliers table.
+2022-10-04 09:37:19,625 INFO c.s.m.MyBatis [main] 6) Products table.
+2022-10-04 09:37:19,626 INFO c.s.m.MyBatis [main] 7) Purchases table.
+2022-10-04 09:37:19,626 INFO c.s.m.MyBatis [main] 8) Promos table.
+2022-10-04 09:37:19,626 INFO c.s.m.MyBatis [main] 9) Orders table.
+2022-10-04 09:37:19,626 INFO c.s.m.MyBatis [main] 10) Branches table.
+2022-10-04 09:37:19,626 INFO c.s.m.MyBatis [main] 11) Delivery table.
+2022-10-04 09:37:19,626 INFO c.s.m.MyBatis [main] 12) Licenses table.
+2022-10-04 09:37:19,627 INFO c.s.m.MyBatis [main] 0) Exit.
